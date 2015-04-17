@@ -36,7 +36,15 @@ void ofApp::update(){
         if(first == true)
         {
             resources = new ResourceManager;
-            resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\tiles\\memes");
+            if(ofRandom(69) < 4.2)
+            {
+                resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\tiles\\memes");
+            }
+            else
+            {
+                resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\tiles");
+            }
+
             resources->addTexture("City.png", "City");
             resources->addTexture("CityHover.png", "CityHover");
             resources->addTexture("CMBackground.png", "CMBackground");
