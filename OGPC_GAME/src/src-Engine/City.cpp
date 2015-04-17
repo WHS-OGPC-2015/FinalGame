@@ -1,7 +1,11 @@
 #include "City.h"
 #include <sstream>
 
-
+int turnsToInt(double d)
+{
+    int i = d;
+    return i;
+}
 
 City::City()
 {
@@ -172,6 +176,7 @@ void City::update(ofVec2f& mousePos, bool& clicked, bool& pressed)
 
 void City::turnlyUpdate()
 {
+    std::cout << accel << endl;
     percentconverted = converted / population;
 
     if (entered == true)
@@ -213,7 +218,7 @@ void City::turnlyUpdate()
             }
             else
             {
-                bandAccel = turnToInt(2/3 * bandAccel);
+                bandAccel = turnsToInt(2/3 * bandAccel);
             }
         }
         if (threshnums[0] != threshnums[1]) // crossing thresholds

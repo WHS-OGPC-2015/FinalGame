@@ -133,6 +133,7 @@ void ObjectManager::updateAll(ofVec2f& mousePos, bool& clicked, bool& pressed)
         objects[ii]->updateAll(mousePos, clicked, pressed);
         if(turn)
         {
+
             objects[ii]->turnlyUpdateAll();
             turn = false;
         }

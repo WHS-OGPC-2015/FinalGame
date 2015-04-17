@@ -202,12 +202,12 @@ void Band::findActions()
         else if (actionButtons[2]->getEventDataInt() == 3 and incognito == false)
         {
             swapIncognito();
-           // movable = false;
+            movable = false;
         }
         else if (actionButtons[2]->getEventDataInt() == 7 and incognito == true)
         {
             swapIncognito();
-           // movable = false;
+            movable = false;
         }
         else
         {
@@ -236,7 +236,7 @@ int Band::update(ofVec2f& mousePos, bool& clicked, bool& pressed)
     hoveredTile = ofVec2i(-1,-1);
 
     findActions();
-    if (movable == false or startup == true)
+    if (startup == true)
     {
         turnlyUpdate();
         startup = false;
@@ -346,7 +346,7 @@ int Band::update(ofVec2f& mousePos, bool& clicked, bool& pressed)
 
 void Band::turnlyUpdate()
 {
-
+    std::cout << "hereband" << std::endl;
     //reset the TL and BR positions for collisions
     TLpos = ofVec2f(boundTile->getLocation().x, boundTile->getLocation().y);
     BRpos = ofVec2f(boundTile->getLocation().x + BandTextures[bandType]->getWidth(), boundTile->getLocation().y + BandTextures[bandType]->getHeight());
