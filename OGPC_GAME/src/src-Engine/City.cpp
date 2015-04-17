@@ -20,6 +20,8 @@ City::City()
     drawMenu = false;
     selected = false;
     hovered = false;
+    strength = 50;
+    bandAccel = 0;
 }
 
 City::City(int dif, double fpopulation, std::string fcityName, int iTileIndex, std::string TN, std::string HTN)
@@ -49,6 +51,8 @@ City::City(int dif, double fpopulation, std::string fcityName, int iTileIndex, s
     drawMenu = false;
     selected = false;
     hovered = false;
+    strength = 50;
+    bandAccel = 0;
 }
 
 void City::setTile(Tile* T)
@@ -116,6 +120,10 @@ void City::update(ofVec2f& mousePos, bool& clicked, bool& pressed)
     TLpos = ofVec2f(boundTile->getLocation().x, boundTile->getLocation().y);
     BRpos = ofVec2f(boundTile->getLocation().x + cityTexture->getWidth(), boundTile->getLocation().y + cityTexture->getHeight());
     occupied = boundTile->getBandoc();
+    if (occupied == true and entered == false)
+    {
+        entered = true;
+    }
 
     clickedData = getClickedData(mousePos, clicked, pressed);
     if(clickedData == 3)
@@ -180,6 +188,7 @@ void City::turnlyUpdate()
             accel = extremeaccel[1];
             threshnums[0] = 3;
         }
+        //now stuff?
         else
         {
 
@@ -196,10 +205,17 @@ void City::turnlyUpdate()
                 // this is, too
             }
         }
-//        if (percentconverted < thresholds[2])
-//        {
-//            add an acceleration based on the number of people in the city;
-//        }
+        if (percentconverted < thresholds[2])
+        {
+            if (occupied > 0)
+            {
+                bandAccel = occupied * strength;
+            }
+            else
+            {
+                bandAccel = turnToInt(2/3 * bandAccel);
+            }
+        }
         if (threshnums[0] != threshnums[1]) // crossing thresholds
         {
             if (threshnums[1] == 0)
@@ -216,7 +232,7 @@ void City::turnlyUpdate()
             }
         }
 
-        velocity += accel;
+        velocity += accel + bandAccel;
         converted += velocity;
 
 
