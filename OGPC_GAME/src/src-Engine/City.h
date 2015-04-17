@@ -58,6 +58,7 @@ private:
     double velmax;
     double accel;
     double accelmax;    //same in all cities
+    double bandAccel;
 
     double extremeaccel[2]; // same in all cities
 
@@ -73,6 +74,8 @@ private:
     int clickedData;
     bool selected;
     bool hovered;
+
+    double strength;
 
 
 
