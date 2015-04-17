@@ -98,7 +98,7 @@ void ofApp::update(){
             if(!mainSound.getIsPlaying())
             {
                 mainSound.play();
-                mainSound.setVolume(1.0f);
+                mainSound.setVolume(.25f);
             }
             adjustedMousePos = mousePos - viewPos;
             gameEngine->update(adjustedMousePos, clicked, pressed);

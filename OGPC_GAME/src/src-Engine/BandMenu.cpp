@@ -31,20 +31,20 @@ void createBandMenu(MenuManager* man, ofVec2f pos)
     MenuEntity* discBox;
     discBox = new TextBox(
                         "Number of Disciples:",
-                       ofVec2f(pos.x - halfmenuWidth + borderWidth + man->getFontPointer("BMText").stringWidth("Number of Disciples:") / 2, pos.y - consta /*a constant*/),
+                       ofVec2f((ofGetScreenWidth()/8)*4 + man->getFontPointer("BMText").stringWidth("Number of Disciples:") , pos.y - consta /*a constant*/),
                         man->getFontPointer("BMText")
                             );
 
     MenuEntity* discNum;
     discNum = new TextBox(
                     "X",
-                    ofVec2f(pos.x - halfmenuWidth + 2 * borderWidth + man->getFontPointer("BMText").stringWidth("Number of Disciples:"), pos.y - consta + 3),
+                    ofVec2f((ofGetScreenWidth()/8)*4 + man->getFontPointer("BMText").stringWidth("Number of Disciples:")*1.5 + 25, pos.y - consta + 3),
                     man->getFontPointer("BMText")
                     );
 
     MenuEntity* BreakUp;
     BreakUp = new HoverButton(
-                        ofVec2f(pos.x - borderWidth - man->getTexturePointer("BMBreakUpButNormal").getWidth()/2, pos.y + constc),
+                        ofVec2f((ofGetScreenWidth()/8)*5 - man->getTexturePointer("BMBreakUpButNormal").getWidth()/2, pos.y + constc*2),
                         man->getTexturePointer("BMBreakUpButNormal"),           // adding textures, we have done this before...
                         man->getTexturePointer("BMBreakUpButHovered"),
                         man->getTexturePointer("BMBreakUpButPressed"),
@@ -55,7 +55,7 @@ void createBandMenu(MenuManager* man, ofVec2f pos)
 
     MenuEntity* MoveBut;
     MoveBut = new HoverButton(
-                        ofVec2f(pos.x + borderWidth + man->getTexturePointer("BMMoveButNormal").getWidth()/2, pos.y + constc),
+                        ofVec2f((ofGetScreenWidth()/8)*5 + man->getTexturePointer("BMMoveButNormal").getWidth()/2, pos.y + constc*2),
                         man->getTexturePointer("BMMoveButNormal"),           // adding textures, we have done this before...
                         man->getTexturePointer("BMMoveButHovered"),
                         man->getTexturePointer("BMMoveButPressed"),
@@ -66,7 +66,7 @@ void createBandMenu(MenuManager* man, ofVec2f pos)
 
     MenuEntity* IncogBut;
     IncogBut = new HoverButton(
-                        ofVec2f(pos.x, pos.y + borderWidth + man->getTexturePointer("BMIncogButNormal").getHeight() + constc),
+                        ofVec2f((ofGetScreenWidth()/8)*5 + man->getTexturePointer("BMIncogButNormal").getWidth()/2, pos.y + constc*2 - man->getTexturePointer("BMIncogButNormal").getHeight()),
                         man->getTexturePointer("BMIncogButNormal"),           // adding textures, we have done this before...
                         man->getTexturePointer("BMIncogButHovered"),
                         man->getTexturePointer("BMIncogButPressed"),
