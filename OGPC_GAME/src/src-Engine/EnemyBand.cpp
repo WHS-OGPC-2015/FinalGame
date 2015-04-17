@@ -59,7 +59,7 @@
 //            }
 //            else
 //            {
-//                newCoord = ofVec2i(nrise + .5, nrun);
+//                newCoord = ofVec2i(nrise + .5 + boundTileCoords.x, nrun + boundTileCoords.y);
 //            }
 //        }
 //        else
