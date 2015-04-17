@@ -36,13 +36,13 @@ void ofApp::update(){
         if(first == true)
         {
             resources = new ResourceManager;
-            resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\Game\\OGPC_GAME\\bin\\data\\tiles");
+            resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\tiles\\memes");
             resources->addTexture("City.png", "City");
             resources->addTexture("CityHover.png", "CityHover");
             resources->addTexture("CMBackground.png", "CMBackground");
             resources->addFont("monterey/MontereyFLF-Bold.ttf", "CMFont", 12);
-            resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\Game\\OGPC_GAME\\bin\\data\\BandTextures");
-            resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\Game\\OGPC_GAME\\bin\\data\\TurnMenuTextures");
+            resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\BandTextures");
+            resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\TurnMenuTextures");
             resources->addSound("MainMenu.mp3", "MainMusic", true);
 
             gameEngine = new Engine;
@@ -67,7 +67,7 @@ void ofApp::update(){
         if(first == true)
         {
             //everything is allready loaded
-            ofSoundSetVolume(.5f);
+            ofSoundSetVolume(.25f);
             //mainSound = resources->getSound("MainMusic");
             mainSound.setLoop(true);
 
