@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="OGPC_GAME" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="addons\;src\;" />
+		<Build>
+			<Target title="release">
+				<Option output="bin/$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Release" />
+				<Option external_deps="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworks.lib;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworks.lib" />
+				</Linker>
+			</Target>
+			<Target title="debug">
+				<Option output="bin/$(PROJECT_NAME)_DEBUG" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Debug/" />
+				<Option external_deps="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworksDebug.lib;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworksDebug.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wno-multichar" />
+			<Add directory="../../../libs/glu/include" />
+			<Add directory="../../../libs/freetype/include" />
+			<Add directory="../../../libs/freetype/include/freetype2" />
+			<Add directory="../../../libs/FreeImage/include" />
+			<Add directory="../../../libs/quicktime/include" />
+			<Add directory="../../../libs/rtAudio/include" />
+			<Add directory="../../../libs/fmodex/include" />
+			<Add directory="../../../libs/videoInput/include" />
+			<Add directory="../../../libs/glew/include" />
+			<Add directory="../../../libs/glut/include" />
+			<Add directory="../../../libs/glfw/include" />
+			<Add directory="../../../libs/openFrameworks" />
+			<Add directory="../../../libs/openFrameworks/3d" />
+			<Add directory="../../../libs/openFrameworks/app" />
+			<Add directory="../../../libs/openFrameworks/communication" />
+			<Add directory="../../../libs/openFrameworks/events" />
+			<Add directory="../../../libs/openFrameworks/gl" />
+			<Add directory="../../../libs/openFrameworks/graphics" />
+			<Add directory="../../../libs/openFrameworks/math" />
+			<Add directory="../../../libs/openFrameworks/sound" />
+			<Add directory="../../../libs/openFrameworks/types" />
+			<Add directory="../../../libs/openFrameworks/utils" />
+			<Add directory="../../../libs/openFrameworks/video" />
+			<Add directory="../../../libs/poco/include" />
+			<Add directory="../../../libs/tess2/include" />
+			<Add directory="../../../libs/cairo/include/cairo" />
+		</Compiler>
+		<Linker>
+			<Add library="..\..\..\libs\FreeImage\lib\win_cb\FreeImage.lib" />
+			<Add library="..\..\..\libs\rtAudio\lib\win_cb\librtaudio.a" />
+			<Add library="..\..\..\libs\quicktime\lib\win_cb\qtmlClient.lib" />
+			<Add library="..\..\..\libs\cairo\lib\win_cb\libcairo.a" />
+			<Add library="..\..\..\libs\cairo\lib\win_cb\libpixman-1.a" />
+			<Add library="..\..\..\libs\freetype\lib\win_cb\libfreetype.a" />
+			<Add library="..\..\..\libs\glut\lib\win_cb\libglut.a" />
+			<Add library="..\..\..\libs\glfw\lib\win_cb\libglfw3.a" />
+			<Add library="..\..\..\libs\videoInput\lib\win_cb\videoInputLib.a" />
+			<Add library="..\..\..\libs\fmodex\lib\win_cb\libfmodex.a" />
+			<Add library="..\..\..\libs\glew\lib\win_cb\glew32s.lib" />
+			<Add library="..\..\..\libs\glu\lib\win_cb\glu32.lib" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoNetSSL.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoCrypto.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoNet.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoUtil.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoXML.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoFoundation.a" />
+			<Add library="..\..\..\libs\openssl\lib\win_cb\libssl.a" />
+			<Add library="..\..\..\libs\openssl\lib\win_cb\libcrypto.a" />
+			<Add library="..\..\..\libs\tess2\lib\win_cb\libtess2.a" />
+			<Add library="opengl32" />
+			<Add library="gdi32" />
+			<Add library="msimg32" />
+			<Add library="glu32" />
+			<Add library="dsound" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add library="strmbase" />
+			<Add library="strmiids" />
+			<Add library="z" />
+			<Add library="uuid" />
+			<Add library="ole32" />
+			<Add library="oleaut32" />
+			<Add library="setupapi" />
+			<Add library="wsock32" />
+			<Add library="ws2_32" />
+			<Add library="Iphlpapi" />
+			<Add library="Comdlg32" />
+		</Linker>
+		<ExtraCommands>
+			<Add after='xcopy /e /i /y &quot;$(PROJECT_DIR)..\..\..\export\win_cb\*.dll&quot;  &quot;$(PROJECT_DIR)bin&quot;' />
+			<Add after='cmd /c if not exist &quot;$(PROJECT_DIR)bin/data&quot; mkdir &quot;$(PROJECT_DIR)bin/data&quot;' />
+			<Mode after="always" />
+		</ExtraCommands>
+		<Unit filename="icon.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/MainMenu.cpp" />
+		<Unit filename="src/MainMenu.h" />
+		<Unit filename="src/XML/libs/tinyxml.cpp" />
+		<Unit filename="src/XML/libs/tinyxml.h" />
+		<Unit filename="src/XML/libs/tinyxmlerror.cpp" />
+		<Unit filename="src/XML/libs/tinyxmlparser.cpp" />
+		<Unit filename="src/XML/src/ofxXmlSettings.cpp" />
+		<Unit filename="src/XML/src/ofxXmlSettings.h" />
+		<Unit filename="src/main.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src/ofApp.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src/ofApp.h">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src/src-Engine/Band.cpp" />
+		<Unit filename="src/src-Engine/Band.h" />
+		<Unit filename="src/src-Engine/BandMenu.cpp" />
+		<Unit filename="src/src-Engine/BandMenu.h" />
+		<Unit filename="src/src-Engine/City.cpp" />
+		<Unit filename="src/src-Engine/City.h" />
+		<Unit filename="src/src-Engine/CityMenu.cpp" />
+		<Unit filename="src/src-Engine/CityMenu.h" />
+		<Unit filename="src/src-Engine/EnemyBand.cpp" />
+		<Unit filename="src/src-Engine/EnemyBand.h" />
+		<Unit filename="src/src-Engine/EngineInclude.h" />
+		<Unit filename="src/src-Engine/EngineMain.cpp" />
+		<Unit filename="src/src-Engine/EngineMain.h" />
+		<Unit filename="src/src-Engine/ObjectManager.cpp" />
+		<Unit filename="src/src-Engine/ObjectManager.h" />
+		<Unit filename="src/src-Engine/ObjectVector.cpp" />
+		<Unit filename="src/src-Engine/ObjectVector.h" />
+		<Unit filename="src/src-Engine/ResourceManager.cpp" />
+		<Unit filename="src/src-Engine/ResourceManager.h" />
+		<Unit filename="src/src-Engine/Tile.cpp" />
+		<Unit filename="src/src-Engine/Tile.h" />
+		<Unit filename="src/src-Engine/TileManager.cpp" />
+		<Unit filename="src/src-Engine/TileManager.h" />
+		<Unit filename="src/src-Engine/UtilMenus.cpp" />
+		<Unit filename="src/src-Engine/UtilMenus.h" />
+		<Unit filename="src/src-Game/CityMenu.cpp" />
+		<Unit filename="src/src-Game/GameMap.cpp" />
+		<Unit filename="src/src-Game/GameMap.h" />
+		<Unit filename="src/src-Game/PauseMenu.cpp" />
+		<Unit filename="src/src-Game/PauseMenu.h" />
+		<Unit filename="src/src-Game/Tile.cpp" />
+		<Unit filename="src/src-Game/Tile.h" />
+		<Unit filename="src/src-Game/Vec2i.cpp" />
+		<Unit filename="src/src-Game/Vec2i.h" />
+		<Unit filename="src/src-Game/simplexnoise.cpp" />
+		<Unit filename="src/src-Game/simplexnoise.h" />
+		<Unit filename="src/src-MenuAPI/HoverButton.cpp" />
+		<Unit filename="src/src-MenuAPI/HoverButton.h" />
+		<Unit filename="src/src-MenuAPI/Menu.cpp" />
+		<Unit filename="src/src-MenuAPI/Menu.h" />
+		<Unit filename="src/src-MenuAPI/MenuBackground.cpp" />
+		<Unit filename="src/src-MenuAPI/MenuBackground.h" />
+		<Unit filename="src/src-MenuAPI/MenuEntity.cpp" />
+		<Unit filename="src/src-MenuAPI/MenuEntity.h" />
+		<Unit filename="src/src-MenuAPI/MenuInclude.h" />
+		<Unit filename="src/src-MenuAPI/MenuManager.cpp" />
+		<Unit filename="src/src-MenuAPI/MenuManager.h" />
+		<Unit filename="src/src-MenuAPI/PieChart.cpp" />
+		<Unit filename="src/src-MenuAPI/PieChart.h" />
+		<Unit filename="src/src-MenuAPI/SimpleButton.cpp" />
+		<Unit filename="src/src-MenuAPI/SimpleButton.h" />
+		<Unit filename="src/src-MenuAPI/Slider.cpp" />
+		<Unit filename="src/src-MenuAPI/Slider.h" />
+		<Unit filename="src/src-MenuAPI/TextBox.cpp" />
+		<Unit filename="src/src-MenuAPI/TextBox.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
