@@ -10,6 +10,7 @@ ObjectManager::ObjectManager(std::string toLoad, ofVec2f translation, TileManage
     createCityMenu(objectMenus, ofVec2f(ofGetWindowWidth()-200, ofGetWindowHeight()-150), recMan);
     createBandMenu(objectMenus, ofVec2f(ofGetWindowWidth()-600, ofGetWindowHeight()-150));
     createNextTurnMenu(objectMenus, ofVec2f(ofGetWindowWidth()-1000, ofGetWindowHeight()-150));
+    turnButton = objectMenus->getMenuPointerByName("TurnMenu")->getPointerToChildByName<HoverButton>("NextTurnButton");
     loadFromFile(toLoad);
     turn = false;
 }
@@ -122,12 +123,18 @@ void ObjectManager::saveToFile(std::string path)
 
 void ObjectManager::updateAll(ofVec2f& mousePos, bool& clicked, bool& pressed)
 {
+    if(turnButton->getEventDataInt() == 3)
+    {
+        turn = true;
+        turnButton->setClicked(false);
+    }
     for(int ii = 0; ii < objects.size(); ii++)
     {
         objects[ii]->updateAll(mousePos, clicked, pressed);
         if(turn)
         {
             objects[ii]->turnlyUpdateAll();
+            turn = false;
         }
     }
 }

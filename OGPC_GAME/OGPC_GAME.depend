@@ -8252,7 +8252,7 @@
 	"EngineMain.h"
 	"City.h"
 
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\objectmanager.h
+1429244423 c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\objectmanager.h
 	"ofMain.h"
 	"../XML/src/ofxXmlSettings.h"
 	"ObjectVector.h"
@@ -8506,4 +8506,8 @@
 	<vector>
 	<string>
 	<iostream>
+
+1429243567 source:c:\openframeworks\apps\finalgame\ogpc_game\src\ofapp.cpp
+	"ofApp.h"
+	"XML/src/ofxXmlSettings.h"
 

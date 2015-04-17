@@ -73,9 +73,12 @@ private:
     TileManager* tiles;         //local reference to tile manager
     ResourceManager* recMan;    //local reference to resources
     MenuManager* objectMenus;   //manager for popups and stuff
+    HoverButton* turnButton;
 
     std::string fileString;
 
     bool turn;
+
+
 
 };
