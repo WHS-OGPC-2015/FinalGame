@@ -46,7 +46,7 @@ int roundforint(double i)
 
 GameMap::GameMap()
 {
-    numCities = 8;
+    numCities = 20;
 }
 
 void GameMap::generateMap()
@@ -215,8 +215,8 @@ std::vector<int> GameMap::genMap(int sizeX, int sizeY, int seeds)
 
 void GameMap::genMapTwo()
 {
-  /*this*/  mapSize = ofVec2i(20, 20);        //size of the map in tiles
- /*this*/   int numSeeds = 4;                  //number of mountains to generate in genMap()
+  /*this*/  mapSize = ofVec2i(50, 50);        //size of the map in tiles
+ /*this*/   int numSeeds = 10;                  //number of mountains to generate in genMap()
     int last = 1;                       //last height used(for noise z seed)
     float noiseWeight = 1;              //value to multiply noise vector by before averaging
     float seedWeight = 1;               //value to multiply seed vector by before averaging

@@ -28,15 +28,17 @@ void PieChart::setVariables(double dub, double tot)
 {
     depVar = dub;
     total = tot;
-    //std::cout << depVar << " " << tot << std::endl;
+    std::cout << dub << " " << tot << std::endl;
+    rati = depVar/total;
+    arc.clear();
+    arc.setFillColor(colors[0]);
+    //std::cout << depVar << ", " << total << std::endl;
+    arc.arc(pos.x, pos.y, rad, rad, ofRadToDeg(pi/2), ofRadToDeg(pi/2+(rati*2*pi)));
 }
 
 void PieChart::update()
 {
-    rati = depVar/total;
-    arc.clear();
-    arc.setFillColor(colors[0]);
-    arc.arc(pos.x, pos.y, rad, rad, ofRadToDeg(pi/2), ofRadToDeg(pi/2+(rati*2*pi)));
+
 }
 
 void PieChart::draw()

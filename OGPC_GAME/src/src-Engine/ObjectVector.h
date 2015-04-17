@@ -68,9 +68,11 @@ public:
 
     void turnlyUpdateAll()
     {
+        std::cout << "turnUpdate" << std::endl;
         for(int ii = 0; ii < vec.size(); ii++)
         {
             vec[ii].turnlyUpdate();
+
 
         }
     }

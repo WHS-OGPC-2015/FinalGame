@@ -127,17 +127,18 @@ void ObjectManager::updateAll(ofVec2f& mousePos, bool& clicked, bool& pressed)
     {
         turn = true;
         turnButton->setClicked(false);
+        std::cout << "here" << std::endl;
     }
     for(int ii = 0; ii < objects.size(); ii++)
     {
         objects[ii]->updateAll(mousePos, clicked, pressed);
         if(turn)
         {
-
             objects[ii]->turnlyUpdateAll();
-            turn = false;
+
         }
     }
+    turn = false;
 }
 
 void ObjectManager::drawNoTranslate()

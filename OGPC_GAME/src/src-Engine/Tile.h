@@ -17,11 +17,13 @@ public:
 
     void switchCityoc();
     void setBandoc(int i);
+    void setIncog(bool b);
     void switchEBandoc();
 
     bool getCityoc();
     int getBandoc();
     bool getEBandoc();
+    bool getIncog();
 
 private:
     ofTexture* texture;
@@ -29,6 +31,7 @@ private:
     bool Cityoc;
     int Bandoc;
     bool EBandoc;
+    bool incog;
 
 };
 

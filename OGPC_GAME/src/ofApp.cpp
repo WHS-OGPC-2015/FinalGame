@@ -6,7 +6,7 @@ void ofApp::setup(){
     ofEnableAlphaBlending();
     viewPos = ofVec2f(0, 0);
     first = true;
-    currentState = LOADING;
+    currentState = MAINMENU;
     ofSetFrameRate(60); //set framerate
     ofSeedRandom();
     mapDim = ofVec2f(100, 100);

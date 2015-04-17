@@ -202,12 +202,14 @@ void Band::findActions()
         else if (actionButtons[2]->getEventDataInt() == 3 and incognito == false)
         {
             swapIncognito();
+            boundTile->setIncog(true);
             movable = false;
         }
         else if (actionButtons[2]->getEventDataInt() == 7 and incognito == true)
         {
             swapIncognito();
             movable = false;
+            boundTile->setIncog(false);
         }
         else
         {
@@ -288,9 +290,12 @@ int Band::update(ofVec2f& mousePos, bool& clicked, bool& pressed)
                 if (temptile.x == possibleMovesCoords[i].x and temptile.y == possibleMovesCoords[i].y)// check every possible move if there is a match
                 {
                     boundTile->setBandoc(0);
+                    boundTile->setIncog(false);
+
                     ofVec2f tm = ofVec2f(temptile.x, temptile.y);
                     boundTile = allTiles->getTileByCoords(tm);
                     boundTile->setBandoc(discipleNum);
+                    boundTile->setIncog(incognito);
 
 
                     boundTileCoords = temptile;
@@ -495,6 +500,7 @@ void Band::setExtremeTiles(ofVec2i v1, ofVec2i v2)
 //set ALL of the textures
 void Band::setTextures(ResourceManager* res)
 {
+    bandType = 1;
     for (int i = 0; i < 4; i++)
     {
         BandTextures[i] = &res->getTextureReference(TextureNames[i]);

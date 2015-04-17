@@ -24,7 +24,7 @@ City::City()
     drawMenu = false;
     selected = false;
     hovered = false;
-    strength = 50;
+    strength = 25;
     bandAccel = 0;
 }
 
@@ -32,7 +32,7 @@ City::City(int dif, double fpopulation, std::string fcityName, int iTileIndex, s
 {
     TileIndex = iTileIndex;
     population = fpopulation; // default population
-    converted = 4000; // you don't have any influence
+    converted = 2000; // you don't have any influence
     cityName = fcityName;
     textureName = TN;
     textureHoverName = HTN;
@@ -55,7 +55,7 @@ City::City(int dif, double fpopulation, std::string fcityName, int iTileIndex, s
     drawMenu = false;
     selected = false;
     hovered = false;
-    strength = 50;
+    strength = 25;
     bandAccel = 0;
 }
 
@@ -124,13 +124,13 @@ void City::update(ofVec2f& mousePos, bool& clicked, bool& pressed)
     TLpos = ofVec2f(boundTile->getLocation().x, boundTile->getLocation().y);
     BRpos = ofVec2f(boundTile->getLocation().x + cityTexture->getWidth(), boundTile->getLocation().y + cityTexture->getHeight());
     occupied = boundTile->getBandoc();
-    if (occupied == true and entered == false)
+    if (occupied > 0 and entered == false)
     {
         entered = true;
     }
 
     clickedData = getClickedData(mousePos, clicked, pressed);
-    if(clickedData == 3)
+    if(clickedData == 3 and mousePos.y < 724)
     {
         if (selected == true)
         {
@@ -142,7 +142,7 @@ void City::update(ofVec2f& mousePos, bool& clicked, bool& pressed)
         }
 
     }
-    else if (clicked == true)
+    else if (clicked == true and mousePos.y < 724)
     {
         selected = false;
     }
@@ -176,8 +176,8 @@ void City::update(ofVec2f& mousePos, bool& clicked, bool& pressed)
 
 void City::turnlyUpdate()
 {
-    std::cout << accel << endl;
     percentconverted = converted / population;
+    std::cout << entered << std::endl;
 
     if (entered == true)
     {
@@ -212,13 +212,13 @@ void City::turnlyUpdate()
         }
         if (percentconverted < thresholds[2])
         {
-            if (occupied > 0)
+            if (occupied > 0 and boundTile->getIncog() == false)
             {
                 bandAccel = occupied * strength;
             }
             else
             {
-                bandAccel = turnsToInt(2/3 * bandAccel);
+                bandAccel = 0;
             }
         }
         if (threshnums[0] != threshnums[1]) // crossing thresholds
@@ -250,6 +250,7 @@ void City::turnlyUpdate()
             converted = population;
         }
     }
+    std::cout << converted << std::endl;
 
 }
 
@@ -283,6 +284,7 @@ void City::fillMenu()
 //
     PieChart*  pChart = cityMenu->getPointerToChildByName<PieChart>("BelieverPie");
     pChart->setVariables(converted, population);
+    //std::cout << "fuc," << std::endl;
 
 }
 

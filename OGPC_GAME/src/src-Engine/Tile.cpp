@@ -6,6 +6,7 @@ Tile::Tile()
     Cityoc = false;
     Bandoc = 0;
     EBandoc = false;
+    incog = false;
 }
 
 void Tile::update()
@@ -44,6 +45,11 @@ void Tile::setBandoc(int i)
     Bandoc = i;
 }
 
+void Tile::setIncog(bool b)
+{
+    incog = b;
+}
+
 void Tile::switchEBandoc()
 {
     EBandoc = !EBandoc;
@@ -62,5 +68,10 @@ int Tile::getBandoc()
 bool Tile::getEBandoc()
 {
     return EBandoc;
+}
+
+bool Tile::getIncog()
+{
+    return incog;
 }
 
