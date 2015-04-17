@@ -28,7 +28,7 @@ void ObjectManager::loadFromFile(std::string filePath)
 
     if(objectFile.loadFile("objects.xml"))
     {
-    std::cout << "file Loaded" << std::endl;
+        std::cout << "file Loaded" << std::endl;
         std::vector<std::string> objectNames;
         int numObjectTypes = objectFile.getValue("numObjectTypes", 0);
 

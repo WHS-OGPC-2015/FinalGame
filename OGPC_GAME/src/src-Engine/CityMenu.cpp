@@ -52,8 +52,7 @@ void createCityMenu(MenuManager* man, ofVec2f pos, ResourceManager* R)
     MenuEntity* nameBox;
     nameBox = new TextBox{
                     "CITY_NAME",
-                    ofVec2f(pos.x,
-                            pos.y - halfmenuHeight + borderWidth),
+                    ofVec2f((ofGetWindowWidth()/8)*7, pos.y - halfmenuHeight + borderWidth + 20),
                     man->getFontPointer("CMText")
                     };
 
