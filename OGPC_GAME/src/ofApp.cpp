@@ -10,7 +10,7 @@ void ofApp::setup(){
     currentState = MAINMENU;
     ofSetFrameRate(60); //set framerate
     ofSeedRandom();
-    mapDim = ofVec2f(100, 100);
+    mapDim = ofVec2f(60, 60);
     tileDim = ofVec2f(32, 32);
     mainSound.loadSound("Music1.mp3");
     secondSound.loadSound("Music2.mp3");
