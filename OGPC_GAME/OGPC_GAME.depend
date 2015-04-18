@@ -13222,7 +13222,15 @@
 1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\pausemenu.h
 	"../src-MenuAPI/MenuInclude.h"
 
+<<<<<<< HEAD
 1429345516 source:c:\openframeworks\apps\finalgame\ogpc_game\src\mainmenu.cpp
+=======
+<<<<<<< HEAD
+1429344235 source:c:\openframeworks\apps\finalgame\ogpc_game\src\mainmenu.cpp
+=======
+1429344380 source:c:\openframeworks\apps\finalgame\ogpc_game\src\mainmenu.cpp
+>>>>>>> 7ccbcde18aab5eb061e0ae5b8c9e228fdffa0732
+>>>>>>> 3cb2bcef7cd9d8f783ebbac6878b8af819aeb7ba
 	"MainMenu.h"
 
 1429339109 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\band.cpp
