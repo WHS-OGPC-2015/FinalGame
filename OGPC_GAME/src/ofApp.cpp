@@ -45,7 +45,7 @@ void ofApp::update(){
         if(first == true)
         {
             resources = new ResourceManager;
-            resources->addTexture("bandTextures/selectTile.png", "selectTile");
+            resources->addTexture("bandTextures\\selectTile.png", "selectTile");
           //  if(ofRandom(69) < 4.2)
           //  {
          //       resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\tiles\\memes");
@@ -54,7 +54,7 @@ void ofApp::update(){
           //  {
                 resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\tiles");
            // }
-            resources->addTexture("EnemyBandTextures/EnemyBand.png", "EnemyBand");
+            resources->addTexture("EnemyBandTextures\\EnemyBand.png", "EnemyBand");
             resources->addTexture("City.png", "City");
             resources->addTexture("CityHover.png", "CityHover");
             resources->addTexture("CMBackground.png", "CMBackground");
