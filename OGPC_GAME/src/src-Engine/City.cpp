@@ -16,11 +16,11 @@ City::City()
     thresholds[0] = .05;     // below this percentage of believers in an entered city, the believers will increase
     thresholds[1] = .5 + difficulty; // above this percentage in an entered city, the converted will increase
     thresholds[2] = .95;  // above this percentage in an entered city, the converted will decline
-    velmin = -(thresholds[1]-thresholds[0]) * accelmax / 2; //integral from bottom th to middle th of the acceleration, / (-2) -- the C of the integral
-    velmax = (thresholds[2]-thresholds[1]) * accelmax / 2;
+//    velmin = -(thresholds[1]-thresholds[0]) * accelmax; //integral from bottom th to middle th of the acceleration, / (-2) -- the C of the integral
+//    velmax = (thresholds[2]-thresholds[1]) * accelmax;
     extremeaccel[0] = 10;
     extremeaccel[1] = -10;
-    threshnums[0] = 0;
+//    threshnums[0] = 0;
     drawMenu = false;
     selected = false;
     hovered = false;
@@ -47,11 +47,11 @@ City::City(int dif, double fpopulation, std::string fcityName, int iTileIndex, s
     thresholds[0] = .05;     // below this percentage of believers in an entered city, the believers will increase
     thresholds[1] = .5 + difficulty; // above this percentage in an entered city, the converted will increase
     thresholds[2] = .95;  // above this percentage in an entered city, the converted will decline
-    velmin = -(thresholds[1]-thresholds[0]) * accelmax / 2; //integral from bottom th to middle th of the acceleration, / (-2) -- the C of the integral
-    velmax = (thresholds[2]-thresholds[1]) * accelmax / 2;
+//    velmin = -(thresholds[1]-thresholds[0]) * accelmax; //integral from bottom th to middle th of the acceleration, / (-2) -- the C of the integral
+//    velmax = (thresholds[2]-thresholds[1]) * accelmax;
     extremeaccel[0] = 10;
     extremeaccel[1] = -10;
-    threshnums[0] = 0;
+//    threshnums[0] = 0;
     drawMenu = false;
     selected = false;
     hovered = false;
@@ -177,21 +177,21 @@ void City::update(ofVec2f& mousePos, bool& clicked, bool& pressed)
 void City::turnlyUpdate()
 {
     percentconverted = converted / population;
-    std::cout << entered << std::endl;
+   // std::cout << entered << std::endl;
 
     if (entered == true)
     {
 
-        threshnums[1] = threshnums[0];
+//        threshnums[1] = threshnums[0];
         if (percentconverted <= thresholds[0])
         {
            accel = extremeaccel[0];
-           threshnums[0] = 0;
+//           threshnums[0] = 0;
         }
         else if (percentconverted >= thresholds[2])
         {
             accel = extremeaccel[1];
-            threshnums[0] = 3;
+//            threshnums[0] = 3;
         }
         //now stuff?
         else
@@ -199,14 +199,17 @@ void City::turnlyUpdate()
 
             if (percentconverted < thresholds[1])
             {
-                threshnums[0] = 1;
-                accel  = (percentconverted - thresholds[0])*((accelmax)/(thresholds[1] - thresholds[0]));
+//                threshnums[0] = 1;
+
+                accel  = (percentconverted - thresholds[0])*((accelmax)/(thresholds[1] - thresholds[0])) - accelmax;
+                std::cout << accel << std::endl;
+                std::cout << bandAccel << std::endl;
                //this is a point-slope formula
             }
             else
             {
-                threshnums[0] = 2;
-                accel  = (percentconverted - thresholds[2])*((accelmax)/(thresholds[1] - thresholds[2]));
+//                threshnums[0] = 2;
+                accel  = (percentconverted - thresholds[2])*((accelmax)/(thresholds[1] - thresholds[2])) - accelmax;
                 // this is, too
             }
         }
@@ -219,21 +222,6 @@ void City::turnlyUpdate()
             else
             {
                 bandAccel = 0;
-            }
-        }
-        if (threshnums[0] != threshnums[1]) // crossing thresholds
-        {
-            if (threshnums[1] == 0)
-            {
-                velocity = velmin;
-            }
-            else if (threshnums[1] == 3)
-            {
-                velocity = velmax;
-            }
-            else
-            {
-                velocity = 0;
             }
         }
 
@@ -250,7 +238,7 @@ void City::turnlyUpdate()
             converted = population;
         }
     }
-    std::cout << converted << std::endl;
+   // std::cout << converted << std::endl;
 
 }
 
@@ -300,7 +288,7 @@ double City::getPercentConverted()
 
 void City::saveObjectData(ofxXmlSettings& file)
 {
-    std::cout << cityName << std::endl;
+    //std::cout << cityName << std::endl;
     file.addValue("cityTexture", textureName);
     file.addValue("cityHoverTexture", textureHoverName);
     file.addValue("cityName", cityName);
