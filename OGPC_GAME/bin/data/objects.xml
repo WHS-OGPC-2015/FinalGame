@@ -5,15 +5,9 @@
     <object>
         <cityTexture>City</cityTexture>
         <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Oakwood</cityName>
-        <tileIndex>664</tileIndex>
-        <population>27509.765625000</population>
-=======
-        <cityName>Brushchester</cityName>
-        <tileIndex>2195</tileIndex>
-        <population>14838.104248047</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <cityName>Dunglen</cityName>
+        <tileIndex>711</tileIndex>
+        <population>22235.565185547</population>
         <converted>2000.000000000</converted>
         <velocity>0.000000000</velocity>
         <accel>0.000000000</accel>
@@ -24,15 +18,9 @@
     <object>
         <cityTexture>City</cityTexture>
         <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Finleigh</cityName>
-        <tileIndex>1620</tileIndex>
-        <population>13985.900878906</population>
-=======
-        <cityName>Brushwick</cityName>
-        <tileIndex>1234</tileIndex>
-        <population>28842.620849609</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <cityName>Finburn</cityName>
+        <tileIndex>922</tileIndex>
+        <population>28189.544677734</population>
         <converted>2000.000000000</converted>
         <velocity>0.000000000</velocity>
         <accel>0.000000000</accel>
@@ -43,15 +31,9 @@
     <object>
         <cityTexture>City</cityTexture>
         <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Sylveing</cityName>
-        <tileIndex>1739</tileIndex>
-        <population>27859.954833984</population>
-=======
-        <cityName>Dowkirk</cityName>
-        <tileIndex>1805</tileIndex>
-        <population>11150.054931641</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <cityName>Moorpool</cityName>
+        <tileIndex>2025</tileIndex>
+        <population>21918.182373047</population>
         <converted>2000.000000000</converted>
         <velocity>0.000000000</velocity>
         <accel>0.000000000</accel>
@@ -62,15 +44,9 @@
     <object>
         <cityTexture>City</cityTexture>
         <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Aberburg</cityName>
-        <tileIndex>2404</tileIndex>
-        <population>29426.269531250</population>
-=======
-        <cityName>Finley</cityName>
-        <tileIndex>738</tileIndex>
-        <population>20514.373779297</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <cityName>Ashleigh</cityName>
+        <tileIndex>1606</tileIndex>
+        <population>28373.413085938</population>
         <converted>2000.000000000</converted>
         <velocity>0.000000000</velocity>
         <accel>0.000000000</accel>
@@ -81,15 +57,9 @@
     <object>
         <cityTexture>City</cityTexture>
         <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Meadowburg</cityName>
-        <tileIndex>2141</tileIndex>
-        <population>10873.870849609</population>
-=======
-        <cityName>Finwood</cityName>
-        <tileIndex>128</tileIndex>
-        <population>15287.475585938</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <cityName>Aberstead</cityName>
+        <tileIndex>2337</tileIndex>
+        <population>23704.223632812</population>
         <converted>2000.000000000</converted>
         <velocity>0.000000000</velocity>
         <accel>0.000000000</accel>
@@ -100,15 +70,9 @@
     <object>
         <cityTexture>City</cityTexture>
         <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Moorfall</cityName>
-        <tileIndex>1408</tileIndex>
-        <population>23782.043457031</population>
-=======
-        <cityName>Ashwick</cityName>
-        <tileIndex>25</tileIndex>
-        <population>12613.372802734</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <cityName>Moorborn</cityName>
+        <tileIndex>1628</tileIndex>
+        <population>25317.840576172</population>
         <converted>2000.000000000</converted>
         <velocity>0.000000000</velocity>
         <accel>0.000000000</accel>
@@ -119,15 +83,9 @@
     <object>
         <cityTexture>City</cityTexture>
         <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Portchester</cityName>
-        <tileIndex>2166</tileIndex>
-        <population>18576.507568359</population>
-=======
-        <cityName>Finreach</cityName>
-        <tileIndex>2236</tileIndex>
-        <population>20717.315673828</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <cityName>Sylvestead</cityName>
+        <tileIndex>2424</tileIndex>
+        <population>24771.575927734</population>
         <converted>2000.000000000</converted>
         <velocity>0.000000000</velocity>
         <accel>0.000000000</accel>
@@ -138,15 +96,9 @@
     <object>
         <cityTexture>City</cityTexture>
         <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Ashburg</cityName>
-        <tileIndex>1347</tileIndex>
-        <population>27977.447509766</population>
-=======
-        <cityName>Oakburn</cityName>
-        <tileIndex>2199</tileIndex>
-        <population>16952.972412109</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <cityName>Portreach</cityName>
+        <tileIndex>1143</tileIndex>
+        <population>14265.899658203</population>
         <converted>2000.000000000</converted>
         <velocity>0.000000000</velocity>
         <accel>0.000000000</accel>
@@ -157,148 +109,9 @@
     <object>
         <cityTexture>City</cityTexture>
         <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Ockville</cityName>
-        <tileIndex>1140</tileIndex>
-        <population>13978.271484375</population>
-=======
-        <cityName>Dowmouth</cityName>
-        <tileIndex>2135</tileIndex>
-        <population>6748.657226562</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
-        <converted>2000.000000000</converted>
-        <velocity>0.000000000</velocity>
-        <accel>0.000000000</accel>
-        <difficulty>3</difficulty>
-        <occupied>0</occupied>
-        <entered>0</entered>
-    </object>
-    <object>
-        <cityTexture>City</cityTexture>
-        <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Moorreach</cityName>
-        <tileIndex>202</tileIndex>
-        <population>10377.197265625</population>
-=======
-        <cityName>Sylvewick</cityName>
-        <tileIndex>2422</tileIndex>
-        <population>11124.877929688</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
-        <converted>2000.000000000</converted>
-        <velocity>0.000000000</velocity>
-        <accel>0.000000000</accel>
-        <difficulty>3</difficulty>
-        <occupied>0</occupied>
-        <entered>0</entered>
-    </object>
-    <object>
-        <cityTexture>City</cityTexture>
-        <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Finwick</cityName>
-        <tileIndex>1220</tileIndex>
-        <population>5395.202636719</population>
-=======
-        <cityName>Finstead</cityName>
-        <tileIndex>1908</tileIndex>
-        <population>17928.771972656</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
-        <converted>2000.000000000</converted>
-        <velocity>0.000000000</velocity>
-        <accel>0.000000000</accel>
-        <difficulty>3</difficulty>
-        <occupied>0</occupied>
-        <entered>0</entered>
-    </object>
-    <object>
-        <cityTexture>City</cityTexture>
-        <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Ashglen</cityName>
-        <tileIndex>1427</tileIndex>
-        <population>21418.457031250</population>
-=======
-        <cityName>Balmouth</cityName>
-        <tileIndex>1597</tileIndex>
-        <population>19449.310302734</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
-        <converted>2000.000000000</converted>
-        <velocity>0.000000000</velocity>
-        <accel>0.000000000</accel>
-        <difficulty>3</difficulty>
-        <occupied>0</occupied>
-        <entered>0</entered>
-    </object>
-    <object>
-        <cityTexture>City</cityTexture>
-        <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Meadowreach</cityName>
-        <tileIndex>1502</tileIndex>
-        <population>11385.040283203</population>
-=======
-        <cityName>Sylveing</cityName>
-        <tileIndex>2433</tileIndex>
-        <population>21561.889648438</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
-        <converted>2000.000000000</converted>
-        <velocity>0.000000000</velocity>
-        <accel>0.000000000</accel>
-        <difficulty>3</difficulty>
-        <occupied>0</occupied>
-        <entered>0</entered>
-    </object>
-    <object>
-        <cityTexture>City</cityTexture>
-        <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Aberborne</cityName>
-        <tileIndex>1962</tileIndex>
-        <population>28861.694335938</population>
-=======
-        <cityName>Dowborn</cityName>
-        <tileIndex>1613</tileIndex>
-        <population>22062.377929688</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
-        <converted>2000.000000000</converted>
-        <velocity>0.000000000</velocity>
-        <accel>0.000000000</accel>
-        <difficulty>3</difficulty>
-        <occupied>0</occupied>
-        <entered>0</entered>
-    </object>
-    <object>
-        <cityTexture>City</cityTexture>
-        <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Balborn</cityName>
-        <tileIndex>2451</tileIndex>
-        <population>16319.732666016</population>
-=======
-        <cityName>Sylveburn</cityName>
-        <tileIndex>655</tileIndex>
-        <population>18352.203369141</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
-        <converted>2000.000000000</converted>
-        <velocity>0.000000000</velocity>
-        <accel>0.000000000</accel>
-        <difficulty>3</difficulty>
-        <occupied>0</occupied>
-        <entered>0</entered>
-    </object>
-    <object>
-        <cityTexture>City</cityTexture>
-        <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
         <cityName>Oakburgh</cityName>
-        <tileIndex>569</tileIndex>
-        <population>18672.637939453</population>
-=======
-        <cityName>Aberchester</cityName>
-        <tileIndex>2152</tileIndex>
-        <population>17119.293212891</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <tileIndex>50</tileIndex>
+        <population>20018.463134766</population>
         <converted>2000.000000000</converted>
         <velocity>0.000000000</velocity>
         <accel>0.000000000</accel>
@@ -309,15 +122,9 @@
     <object>
         <cityTexture>City</cityTexture>
         <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Dunley</cityName>
-        <tileIndex>629</tileIndex>
-        <population>16571.502685547</population>
-=======
-        <cityName>Moorton</cityName>
-        <tileIndex>928</tileIndex>
-        <population>6177.978515625</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <cityName>Moorborne</cityName>
+        <tileIndex>49</tileIndex>
+        <population>18311.004638672</population>
         <converted>2000.000000000</converted>
         <velocity>0.000000000</velocity>
         <accel>0.000000000</accel>
@@ -328,15 +135,48 @@
     <object>
         <cityTexture>City</cityTexture>
         <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
+        <cityName>Sylvepool</cityName>
+        <tileIndex>1188</tileIndex>
+        <population>22474.365234375</population>
+        <converted>2000.000000000</converted>
+        <velocity>0.000000000</velocity>
+        <accel>0.000000000</accel>
+        <difficulty>3</difficulty>
+        <occupied>0</occupied>
+        <entered>0</entered>
+    </object>
+    <object>
+        <cityTexture>City</cityTexture>
+        <cityHoverTexture>CityHover</cityHoverTexture>
+        <cityName>Sylvestead</cityName>
+        <tileIndex>1870</tileIndex>
+        <population>16614.227294922</population>
+        <converted>2000.000000000</converted>
+        <velocity>0.000000000</velocity>
+        <accel>0.000000000</accel>
+        <difficulty>3</difficulty>
+        <occupied>0</occupied>
+        <entered>0</entered>
+    </object>
+    <object>
+        <cityTexture>City</cityTexture>
+        <cityHoverTexture>CityHover</cityHoverTexture>
+        <cityName>Balstead</cityName>
+        <tileIndex>1553</tileIndex>
+        <population>24333.648681641</population>
+        <converted>2000.000000000</converted>
+        <velocity>0.000000000</velocity>
+        <accel>0.000000000</accel>
+        <difficulty>3</difficulty>
+        <occupied>0</occupied>
+        <entered>0</entered>
+    </object>
+    <object>
+        <cityTexture>City</cityTexture>
+        <cityHoverTexture>CityHover</cityHoverTexture>
         <cityName>Portbury</cityName>
-        <tileIndex>1472</tileIndex>
-        <population>11523.895263672</population>
-=======
-        <cityName>Moorton</cityName>
-        <tileIndex>1554</tileIndex>
-        <population>11127.929687500</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <tileIndex>441</tileIndex>
+        <population>13255.767822266</population>
         <converted>2000.000000000</converted>
         <velocity>0.000000000</velocity>
         <accel>0.000000000</accel>
@@ -347,15 +187,9 @@
     <object>
         <cityTexture>City</cityTexture>
         <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Ockbury</cityName>
-        <tileIndex>1251</tileIndex>
-        <population>7333.068847656</population>
-=======
-        <cityName>Aberburg</cityName>
-        <tileIndex>409</tileIndex>
-        <population>21979.217529297</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <cityName>Balreach</cityName>
+        <tileIndex>945</tileIndex>
+        <population>23615.722656250</population>
         <converted>2000.000000000</converted>
         <velocity>0.000000000</velocity>
         <accel>0.000000000</accel>
@@ -366,15 +200,61 @@
     <object>
         <cityTexture>City</cityTexture>
         <cityHoverTexture>CityHover</cityHoverTexture>
-<<<<<<< HEAD
-        <cityName>Aberglen</cityName>
-        <tileIndex>809</tileIndex>
-        <population>19923.858642578</population>
-=======
-        <cityName>Portborough</cityName>
-        <tileIndex>1756</tileIndex>
-        <population>12406.616210938</population>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <cityName>Oakburg</cityName>
+        <tileIndex>1913</tileIndex>
+        <population>21704.559326172</population>
+        <converted>2000.000000000</converted>
+        <velocity>0.000000000</velocity>
+        <accel>0.000000000</accel>
+        <difficulty>3</difficulty>
+        <occupied>0</occupied>
+        <entered>0</entered>
+    </object>
+    <object>
+        <cityTexture>City</cityTexture>
+        <cityHoverTexture>CityHover</cityHoverTexture>
+        <cityName>Dunfall</cityName>
+        <tileIndex>413</tileIndex>
+        <population>16452.484130859</population>
+        <converted>2000.000000000</converted>
+        <velocity>0.000000000</velocity>
+        <accel>0.000000000</accel>
+        <difficulty>3</difficulty>
+        <occupied>0</occupied>
+        <entered>0</entered>
+    </object>
+    <object>
+        <cityTexture>City</cityTexture>
+        <cityHoverTexture>CityHover</cityHoverTexture>
+        <cityName>Dunton</cityName>
+        <tileIndex>2066</tileIndex>
+        <population>14919.738769531</population>
+        <converted>2000.000000000</converted>
+        <velocity>0.000000000</velocity>
+        <accel>0.000000000</accel>
+        <difficulty>3</difficulty>
+        <occupied>0</occupied>
+        <entered>0</entered>
+    </object>
+    <object>
+        <cityTexture>City</cityTexture>
+        <cityHoverTexture>CityHover</cityHoverTexture>
+        <cityName>Aberburn</cityName>
+        <tileIndex>2218</tileIndex>
+        <population>29995.422363281</population>
+        <converted>2000.000000000</converted>
+        <velocity>0.000000000</velocity>
+        <accel>0.000000000</accel>
+        <difficulty>3</difficulty>
+        <occupied>0</occupied>
+        <entered>0</entered>
+    </object>
+    <object>
+        <cityTexture>City</cityTexture>
+        <cityHoverTexture>CityHover</cityHoverTexture>
+        <cityName>Oakglen</cityName>
+        <tileIndex>1436</tileIndex>
+        <population>16067.962646484</population>
         <converted>2000.000000000</converted>
         <velocity>0.000000000</velocity>
         <accel>0.000000000</accel>
@@ -393,24 +273,20 @@
         <name></name>
         <movable>1</movable>
         <actionState>0</actionState>
-        <bandType>0</bandType>
-        <boundTileCoordsx>0</boundTileCoordsx>
-        <boundTileCoordsy>0</boundTileCoordsy>
-<<<<<<< HEAD
-        <boundTileIndex>1043</boundTileIndex>
-=======
-        <boundTileIndex>1027</boundTileIndex>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <bandType>206109516</bandType>
+        <boundTileCoordsx>10534008</boundTileCoordsx>
+        <boundTileCoordsy>206109744</boundTileCoordsy>
+        <boundTileIndex>124</boundTileIndex>
         <discipleNumber>10</discipleNumber>
         <TextureName0>BandNormal</TextureName0>
         <TextureName1>BandIncog</TextureName1>
         <TextureName2>BandIncarn</TextureName2>
         <TextureName3>BandIncarnIncog</TextureName3>
         <HLTexName></HLTexName>
-        <extremeTile0x>0</extremeTile0x>
-        <extremeTile0y>1074528256</extremeTile0y>
-        <extremeTile1x>1717986918</extremeTile1x>
-        <extremeTile1y>1072588390</extremeTile1y>
+        <extremeTile0x>-1717986918</extremeTile0x>
+        <extremeTile0y>1068079513</extremeTile0y>
+        <extremeTile1x>0</extremeTile1x>
+        <extremeTile1y>1074528256</extremeTile1y>
         <HLdraw>0</HLdraw>
     </object>
     <object>
@@ -420,24 +296,20 @@
         <name></name>
         <movable>1</movable>
         <actionState>0</actionState>
-        <bandType>0</bandType>
-        <boundTileCoordsx>0</boundTileCoordsx>
-        <boundTileCoordsy>0</boundTileCoordsy>
-<<<<<<< HEAD
-        <boundTileIndex>872</boundTileIndex>
-=======
-        <boundTileIndex>1403</boundTileIndex>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <bandType>206109516</bandType>
+        <boundTileCoordsx>10534008</boundTileCoordsx>
+        <boundTileCoordsy>206109744</boundTileCoordsy>
+        <boundTileIndex>657</boundTileIndex>
         <discipleNumber>10</discipleNumber>
         <TextureName0>BandNormal</TextureName0>
         <TextureName1>BandIncog</TextureName1>
         <TextureName2>BandIncarn</TextureName2>
         <TextureName3>BandIncarnIncog</TextureName3>
         <HLTexName></HLTexName>
-        <extremeTile0x>0</extremeTile0x>
-        <extremeTile0y>1074528256</extremeTile0y>
-        <extremeTile1x>1717986918</extremeTile1x>
-        <extremeTile1y>1072588390</extremeTile1y>
+        <extremeTile0x>-1717986918</extremeTile0x>
+        <extremeTile0y>1068079513</extremeTile0y>
+        <extremeTile1x>0</extremeTile1x>
+        <extremeTile1y>1074528256</extremeTile1y>
         <HLdraw>0</HLdraw>
     </object>
     <object>
@@ -447,24 +319,20 @@
         <name></name>
         <movable>1</movable>
         <actionState>0</actionState>
-        <bandType>0</bandType>
-        <boundTileCoordsx>0</boundTileCoordsx>
-        <boundTileCoordsy>0</boundTileCoordsy>
-<<<<<<< HEAD
-        <boundTileIndex>665</boundTileIndex>
-=======
-        <boundTileIndex>350</boundTileIndex>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <bandType>206109516</bandType>
+        <boundTileCoordsx>10534008</boundTileCoordsx>
+        <boundTileCoordsy>206109744</boundTileCoordsy>
+        <boundTileIndex>338</boundTileIndex>
         <discipleNumber>10</discipleNumber>
         <TextureName0>BandNormal</TextureName0>
         <TextureName1>BandIncog</TextureName1>
         <TextureName2>BandIncarn</TextureName2>
         <TextureName3>BandIncarnIncog</TextureName3>
         <HLTexName></HLTexName>
-        <extremeTile0x>0</extremeTile0x>
-        <extremeTile0y>1074528256</extremeTile0y>
-        <extremeTile1x>1717986918</extremeTile1x>
-        <extremeTile1y>1072588390</extremeTile1y>
+        <extremeTile0x>-1717986918</extremeTile0x>
+        <extremeTile0y>1068079513</extremeTile0y>
+        <extremeTile1x>0</extremeTile1x>
+        <extremeTile1y>1074528256</extremeTile1y>
         <HLdraw>0</HLdraw>
     </object>
     <object>
@@ -474,24 +342,20 @@
         <name></name>
         <movable>1</movable>
         <actionState>0</actionState>
-        <bandType>0</bandType>
-        <boundTileCoordsx>0</boundTileCoordsx>
-        <boundTileCoordsy>0</boundTileCoordsy>
-<<<<<<< HEAD
-        <boundTileIndex>505</boundTileIndex>
-=======
-        <boundTileIndex>678</boundTileIndex>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <bandType>206109516</bandType>
+        <boundTileCoordsx>10534008</boundTileCoordsx>
+        <boundTileCoordsy>206109744</boundTileCoordsy>
+        <boundTileIndex>1594</boundTileIndex>
         <discipleNumber>10</discipleNumber>
         <TextureName0>BandNormal</TextureName0>
         <TextureName1>BandIncog</TextureName1>
         <TextureName2>BandIncarn</TextureName2>
         <TextureName3>BandIncarnIncog</TextureName3>
         <HLTexName></HLTexName>
-        <extremeTile0x>0</extremeTile0x>
-        <extremeTile0y>1074528256</extremeTile0y>
-        <extremeTile1x>1717986918</extremeTile1x>
-        <extremeTile1y>1072588390</extremeTile1y>
+        <extremeTile0x>-1717986918</extremeTile0x>
+        <extremeTile0y>1068079513</extremeTile0y>
+        <extremeTile1x>0</extremeTile1x>
+        <extremeTile1y>1074528256</extremeTile1y>
         <HLdraw>0</HLdraw>
     </object>
     <object>
@@ -501,24 +365,20 @@
         <name></name>
         <movable>1</movable>
         <actionState>0</actionState>
-        <bandType>0</bandType>
-        <boundTileCoordsx>0</boundTileCoordsx>
-        <boundTileCoordsy>0</boundTileCoordsy>
-<<<<<<< HEAD
-        <boundTileIndex>904</boundTileIndex>
-=======
-        <boundTileIndex>2278</boundTileIndex>
->>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+        <bandType>206109516</bandType>
+        <boundTileCoordsx>10534008</boundTileCoordsx>
+        <boundTileCoordsy>206109744</boundTileCoordsy>
+        <boundTileIndex>754</boundTileIndex>
         <discipleNumber>10</discipleNumber>
         <TextureName0>BandNormal</TextureName0>
         <TextureName1>BandIncog</TextureName1>
         <TextureName2>BandIncarn</TextureName2>
         <TextureName3>BandIncarnIncog</TextureName3>
         <HLTexName></HLTexName>
-        <extremeTile0x>0</extremeTile0x>
-        <extremeTile0y>1074528256</extremeTile0y>
-        <extremeTile1x>1717986918</extremeTile1x>
-        <extremeTile1y>1072588390</extremeTile1y>
+        <extremeTile0x>-1717986918</extremeTile0x>
+        <extremeTile0y>1068079513</extremeTile0y>
+        <extremeTile1x>0</extremeTile1x>
+        <extremeTile1y>1074528256</extremeTile1y>
         <HLdraw>0</HLdraw>
     </object>
 </type>

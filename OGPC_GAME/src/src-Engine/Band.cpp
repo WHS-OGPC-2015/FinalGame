@@ -113,6 +113,11 @@ void Band::draw() // draws the current texture at the bound tile
         BandTextures[bandType]->draw(boundTile->getLocation());
 
     }
+
+    if (selected == true)
+    {
+        SLTex->draw(boundTile->getLocation());
+    }
 }
 
 
