@@ -20,21 +20,22 @@ MainMenu::MainMenu() // in the constructor, we create EVERYTHING in the main men
     Manager->addTexture("XHovered", "XButtonHovered.png");
     Manager->addTexture("XPressed", "XButtonPressed.png");
 
-    Manager->addTexture("OrangeBackground", "OrangeBackground.png");
+//    Manager->addTexture("OrangeBackground", "OrangeBackground.png");
 
-    Manager->addTexture("BlueButton", "BlueButton.pngDefaultQuitButton");
-    Manager->addTexture("ClickedBlueButton", "ClickedBlueButton.png");
-    Manager->addTexture("PressedBlueButton", "PressedBlueButton.png");
-    Manager->addTexture("HoveredBlueButton", "HoveredBlueButton.png");
-    Manager->addTexture("PressedClickedBlueButton", "PressedClickedBlueButton.png");
+//    Manager->addTexture("BlueButton", "BlueButton.pngDefaultQuitButton");
+//    Manager->addTexture("ClickedBlueButton", "ClickedBlueButton.png");
+//    Manager->addTexture("PressedBlueButton", "PressedBlueButton.png");
+//    Manager->addTexture("HoveredBlueButton", "HoveredBlueButton.png");
+//    Manager->addTexture("PressedClickedBlueButton", "PressedClickedBlueButton.png");
 
-    Manager->addTexture("DolphinBackground", "DolphinBackground.png");
+//    Manager->addTexture("DolphinBackground", "DolphinBackground.png");
 
     Manager->addTexture("StartGameButtonNormal", "PlayButtonNormal.png");
     Manager->addTexture("StartGameButtonPressed", "PlayButtonPressed.png");
     Manager->addTexture("StartGameButtonHovered", "PlayButtonHovered.png");
 
-    Manager->addTexture("CreditsBackground", "Credits.png");
+    Manager->addTexture("CreditsBackground", "Credits(1).png");
+    Manager->addTexture("MainMenuBackground", "MainMenuBG.png");
 
     Manager->addTexture("StandardNormal", "StandardNormal.png");
     Manager->addTexture("StandardPressed", "StandardPressed.png");
@@ -80,10 +81,11 @@ MainMenu::MainMenu() // in the constructor, we create EVERYTHING in the main men
 
     // Please use the following format for consistency and legibility:
     //Start:
+
     MenuEntity *brightnessSlider;
     brightnessSlider = new Slider(
                             ofVec2f(ofGetWindowWidth()/2, ofGetWindowHeight()/4),
-                            Manager->getTexturePointer("BlueButton"),
+                            Manager->getTexturePointer("StandardNormal"),
                             Manager->getTexturePointer("XPressed"),
                             100,
                             0,
@@ -108,10 +110,10 @@ MainMenu::MainMenu() // in the constructor, we create EVERYTHING in the main men
 
 
 
-    MenuEntity *orangeBG; // Orange Background
-    orangeBG = new MenuBackground(
+    MenuEntity *defaultBG; // Orange Background
+    defaultBG = new MenuBackground(
                             ofVec2f(ofGetWindowWidth()/2, ofGetWindowHeight()/2), // in the middle of the window
-                            Manager->getTexturePointer("OrangeBackground")
+                            Manager->getTexturePointer("MainMenuBackground")
                                   );
     MenuEntity *reallyQuitBG;//quitMenu background
     reallyQuitBG = new MenuBackground(
@@ -176,9 +178,9 @@ MainMenu::MainMenu() // in the constructor, we create EVERYTHING in the main men
 
 
 
-    MenuEntity *cancelButton; // cancel Button
-    cancelButton = new HoverButton(
-                            ofVec2f(ofGetWindowWidth()/2, 4*ofGetWindowHeight()/5),
+    MenuEntity *backButton; // cancel Button
+    backButton = new HoverButton(
+                            ofVec2f(ofGetWindowWidth()/2, 9*ofGetWindowHeight()/10),
                             Manager->getTexturePointer("QuitNormal"),
                             Manager->getTexturePointer("QuitHovered"),
                             Manager->getTexturePointer("QuitPressed"),
@@ -229,18 +231,17 @@ MainMenu::MainMenu() // in the constructor, we create EVERYTHING in the main men
     Now we add the buttons to menus and the menus to Menu manager.
     ----------------------------------------------------------------------------------*/
 
-
-    opMenu.addEntity(*dolphinBG, "DolphinBackground"); // adding Entities to menus...
+    opMenu.addEntity(*defaultBG, "OptionsBG"); // adding Entities to menus...
     opMenu.addEntity(*exitButton, "ExitButton");
     opMenu.addEntity(*brightnessSlider, "setBrightness");
 
-    normalMenu.addEntity(*orangeBG, "NormalBackground");
+    normalMenu.addEntity(*defaultBG, "NormalBackground");
     normalMenu.addEntity(*SGButton, "StartGameButton");
     normalMenu.addEntity(*optionsButton, "OptionsButton");
     normalMenu.addEntity(*creditsButton, "CreditsButton");
     normalMenu.addEntity(*quitGameButton, "QuitGameButton");
     credMenu.addEntity(*creditsBG, "CreditsBackground");
-    credMenu.addEntity(*cancelButton, "CancelButton");
+    credMenu.addEntity(*backButton, "CancelButton");
     quitMenu.addEntity(*reallyQuitBG, "QuitBackground");
     quitMenu.addEntity(*yesExitButton, "YesExitButton");
     quitMenu.addEntity(*noExitButton, "NoExitButton");
@@ -302,9 +303,26 @@ bool MainMenu::update(ofVec2f& mousePos, bool& clicked, bool& pressed) // In Upd
 {
     if (active == true)
     {
-         // this (if) -- (else if) statement is a good example of swapping between menus:
+
+
+
+
+        Exit->setPosition(ofVec2f(ofGetWindowWidth()-100, 100));
+        OptionsBut->setPosition(ofVec2f(ofGetWindowWidth()/2, 2*ofGetWindowHeight()/5));
+        CreditsBut->setPosition(ofVec2f(ofGetWindowWidth()/2, 3*ofGetWindowHeight()/5));
+        StartGameButton->setPosition(ofVec2f(ofGetWindowWidth()/2, ofGetWindowHeight()/5));
+        CancelBut->setPosition(ofVec2f(ofGetWindowWidth()/2, 9*ofGetWindowHeight()/10));
+        QuitGameBut->setPosition(ofVec2f(ofGetWindowWidth()/2, 4*ofGetWindowHeight()/5));
+
+
+
+        Manager->update(mousePos, clicked, pressed); // and finally, and most importantly, we update the manager
+
+
+        // this (if) -- (else if) statement is a good example of swapping between menus:
          //Start:
          // This if statement says that if you click the x button in the options menu, it goes back to the default menu
+         std::cout << OptionsBut->getEventDataInt() << std::endl;
          if(Exit->getEventDataInt() > 2) // "Exit->getEventDataInt() > 2" essentially means that if the exit button (inside the options menu) is clicked, it passes the if test
          {                               //   ( >2 means it's clicked. 0 = nothing, 1 = hovered, 2 = pressed, 3 = clicked, 4 = hovered and clicked, 5 = pressed and clicked)
              Exit->setClicked(false);    // once the button is clicked, we immediately unclick it manually
@@ -313,15 +331,17 @@ bool MainMenu::update(ofVec2f& mousePos, bool& clicked, bool& pressed) // In Upd
              defaultMenu->setActive();      // we re-set the default menu to active
          }
          // This else if statement is more common than the previous if statement
+
          else if (defaultMenu->isActive() == true and optionsMenu->isActive() == false and OptionsBut->getEventDataInt() > 2) // translation: if you are in the default menu,
-         {                                                                                                                    // and you hit the options button, the following happens:
+         {
+             OptionsBut->setClicked(false);// and you hit the options button, the following happens:
              optionsMenu->setActive(); // the options menu pops up
              defaultMenu->setInactive();// the default menu is turned inactive
          }
          //End.
 
 
-         // this if deals with the start game button -- NOT FINISHED
+         // this if deals with the start game button
          if (StartGameButton->getEventDataInt() > 2)
          {
              StartGameButton->setClicked(false);
@@ -332,7 +352,7 @@ bool MainMenu::update(ofVec2f& mousePos, bool& clicked, bool& pressed) // In Upd
          }
 
         // the following two are grouped, hopefullyStartGameButtonBut->setPosition(ofVec2f(ofGetWindowWidth()/2, ofGetWindowHeight()/5));
-         if (CancelBut->getEventDataInt() >2) // deals with the cancel button in the credits menu
+         if (CancelBut->getEventDataInt() > 2) // deals with the cancel button in the credits menu
          {
 
              CancelBut->setClicked(false);
@@ -347,7 +367,7 @@ bool MainMenu::update(ofVec2f& mousePos, bool& clicked, bool& pressed) // In Upd
              defaultMenu->setInactive();
          }
 
-         if (QuitGameBut->getEventDataInt() >2) // deals with the quit game button
+         if (QuitGameBut->getEventDataInt() > 2) // deals with the quit game button
          {
              quitGameMenu->setActive();
              QuitGameBut->setClicked(false);
@@ -374,16 +394,6 @@ bool MainMenu::update(ofVec2f& mousePos, bool& clicked, bool& pressed) // In Upd
          //std::cout << BrightnessSlider->getEventDataInt() << endl;//slider troubleshooting
 
 
-
-        Exit->setPosition(ofVec2f(ofGetWindowWidth()-100, 100));
-        OptionsBut->setPosition(ofVec2f(ofGetWindowWidth()/2, 2*ofGetWindowHeight()/5));
-        CreditsBut->setPosition(ofVec2f(ofGetWindowWidth()/2, 3*ofGetWindowHeight()/5));
-        StartGameButton->setPosition(ofVec2f(ofGetWindowWidth()/2, ofGetWindowHeight()/5));
-        CancelBut->setPosition(ofVec2f(ofGetWindowWidth()/2, 4*ofGetWindowHeight()/5));
-        QuitGameBut->setPosition(ofVec2f(ofGetWindowWidth()/2, 4*ofGetWindowHeight()/5));
-
-
-        Manager->update(mousePos, clicked, pressed); // and finally, and most importantly, we update the manager
 
 
 

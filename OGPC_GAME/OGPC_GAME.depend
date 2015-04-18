@@ -1,12 +1,16 @@
 # depslib dependency file v1.0
-1429326441 
+1420917385 
 	"Poco/Timestamp.h"
+	"Poco/Foundation.h"
+	"Poco/AtomicCounter.h"
+	"Poco/Foundation.h"
+	"Poco/AtomicCounter.h"
 
 2 <<<<< HEAD
 
 1425772259 source:c:\openframeworks\apps\game\ogpc_game\icon.rc
 
-1429242350 D
+1429326441 D
 	"MainMenu.h"
 	"ofApp.h"
 	"XML/src/ofxXmlSettings.h"
@@ -175,6 +179,77 @@
 	<MixedMode.h>
 	"ofMain.h"
 	"MenuEntity.h"
+	"Poco/XML/XML.h"
+	"Poco/DOM/AbstractContainerNode.h"
+	"Poco/XML/Name.h"
+	"Poco/XML/XML.h"
+	"Poco/DOM/AbstractContainerNode.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/XML.h"
+	"Poco/SAX/XMLReader.h"
+	"Poco/XML/ParserEngine.h"
+	"Poco/XML/XML.h"
+	<expat.h>
+	"Poco/XML/expat.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/XMLStream.h"
+	"Poco/SAX/Locator.h"
+	"Poco/TextEncoding.h"
+	<map>
+	<vector>
+	"Poco/XML/XML.h"
+	<istream>
+	<ostream>
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLException.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/XML.h"
+	"Poco/SAX/ContentHandler.h"
+	"Poco/SAX/LexicalHandler.h"
+	"Poco/SAX/DTDHandler.h"
+	"Poco/SAX/NamespaceSupport.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/XMLStream.h"
+	"Poco/XML/Name.h"
+	<string>
+	<iostream>
+	"Poco/Runnable.h"
+	"Poco/UnWindows.h"
+	"Poco/Exception.h"
+	<algorithm>
+	"Poco/Thread.h"
+	"Poco/Mutex.h"
+	<vector>
+	"Poco/Mutex.h"
+	"Poco/XML/XMLString.h"
+	<set>
+	<map>
+	<vector>
+	"Poco/XML/Name.h"
+	"Poco/XML/XMLStream.h"
+	"Poco/SAX/Locator.h"
+	"Poco/TextEncoding.h"
+	<map>
+	<vector>
+	"Poco/StreamUtil.h"
+	<streambuf>
+	<iosfwd>
+	<ios>
+	"ofBaseSoundPlayer.h"
+	"fmod.h"
+	"fmod_errors.h"
+	<MacTypes.h>
+	<OSUtils.h>
+	<MacTypes.h>
+	<OSUtils.h>
+	"ofMain.h"
+	"ofMain.h"
+	"MenuEntity.h"
+	"MenuEntity.h"
+	<math.h>
+	"simplexnoise.h"
+	<math.h>
+	"simplexnoise.h"
 
 1429226826 source:c:\openframeworks\apps\game\ogpc_game\src\main.cpp
 	"ofMain.h"
@@ -1381,11 +1456,9 @@
 	"BandMenu.h"
 	"UtilMenus.h"
 
-<<<<<<< HEAD
-1420917386 c:\openframeworks\libs\openframeworks\ofmain.h
-=======
 1411795669 c:\openframeworks\libs\openframeworks\ofmain.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
+
+1429338675 e7fc3883018d2b2bfd625a91b99c829315dba
 	"ofConstants.h"
 	"ofFileUtils.h"
 	"ofLog.h"
@@ -1437,6 +1510,640 @@
 	"ofEasyCam.h"
 	"ofMesh.h"
 	"ofNode.h"
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+	"Poco/XML/XML.h"
+	"Poco/SAX/ContentHandler.h"
+	"Poco/SAX/LexicalHandler.h"
+	"Poco/SAX/DTDHandler.h"
+	"Poco/SAX/NamespaceSupport.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/XMLStream.h"
+	"Poco/XML/Name.h"
+	"Poco/TextEncoding.h"
+	"Poco/StreamConverter.h"
+	<vector>
+	<map>
+	"Poco/Foundation.h"
+	"Poco/TextEncoding.h"
+	"Poco/UnbufferedStreamBuf.h"
+	<istream>
+	<ostream>
+	"Poco/Foundation.h"
+	"Poco/StreamUtil.h"
+	<streambuf>
+	<iosfwd>
+	<ios>
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/XMLStream.h"
+	"Poco/TextEncoding.h"
+	"Poco/XML/XML.h"
+	"Poco/DOM/AbstractNode.h"
+	"Poco/DOM/Element.h"
+	"Poco/XML/Name.h"
+	"Poco/XML/XML.h"
+	"Poco/DOM/CharacterData.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/XML.h"
+	"Poco/DOM/AbstractNode.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/XML.h"
+	"Poco/DOM/DOMObject.h"
+	"Poco/XML/XMLString.h"
+	"ofEvents.h"
+	"ofTypes.h"
+	"ofUtils.h"
+	<map>
+	"Poco/Any.h"
+	"ofConstants.h"
+	"ofLog.h"
+	"ofParameter.h"
+	"ofTypes.h"
+	"Poco/Exception.h"
+	<algorithm>
+	<typeinfo>
+	"ofVec2f.h"
+	"ofVec3f.h"
+	"ofVec4f.h"
+	"ofMatrix3x3.h"
+	"ofMatrix4x4.h"
+	"ofQuaternion.h"
+	"ofConstants.h"
+	"ofTypes.h"
+	<termios.h>
+	<winbase.h>
+	<tchar.h>
+	<iostream>
+	<string.h>
+	<setupapi.h>
+	<regstr.h>
+	<winioctl.h>
+	<initguid.h>
+	<list>
+	<vector>
+	<string>
+	<iostream>
+	"ofEvents.h"
+	"ofSerial.h"
+	"ofPoint.h"
+	"ofRectangle.h"
+	"ofBaseTypes.h"
+	"ofConstants.h"
+	"ofVboMesh.h"
+	"ofConstants.h"
+	"ofVec3f.h"
+	"ofColor.h"
+	"ofUtils.h"
+	"ofMesh.h"
+	"ofGLUtils.h"
+	<map>
+	"ofBaseTypes.h"
+	"ofPolyline.h"
+	"ofMatrix4x4.h"
+	<stack>
+	"ofGraphics.h"
+	"ofMatrixStack.h"
+	"ofPoint.h"
+	"ofConstants.h"
+	<deque>
+	"ofRectangle.h"
+	"ofConstants.h"
+	"ofColor.h"
+	"ofPoint.h"
+	"ofMatrix4x4.h"
+	"ofRectangle.h"
+	"ofTypes.h"
+	"ofBaseTypes.h"
+	<stack>
+	"ofConstants.h"
+	"ofRectangle.h"
+	"ofGraphics.h"
+	"ofMatrix4x4.h"
+	"ofNode.h"
+	"ofColor.h"
+	"of3dGraphics.h"
+	"ofVectorMath.h"
+	"of3dUtils.h"
+	"ofGraphics.h"
+	"ofConstants.h"
+	"ofColor.h"
+	"ofPoint.h"
+	"ofMatrix4x4.h"
+	"ofRectangle.h"
+	"ofTypes.h"
+	"ofBaseTypes.h"
+	"ofGLRenderer.h"
+	"of3dPrimitives.h"
+	"ofVboMesh.h"
+	"ofRectangle.h"
+	"ofNode.h"
+	"ofTexture.h"
+	<map>
+	"ofConstants.h"
+	"ofBaseTypes.h"
+	"ofTexture.h"
+	"ofMatrix4x4.h"
+	"Poco/RegularExpression.h"
+	<map>
+	"ofAppBaseWindow.h"
+	"ofPoint.h"
+	"ofTypes.h"
+	<X11/Xlib.h>
+	"ofBaseTypes.h"
+	"ofPolyline.h"
+	"ofMatrix4x4.h"
+	"ofShader.h"
+	"ofGraphics.h"
+	"ofMatrixStack.h"
+	<stack>
+	"cairo-features.h"
+	"cairo-pdf.h"
+	"cairo-svg.h"
+	"cairo.h"
+	<deque>
+	<stack>
+	"ofMatrix4x4.h"
+	"ofBaseTypes.h"
+	"ofPath.h"
+	"cairo-version.h"
+	"cairo-features.h"
+	"cairo-deprecated.h"
+	"ofConstants.h"
+	"ofPoint.h"
+	"ofColor.h"
+	"ofPolyline.h"
+	"ofBaseTypes.h"
+	"ofVboMesh.h"
+	"ofTessellator.h"
+	"ofConstants.h"
+	"ofMesh.h"
+	"ofTypes.h"
+	"ofPolyline.h"
+	"tesselator.h"
+	"ofFileUtils.h"
+	"ofTexture.h"
+	"ofPixels.h"
+	"ofBaseTypes.h"
+	"ofConstants.h"
+	<vector>
+	"ofPoint.h"
+	"ofRectangle.h"
+	"ofConstants.h"
+	"ofPath.h"
+	"ofTexture.h"
+	"ofMesh.h"
+	"ofPoint.h"
+	"ofEvents.h"
+	"ofBaseTypes.h"
+	"ofConstants.h"
+	"ofPoint.h"
+	"ofRectangle.h"
+	"ofTypes.h"
+	<X11/Xlib.h>
+	"ofConstants.h"
+	"ofBaseTypes.h"
+	"ofBaseApp.h"
+	"ofTypes.h"
+	"ofBaseSoundStream.h"
+	"ofRtAudioSoundStream.h"
+	"ofPASoundStream.h"
+	"ofxAndroidSoundStream.h"
+	"ofxiOSSoundStream.h"
+	"ofConstants.h"
+	"ofBaseSoundStream.h"
+	"ofTypes.h"
+	"ofConstants.h"
+	"ofTypes.h"
+	"ofBaseTypes.h"
+	"ofBaseSoundPlayer.h"
+	"ofQuicktimeSoundPlayer.h"
+	"ofFmodSoundPlayer.h"
+	"ofOpenALSoundPlayer.h"
+	"ofxiOSSoundPlayer.h"
+	"ofxAndroidSoundPlayer.h"
+	"ofConstants.h"
+	"ofBaseSoundPlayer.h"
+	"fmod.h"
+	"fmod_errors.h"
+	"fmod_codec.h"
+	"fmod_dsp.h"
+	"fmod_memoryinfo.h"
+	"ofConstants.h"
+	"ofBaseSoundPlayer.h"
+	"ofEvents.h"
+	"ofThread.h"
+	<OpenAL/al.h>
+	<OpenAL/alc.h>
+	<AL/al.h>
+	<AL/alc.h>
+	"kiss_fft.h"
+	"kiss_fftr.h"
+	<sndfile.h>
+	<mpg123.h>
+	"ofConstants.h"
+	"ofTexture.h"
+	"ofBaseTypes.h"
+	"ofPixels.h"
+	"ofTypes.h"
+	"ofxiOSVideoGrabber.h"
+	"ofQuickTimeGrabber.h"
+	"ofQTKitGrabber.h"
+	"ofDirectShowGrabber.h"
+	"ofGstVideoGrabber.h"
+	"ofxAndroidVideoGrabber.h"
+	"ofConstants.h"
+	"ofQtUtils.h"
+	"ofTexture.h"
+	"ofBaseTypes.h"
+	"ofPixels.h"
+	"ofConstants.h"
+	<QuickTime/QuickTime.h>
+	<CoreServices/CoreServices.h>
+	<ApplicationServices/ApplicationServices.h>
+	<QTML.h>
+	<FixMath.h>
+	<QuickTimeComponents.h>
+	<TextUtils.h>
+	<MediaHandlers.h>
+	<MacTypes.h>
+	<MacMemory.h>
+	<MacWindows.h>
+	<OSUtils.h>
+	<Files.h>
+	<MacTypes.h>
+	<Aliases.h>
+	<AppleEvents.h>
+	<Collections.h>
+	<Drag.h>
+	<Events.h>
+	<Menus.h>
+	<MixedMode.h>
+	<QDOffscreen.h>
+	<Quickdraw.h>
+	<TextCommon.h>
+	<Icons.h>
+	<MacErrors.h>
+	<MacTypes.h>
+	<AppleTalk.h>
+	<Files.h>
+	<MacTypes.h>
+	<MixedMode.h>
+	<MacMemory.h>
+	<Patches.h>
+	<DateTimeUtils.h>
+	<Endian.h>
+	<MacTypes.h>
+	<MixedMode.h>
+	<OSUtils.h>
+	<TextCommon.h>
+	<UTCUtils.h>
+	<Finder.h>
+	<MacTypes.h>
+	<MixedMode.h>
+	<Notification.h>
+	<Events.h>
+	<AEDataModel.h>
+	<OSUtils.h>
+	<Quickdraw.h>
+	<MacTypes.h>
+	<Endian.h>
+	<Components.h>
+	<MacTypes.h>
+	<MixedMode.h>
+	<QuickdrawText.h>
+	<MacErrors.h>
+	<MacTypes.h>
+	<MixedMode.h>
+	<MacTypes.h>
+	<Events.h>
+	<Files.h>
+	<AppleEvents.h>
+	<Quickdraw.h>
+	<MacTypes.h>
+	<Events.h>
+	<Quickdraw.h>
+	<Fonts.h>
+	<TextCommon.h>
+	<Processes.h>
+	<AppleEvents.h>
+	<Collections.h>
+	<MacErrors.h>
+	<MacTypes.h>
+	<Files.h>
+	<Quickdraw.h>
+	<TextCommon.h>
+	<MacErrors.h>
+	<MacTypes.h>
+	<Events.h>
+	<Files.h>
+	<MacTypes.h>
+	<Quickdraw.h>
+	<Files.h>
+	<CodeFragments.h>
+	<MacTypes.h>
+	<MixedMode.h>
+	<Components.h>
+	<ImageCompression.h>
+	<Movies.h>
+	<Quickdraw.h>
+	<Video.h>
+	<Sound.h>
+	<QuickTimeMusic.h>
+	<MacTypes.h>
+	<Quickdraw.h>
+	<QDOffscreen.h>
+	<Components.h>
+	<StandardFile.h>
+	<MacTypes.h>
+	<Dialogs.h>
+	<Files.h>
+	<MacTypes.h>
+	<MixedMode.h>
+	<Events.h>
+	<MacWindows.h>
+	<TextEdit.h>
+	<Controls.h>
+	<MacErrors.h>
+	<MacTypes.h>
+	<Quickdraw.h>
+	<MixedMode.h>
+	<MacTypes.h>
+	<Quickdraw.h>
+	<Menus.h>
+	<TextEdit.h>
+	<Drag.h>
+	<Icons.h>
+	<Collections.h>
+	<MacErrors.h>
+	<Quickdraw.h>
+	<Aliases.h>
+	<Events.h>
+	<Menus.h>
+	<Components.h>
+	<ImageCompression.h>
+	<MacTypes.h>
+	<Dialogs.h>
+	<Components.h>
+	<MixedMode.h>
+	<Movies.h>
+	<Components.h>
+	<ImageCompression.h>
+	<Movies.h>
+	<Quickdraw.h>
+	<Video.h>
+	<MacMemory.h>
+	<Sound.h>
+	<Endian.h>
+	<MacTypes.h>
+	<NumberFormatting.h>
+	<StringCompare.h>
+	<DateTimeUtils.h>
+	<ConditionalMacros.h>
+	<MacTypes.h>
+	<IntlResources.h>
+	<MacTypes.h>
+	<TextCommon.h>
+	<Script.h>
+	<MacTypes.h>
+	<Quickdraw.h>
+	<IntlResources.h>
+	<Events.h>
+	<ConditionalMacros.h>
+	<MacTypes.h>
+	<Components.h>
+	<Movies.h>
+	<Sound.h>
+	"ofConstants.h"
+	"ofTexture.h"
+	"ofBaseTypes.h"
+	"ofPixels.h"
+	"videoInput.h"
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<wchar.h>
+	<string>
+	<vector>
+	<windows.h>
+	"ofConstants.h"
+	"ofConstants.h"
+	"ofBaseTypes.h"
+	"ofPixels.h"
+	"ofTypes.h"
+	"ofEvents.h"
+	"ofThread.h"
+	<gst/gst.h>
+	<gst/gstpad.h>
+	"Poco/Condition.h"
+	"ofConstants.h"
+	"ofTexture.h"
+	"ofBaseTypes.h"
+	"ofTypes.h"
+	"ofGstVideoPlayer.h"
+	"ofQuickTimePlayer.h"
+	"ofQTKitPlayer.h"
+	"ofxiOSVideoPlayer.h"
+	"ofxAndroidVideoPlayer.h"
+	"ofConstants.h"
+	"ofBaseTypes.h"
+	"ofPixels.h"
+	"ofQtUtils.h"
+	"ofRectangle.h"
+	"ofAppRunner.h"
+	"ofNode.h"
+	"ofMain.h"
+	"src-Engine/EngineInclude.h"
+	"src-Game/GameMap.h"
+	"MainMenu.h"
+	"src-Game/LoadingScreen.h"
+	"src-Game/PauseMenu.h"
+	"MenuManager.h"
+	"Menu.h"
+	"MenuEntity.h"
+	"SimpleButton.h"
+	"Slider.h"
+	"MenuBackground.h"
+	"HoverButton.h"
+	"PieChart.h"
+	"TextBox.h"
+	"ofMain.h"
+	"Menu.h"
+	<Map>
+	"ofConstants.h"
+	"ofFileUtils.h"
+	"ofTypes.h"
+	"ofConstants.h"
+	"ofColor.h"
+	<memory>
+	<tr1/memory>
+	"Poco/Mutex.h"
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	"Poco/UnWindows.h"
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	"Poco/UnWindows.h"
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	<semLib.h>
+	<errno.h>
+	"Poco/Foundation.h"
+	"Poco/Runnable.h"
+	"Poco/UnWindows.h"
+	"Poco/Foundation.h"
+	"Poco/AtomicCounter.h"
+	"ofConstants.h"
+	"ofPoint.h"
+	"ofEventUtils.h"
+	"ofConstants.h"
+	"ofPoint.h"
+	"ofLog.h"
+	"Poco/XML/XML.h"
+	"Poco/DOM/Event.h"
+	"Poco/XML/XML.h"
+	"Poco/DOM/Event.h"
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
+	"Poco/DOM/DOMObject.h"
+	"Poco/XML/XML.h"
+	"Poco/DOM/AbstractContainerNode.h"
+	"Poco/XML/Name.h"
+	"Poco/Foundation.h"
+	<list>
+	"Poco/Foundation.h"
+	<list>
+	"Poco/XML/XML.h"
+	"Poco/DOM/AbstractContainerNode.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/XML.h"
+	"Poco/SAX/XMLReader.h"
+	"Poco/XML/ParserEngine.h"
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLException.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/XML.h"
+	"Poco/DOM/NodeList.h"
+	"Poco/XML/XML.h"
+	"Poco/DOM/NodeList.h"
+	"ofEvents.h"
+	"ofTypes.h"
+	"ofUtils.h"
+	"Poco/Exception.h"
+	<algorithm>
+	<typeinfo>
+	"Poco/Foundation.h"
+	<vector>
+	"Poco/Foundation.h"
+	<vector>
+	"cairo-version.h"
+	"cairo-features.h"
+	"cairo-deprecated.h"
+	"ofConstants.h"
+	"ofBaseSoundStream.h"
+	"ofTypes.h"
+	"fmod_codec.h"
+	"fmod_dsp.h"
+	"fmod_memoryinfo.h"
+	"ofConstants.h"
+	"ofQtUtils.h"
+	"ofTexture.h"
+	"ofBaseTypes.h"
+	"ofPixels.h"
+	<ConditionalMacros.h>
+	<MacTypes.h>
+	<Aliases.h>
+	<AppleEvents.h>
+	<Collections.h>
+	<Drag.h>
+	<Events.h>
+	<Menus.h>
+	<MixedMode.h>
+	<QDOffscreen.h>
+	<Quickdraw.h>
+	<TextCommon.h>
+	<Icons.h>
+	<MacErrors.h>
+	<ConditionalMacros.h>
+	<MacTypes.h>
+	<MacTypes.h>
+	<MixedMode.h>
+	<Notification.h>
+	<Events.h>
+	<AEDataModel.h>
+	<OSUtils.h>
+	<Quickdraw.h>
+	<MacTypes.h>
+	<Endian.h>
+	<Components.h>
+	<MacTypes.h>
+	<MixedMode.h>
+	<QuickdrawText.h>
+	<MacErrors.h>
+	<MacTypes.h>
+	<MixedMode.h>
+	<MacTypes.h>
+	<MixedMode.h>
+	"ofMain.h"
+	"src-Engine/EngineInclude.h"
+	"src-Game/GameMap.h"
+	"MainMenu.h"
+	"src-Game/LoadingScreen.h"
+	"src-Game/PauseMenu.h"
+	"ofMain.h"
+	"src-Engine/EngineInclude.h"
+	"src-Game/GameMap.h"
+	"MainMenu.h"
+	"src-Game/LoadingScreen.h"
+	"src-Game/PauseMenu.h"
+	"ofApp.h"
+	"XML/src/ofxXmlSettings.h"
+	"ObjectManager.h"
+	"ResourceManager.h"
+	"TileManager.h"
+	"EngineMain.h"
+	"City.h"
+	"MenuEntity.h"
+	"MenuEntity.h"
+	"MenuEntity.h"
+	"MenuEntity.h"
+	"ofMain.h"
+	"../src-MenuAPI/MenuInclude.h"
+	"ResourceManager.h"
+	"ofMain.h"
+	"Tile.h"
+	"../src-Game/Vec2i.h"
+	"../src-MenuAPI/MenuInclude.h"
+	"../XML/src/ofxXmlSettings.h"
+	"ResourceManager.h"
+	"TileManager.h"
+	"ofMain.h"
+	"../src-MenuAPI/MenuInclude.h"
+	"ResourceManager.h"
+	"ResourceManager.h"
+	"GameMap.h"
+	<sstream>
+	"../XML/src/ofxXmlSettings.h"
+	"simplexnoise.h"
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+	"ofMain.h"
+	"Tile.h"
+	"../src-Game/Vec2i.h"
+	"../src-MenuAPI/MenuInclude.h"
+	"../XML/src/ofxXmlSettings.h"
+	"ResourceManager.h"
+	"Band.h"
 
 1429327333 fcba7c4d18f6307630a1250249c8885a6996b
 	"ofConstants.h"
@@ -7702,8 +8409,7 @@
 	"Menu.h"
 	<Map>
 
-<<<<<<< HEAD
-1420917387 c:\openframeworks\libs\openframeworks\utils\ofconstants.h
+1411795670 c:\openframeworks\libs\openframeworks\utils\ofconstants.h
 	<stdint.h>
 	<TargetConditionals.h>
 	<windows.h>
@@ -7749,17 +8455,8 @@
 	<fstream>
 	<algorithm>
 	<cfloat>
-
-1420917387 "
-	<iomanip>
-	<fstream>
-	<algorithm>
-	<cfloat>
-=======
-1411795670 c:\openframeworks\libs\openframeworks\utils\ofconstants.h
 	<stdint.h>
 	<TargetConditionals.h>
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 
 1420917387 "
 	<iomanip>
@@ -7770,10 +8467,16 @@
 	<fstream>
 	<algorithm>
 	<cfloat>
+	<iomanip>
+	<fstream>
+	<algorithm>
+	<cfloat>
 
-<<<<<<< HEAD
-1420917380 c:\openframeworks\libs\glew\include\gl\glew.h
-=======
+1420917383 >
+	"Poco/Foundation.h"
+
+1411795646 c:\openframeworks\libs\glew\include\gl\glew.h
+
 1410256997 nuAPI/MenuInclude.h"
 	<iomanip>
 	<fstream>
@@ -7784,21 +8487,8 @@
 	<algorithm>
 	<cfloat>
 
-1411795646 c:\openframeworks\libs\glew\include\gl\glew.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	<stddef.h>
-	<inttypes.h>
-	<stdint.h>
-	<inttypes.h>
-	<OpenGL/glu.h>
-	<GL/glu.h>
-
-<<<<<<< HEAD
-1420917380 c:\openframeworks\libs\glew\include\gl\wglew.h
-	<windows.h>
-=======
 1411795646 c:\openframeworks\libs\glew\include\gl\wglew.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
+	<windows.h>
 
 1427829137 6e0feb0ad024e83f72b1899f34067968bac01
 	"ofConstants.h"
@@ -8176,11 +8866,8 @@
 	"Poco/XML/XML.h"
 	"Poco/XML/XMLString.h"
 	"Poco/DOM/DOMObject.h"
-<<<<<<< HEAD
-	"Poco/XML/XML.h"
-	"Poco/DOM/AbstractContainerNode.h"
-	"Poco/XML/Name.h"
-=======
+
+1427829137 Name.h"
 	"Poco/XML/XML.h"
 	"Poco/DOM/AbstractContainerNode.h"
 	"Poco/XML/Name.h"
@@ -8208,498 +8895,6 @@
 	"Poco/XML/XML.h"
 	"Poco/XML/XMLException.h"
 	"Poco/XML/XMLString.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/XML/XML.h"
-	"Poco/SAX/ContentHandler.h"
-	"Poco/SAX/LexicalHandler.h"
-	"Poco/SAX/DTDHandler.h"
-	"Poco/SAX/NamespaceSupport.h"
-	"Poco/XML/XMLString.h"
-	"Poco/XML/XMLStream.h"
-	"Poco/XML/Name.h"
-<<<<<<< HEAD
-	"Poco/XML/XML.h"
-	"Poco/DOM/AbstractContainerNode.h"
-	"Poco/XML/XMLString.h"
-	"Poco/XML/XML.h"
-	"Poco/SAX/XMLReader.h"
-	"Poco/XML/ParserEngine.h"
-	"Poco/XML/XML.h"
-	<expat.h>
-	"Poco/XML/expat.h"
-	"Poco/XML/XMLString.h"
-	"Poco/XML/XMLStream.h"
-	"Poco/SAX/Locator.h"
-	"Poco/TextEncoding.h"
-	<map>
-	<vector>
-	"Poco/XML/XML.h"
-	<istream>
-	<ostream>
-	"Poco/XML/XML.h"
-	"Poco/XML/XMLException.h"
-	"Poco/XML/XMLString.h"
-	"Poco/XML/XML.h"
-	"Poco/SAX/ContentHandler.h"
-	"Poco/SAX/LexicalHandler.h"
-	"Poco/SAX/DTDHandler.h"
-	"Poco/SAX/NamespaceSupport.h"
-	"Poco/XML/XMLString.h"
-	"Poco/XML/XMLStream.h"
-	"Poco/XML/Name.h"
-=======
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/TextEncoding.h"
-	"Poco/StreamConverter.h"
-	<vector>
-	<map>
-	"Poco/Foundation.h"
-	"Poco/TextEncoding.h"
-	"Poco/UnbufferedStreamBuf.h"
-	<istream>
-	<ostream>
-	"Poco/Foundation.h"
-	"Poco/StreamUtil.h"
-	<streambuf>
-	<iosfwd>
-	<ios>
-	"Poco/XML/XML.h"
-	"Poco/XML/XMLString.h"
-	"Poco/XML/XMLStream.h"
-	"Poco/TextEncoding.h"
-	"Poco/XML/XML.h"
-	"Poco/DOM/AbstractNode.h"
-	"Poco/DOM/Element.h"
-	"Poco/XML/Name.h"
-	"Poco/XML/XML.h"
-	"Poco/DOM/CharacterData.h"
-	"Poco/XML/XMLString.h"
-	"Poco/XML/XML.h"
-	"Poco/DOM/AbstractNode.h"
-	"Poco/XML/XMLString.h"
-	"Poco/XML/XML.h"
-	"Poco/DOM/DOMObject.h"
-	"Poco/XML/XMLString.h"
-	"ofEvents.h"
-	"ofTypes.h"
-	"ofUtils.h"
-	<map>
-	"Poco/Any.h"
-	"ofConstants.h"
-	"ofLog.h"
-	"ofParameter.h"
-	"ofTypes.h"
-	"Poco/Exception.h"
-	<algorithm>
-	<typeinfo>
-	"ofVec2f.h"
-	"ofVec3f.h"
-	"ofVec4f.h"
-	"ofMatrix3x3.h"
-	"ofMatrix4x4.h"
-	"ofQuaternion.h"
-	"ofConstants.h"
-	"ofTypes.h"
-	<termios.h>
-	<winbase.h>
-	<tchar.h>
-	<iostream>
-	<string.h>
-	<setupapi.h>
-	<regstr.h>
-	<winioctl.h>
-	<initguid.h>
-	<list>
-	<vector>
-	<string>
-	<iostream>
-	"ofEvents.h"
-	"ofSerial.h"
-	"ofPoint.h"
-	"ofRectangle.h"
-	"ofBaseTypes.h"
-	"ofConstants.h"
-	"ofVboMesh.h"
-	"ofConstants.h"
-	"ofVec3f.h"
-	"ofColor.h"
-	"ofUtils.h"
-	"ofMesh.h"
-	"ofGLUtils.h"
-	<map>
-	"ofBaseTypes.h"
-	"ofPolyline.h"
-	"ofMatrix4x4.h"
-	<stack>
-	"ofGraphics.h"
-	"ofMatrixStack.h"
-	"ofPoint.h"
-	"ofConstants.h"
-	<deque>
-	"ofRectangle.h"
-	"ofConstants.h"
-	"ofColor.h"
-	"ofPoint.h"
-	"ofMatrix4x4.h"
-	"ofRectangle.h"
-	"ofTypes.h"
-	"ofBaseTypes.h"
-	<stack>
-	"ofConstants.h"
-	"ofRectangle.h"
-	"ofGraphics.h"
-	"ofMatrix4x4.h"
-	"ofNode.h"
-	"ofColor.h"
-	"of3dGraphics.h"
-	"ofVectorMath.h"
-	"of3dUtils.h"
-	"ofGraphics.h"
-	"ofConstants.h"
-	"ofColor.h"
-	"ofPoint.h"
-	"ofMatrix4x4.h"
-	"ofRectangle.h"
-	"ofTypes.h"
-	"ofBaseTypes.h"
-	"ofGLRenderer.h"
-	"of3dPrimitives.h"
-	"ofVboMesh.h"
-	"ofRectangle.h"
-	"ofNode.h"
-	"ofTexture.h"
-	<map>
-	"ofConstants.h"
-	"ofBaseTypes.h"
-	"ofTexture.h"
-	"ofMatrix4x4.h"
-	"Poco/RegularExpression.h"
-	<map>
-	"ofAppBaseWindow.h"
-	"ofPoint.h"
-	"ofTypes.h"
-	<X11/Xlib.h>
-	"ofBaseTypes.h"
-	"ofPolyline.h"
-	"ofMatrix4x4.h"
-	"ofShader.h"
-	"ofGraphics.h"
-	"ofMatrixStack.h"
-	<stack>
-	"cairo-features.h"
-	"cairo-pdf.h"
-	"cairo-svg.h"
-	"cairo.h"
-	<deque>
-	<stack>
-	"ofMatrix4x4.h"
-	"ofBaseTypes.h"
-	"ofPath.h"
-	"cairo-version.h"
-	"cairo-features.h"
-	"cairo-deprecated.h"
-	"ofConstants.h"
-	"ofPoint.h"
-	"ofColor.h"
-	"ofPolyline.h"
-	"ofBaseTypes.h"
-	"ofVboMesh.h"
-	"ofTessellator.h"
-	"ofConstants.h"
-	"ofMesh.h"
-	"ofTypes.h"
-	"ofPolyline.h"
-	"tesselator.h"
-	"ofFileUtils.h"
-	"ofTexture.h"
-	"ofPixels.h"
-	"ofBaseTypes.h"
-	"ofConstants.h"
-	<vector>
-	"ofPoint.h"
-	"ofRectangle.h"
-	"ofConstants.h"
-	"ofPath.h"
-	"ofTexture.h"
-	"ofMesh.h"
-	"ofPoint.h"
-	"ofEvents.h"
-	"ofBaseTypes.h"
-	"ofConstants.h"
-	"ofPoint.h"
-	"ofRectangle.h"
-	"ofTypes.h"
-	<X11/Xlib.h>
-	"ofConstants.h"
-	"ofBaseTypes.h"
-	"ofBaseApp.h"
-	"ofTypes.h"
-	"ofBaseSoundStream.h"
-	"ofRtAudioSoundStream.h"
-	"ofPASoundStream.h"
-	"ofxAndroidSoundStream.h"
-	"ofxiOSSoundStream.h"
-	"ofConstants.h"
-	"ofBaseSoundStream.h"
-	"ofTypes.h"
-	"ofConstants.h"
-	"ofTypes.h"
-	"ofBaseTypes.h"
-	"ofBaseSoundPlayer.h"
-	"ofQuicktimeSoundPlayer.h"
-	"ofFmodSoundPlayer.h"
-	"ofOpenALSoundPlayer.h"
-	"ofxiOSSoundPlayer.h"
-	"ofxAndroidSoundPlayer.h"
-	"ofConstants.h"
-	"ofBaseSoundPlayer.h"
-	"fmod.h"
-	"fmod_errors.h"
-	"fmod_codec.h"
-	"fmod_dsp.h"
-	"fmod_memoryinfo.h"
-	"ofConstants.h"
-	"ofBaseSoundPlayer.h"
-	"ofEvents.h"
-	"ofThread.h"
-	<OpenAL/al.h>
-	<OpenAL/alc.h>
-	<AL/al.h>
-	<AL/alc.h>
-	"kiss_fft.h"
-	"kiss_fftr.h"
-	<sndfile.h>
-	<mpg123.h>
-	"ofConstants.h"
-	"ofTexture.h"
-	"ofBaseTypes.h"
-	"ofPixels.h"
-	"ofTypes.h"
-	"ofxiOSVideoGrabber.h"
-	"ofQuickTimeGrabber.h"
-	"ofQTKitGrabber.h"
-	"ofDirectShowGrabber.h"
-	"ofGstVideoGrabber.h"
-	"ofxAndroidVideoGrabber.h"
-	"ofConstants.h"
-	"ofQtUtils.h"
-	"ofTexture.h"
-	"ofBaseTypes.h"
-	"ofPixels.h"
-	"ofConstants.h"
-	<QuickTime/QuickTime.h>
-	<CoreServices/CoreServices.h>
-	<ApplicationServices/ApplicationServices.h>
-	<QTML.h>
-	<FixMath.h>
-	<QuickTimeComponents.h>
-	<TextUtils.h>
-	<MediaHandlers.h>
-	<MacTypes.h>
-	<MacMemory.h>
-	<MacWindows.h>
-	<OSUtils.h>
-	<Files.h>
-	<MacTypes.h>
-	<Aliases.h>
-	<AppleEvents.h>
-	<Collections.h>
-	<Drag.h>
-	<Events.h>
-	<Menus.h>
-	<MixedMode.h>
-	<QDOffscreen.h>
-	<Quickdraw.h>
-	<TextCommon.h>
-	<Icons.h>
-	<MacErrors.h>
-	<MacTypes.h>
-	<AppleTalk.h>
-	<Files.h>
-	<MacTypes.h>
-	<MixedMode.h>
-	<MacMemory.h>
-	<Patches.h>
-	<DateTimeUtils.h>
-	<Endian.h>
-	<MacTypes.h>
-	<MixedMode.h>
-	<OSUtils.h>
-	<TextCommon.h>
-	<UTCUtils.h>
-	<Finder.h>
-	<MacTypes.h>
-	<MixedMode.h>
-	<Notification.h>
-	<Events.h>
-	<AEDataModel.h>
-	<OSUtils.h>
-	<Quickdraw.h>
-	<MacTypes.h>
-	<Endian.h>
-	<Components.h>
-	<MacTypes.h>
-	<MixedMode.h>
-	<QuickdrawText.h>
-	<MacErrors.h>
-	<MacTypes.h>
-	<MixedMode.h>
-	<MacTypes.h>
-	<Events.h>
-	<Files.h>
-	<AppleEvents.h>
-	<Quickdraw.h>
-	<MacTypes.h>
-	<Events.h>
-	<Quickdraw.h>
-	<Fonts.h>
-	<TextCommon.h>
-	<Processes.h>
-	<AppleEvents.h>
-	<Collections.h>
-	<MacErrors.h>
-	<MacTypes.h>
-	<Files.h>
-	<Quickdraw.h>
-	<TextCommon.h>
-	<MacErrors.h>
-	<MacTypes.h>
-	<Events.h>
-	<Files.h>
-	<MacTypes.h>
-	<Quickdraw.h>
-	<Files.h>
-	<CodeFragments.h>
-	<MacTypes.h>
-	<MixedMode.h>
-	<Components.h>
-	<ImageCompression.h>
-	<Movies.h>
-	<Quickdraw.h>
-	<Video.h>
-	<Sound.h>
-	<QuickTimeMusic.h>
-	<MacTypes.h>
-	<Quickdraw.h>
-	<QDOffscreen.h>
-	<Components.h>
-	<StandardFile.h>
-	<MacTypes.h>
-	<Dialogs.h>
-	<Files.h>
-	<MacTypes.h>
-	<MixedMode.h>
-	<Events.h>
-	<MacWindows.h>
-	<TextEdit.h>
-	<Controls.h>
-	<MacErrors.h>
-	<MacTypes.h>
-	<Quickdraw.h>
-	<MixedMode.h>
-	<MacTypes.h>
-	<Quickdraw.h>
-	<Menus.h>
-	<TextEdit.h>
-	<Drag.h>
-	<Icons.h>
-	<Collections.h>
-	<MacErrors.h>
-	<Quickdraw.h>
-	<Aliases.h>
-	<Events.h>
-	<Menus.h>
-	<Components.h>
-	<ImageCompression.h>
-	<MacTypes.h>
-	<Dialogs.h>
-	<Components.h>
-	<MixedMode.h>
-	<Movies.h>
-	<Components.h>
-	<ImageCompression.h>
-	<Movies.h>
-	<Quickdraw.h>
-	<Video.h>
-	<MacMemory.h>
-	<Sound.h>
-	<Endian.h>
-	<MacTypes.h>
-	<NumberFormatting.h>
-	<StringCompare.h>
-	<DateTimeUtils.h>
-	<ConditionalMacros.h>
-	<MacTypes.h>
-	<IntlResources.h>
-	<MacTypes.h>
-	<TextCommon.h>
-	<Script.h>
-	<MacTypes.h>
-	<Quickdraw.h>
-	<IntlResources.h>
-	<Events.h>
-	<ConditionalMacros.h>
-	<MacTypes.h>
-	<Components.h>
-	<Movies.h>
-	<Sound.h>
-	"ofConstants.h"
-	"ofTexture.h"
-	"ofBaseTypes.h"
-	"ofPixels.h"
-	"videoInput.h"
-	<stdlib.h>
-	<stdio.h>
-	<math.h>
-	<string.h>
-	<wchar.h>
-	<string>
-	<vector>
-	<windows.h>
-	"ofConstants.h"
-	"ofConstants.h"
-	"ofBaseTypes.h"
-	"ofPixels.h"
-	"ofTypes.h"
-	"ofEvents.h"
-	"ofThread.h"
-	<gst/gst.h>
-	<gst/gstpad.h>
-	"Poco/Condition.h"
-	"ofConstants.h"
-	"ofTexture.h"
-	"ofBaseTypes.h"
-	"ofTypes.h"
-	"ofGstVideoPlayer.h"
-	"ofQuickTimePlayer.h"
-	"ofQTKitPlayer.h"
-	"ofxiOSVideoPlayer.h"
-	"ofxAndroidVideoPlayer.h"
-	"ofConstants.h"
-	"ofBaseTypes.h"
-	"ofPixels.h"
-	"ofQtUtils.h"
-	"ofRectangle.h"
-	"ofAppRunner.h"
-	"ofNode.h"
-	"ofMain.h"
-	"src-Engine/EngineInclude.h"
-	"src-Game/GameMap.h"
-	"MainMenu.h"
-	"src-Game/LoadingScreen.h"
-	"src-Game/PauseMenu.h"
-	"MenuManager.h"
-	"Menu.h"
-	"MenuEntity.h"
-	"SimpleButton.h"
-	"Slider.h"
-	"MenuBackground.h"
-	"HoverButton.h"
-	"PieChart.h"
-	"TextBox.h"
-	"ofMain.h"
-	"Menu.h"
-	<Map>
 
 1420917380 c:\openframeworks\libs\glu\include\glu.h
 	"glu_mangle.h"
@@ -8815,8 +9010,7 @@
 	<OpenGL/glu.h>
 	<GL/glu.h>
 
-<<<<<<< HEAD
-1420917384 c:\openframeworks\libs\poco\include\poco\file.h
+1411795662 c:\openframeworks\libs\poco\include\poco\file.h
 	"Poco/Foundation.h"
 	"Poco/Timestamp.h"
 	<vector>
@@ -8827,7 +9021,7 @@
 	"Poco/File_UNIX.h"
 	"Poco/File_VMS.h"
 
-1420917383 c:\openframeworks\libs\poco\include\poco\foundation.h
+1411795659 c:\openframeworks\libs\poco\include\poco\foundation.h
 	"Poco/Config.h"
 	"Poco/Platform.h"
 	"Poco/Platform_WIN32.h"
@@ -8837,32 +9031,8 @@
 	"Poco/Bugcheck.h"
 	"Poco/Types.h"
 	<string>
-=======
-1411795662 c:\openframeworks\libs\poco\include\poco\file.h
 
-1411795659 c:\openframeworks\libs\poco\include\poco\foundation.h
-
-1411795660 c:\openframeworks\libs\poco\include\poco\config.h
-
-1411795664 c:\openframeworks\libs\poco\include\poco\platform.h
-
-1411795661 c:\openframeworks\libs\poco\include\poco\platform_win32.h
-
-1411795659 c:\openframeworks\libs\poco\include\poco\platform_vms.h
-
-1411795661 c:\openframeworks\libs\poco\include\poco\platform_vx.h
-
-1411795660 c:\openframeworks\libs\poco\include\poco\platform_posix.h
-
-1411795663 c:\openframeworks\libs\poco\include\poco\bugcheck.h
-	"Poco/Foundation.h"
-	<string>
-	<iostream>
-
-1411795659 c:\openframeworks\libs\poco\include\poco\types.h
-	"Poco/Foundation.h"
-	"Poco/Foundation.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
+1420917387 s.h"
 
 1420917383 c:\openframeworks\libs\poco\include\poco\config.h
 
@@ -8878,14 +9048,13 @@
 
 1420917384 c:\openframeworks\libs\poco\include\poco\bugcheck.h
 	"Poco/Foundation.h"
-<<<<<<< HEAD
 	<string>
 	<iostream>
-=======
 	"Poco/Foundation.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 
 1420917383 c:\openframeworks\libs\poco\include\poco\types.h
+	"Poco/Foundation.h"
+	"Poco/Foundation.h"
 	"Poco/Foundation.h"
 
 1420917384 c:\openframeworks\libs\poco\include\poco\file_vx.h
@@ -8899,25 +9068,9 @@
 	"Poco/Foundation.h"
 	"Poco/Foundation.h"
 
-<<<<<<< HEAD
-1420917387 c:\openframeworks\libs\openframeworks\utils\oflog.h
-=======
 1411795670 c:\openframeworks\libs\openframeworks\utils\oflog.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"ofConstants.h"
-	"ofFileUtils.h"
-	"ofTypes.h"
 
-<<<<<<< HEAD
-1420917387 c:\openframeworks\libs\openframeworks\types\oftypes.h
-=======
 1411795670 c:\openframeworks\libs\openframeworks\types\oftypes.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"ofConstants.h"
-	"ofColor.h"
-	<memory>
-	<tr1/memory>
-	"Poco/Mutex.h"
 
 1420917387 c:\openframeworks\libs\openframeworks\types\ofcolor.h
 	<limits>
@@ -8935,36 +9088,31 @@
 	"ofVec3f.h"
 	"ofVec3f.h"
 
-<<<<<<< HEAD
-1420917387 c:\openframeworks\libs\openframeworks\math\ofvec3f.h
-	"ofVec2f.h"
-	"ofVec4f.h"
-	"ofConstants.h"
-	<cmath>
-	<iostream>
-=======
 1411795671 c:\openframeworks\libs\openframeworks\math\ofvec3f.h
 	"ofVec2f.h"
 	"ofVec4f.h"
 	"ofConstants.h"
 	<cmath>
 	<iostream>
-
-1411795672 c:\openframeworks\libs\openframeworks\math\ofvec2f.h
+	"ofVec2f.h"
+	"ofVec4f.h"
 	"ofConstants.h"
-	"ofConstants.h"
-	"ofConstants.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
+	<cmath>
+	<iostream>
 
 1420917387 c:\openframeworks\libs\openframeworks\math\ofvec2f.h
 	"ofConstants.h"
 	"ofConstants.h"
+	"ofConstants.h"
+	"ofConstants.h"
+	"ofConstants.h"
 
-<<<<<<< HEAD
 1420917387 c:\openframeworks\libs\openframeworks\math\ofvec4f.h
 	"ofConstants.h"
-=======
-1411795663 c:\openframeworks\libs\poco\include\poco\mutex.h
+
+1420917387 ts.h"
+
+1420917384 c:\openframeworks\libs\poco\include\poco\mutex.h
 	"Poco/Foundation.h"
 	"Poco/Exception.h"
 	"Poco/ScopedLock.h"
@@ -8972,9 +9120,6 @@
 	"Poco/Mutex_WIN32.h"
 	"Poco/Mutex_VX.h"
 	"Poco/Mutex_POSIX.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-
-1420917384 c:\openframeworks\libs\poco\include\poco\mutex.h
 	"Poco/Foundation.h"
 	"Poco/Exception.h"
 	"Poco/ScopedLock.h"
@@ -8993,54 +9138,27 @@
 	"Poco/Foundation.h"
 	"Poco/Foundation.h"
 
-<<<<<<< HEAD
-1420917383 c:\openframeworks\libs\poco\include\poco\mutex_wince.h
-=======
 1411795660 c:\openframeworks\libs\poco\include\poco\mutex_wince.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/Foundation.h"
-	"Poco/Exception.h"
-	"Poco/UnWindows.h"
 
 1420917384 c:\openframeworks\libs\poco\include\poco\unwindows.h
 	<windows.h>
 	<windows.h>
 
-<<<<<<< HEAD
-1420917385 c:\openframeworks\libs\poco\include\poco\mutex_win32.h
-=======
 1411795664 c:\openframeworks\libs\poco\include\poco\mutex_win32.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/Foundation.h"
-	"Poco/Exception.h"
-	"Poco/UnWindows.h"
 
-<<<<<<< HEAD
-1420917384 c:\openframeworks\libs\poco\include\poco\mutex_vx.h
-=======
 1411795663 c:\openframeworks\libs\poco\include\poco\mutex_vx.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/Foundation.h"
-	"Poco/Exception.h"
-	<semLib.h>
-	<errno.h>
-<<<<<<< HEAD
-
-1420917384 c:\openframeworks\libs\poco\include\poco\mutex_posix.h
-	"Poco/Foundation.h"
-	"Poco/Exception.h"
-	<pthread.h>
-	<errno.h>
-
-1420917387 c:\openframeworks\libs\openframeworks\utils\ofsystemutils.h
-=======
 
 1411795662 c:\openframeworks\libs\poco\include\poco\mutex_posix.h
 	"Poco/Foundation.h"
 	"Poco/Exception.h"
 	<pthread.h>
 	<errno.h>
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	<pthread.h>
+	<errno.h>
+
+1420917387 c:\openframeworks\libs\openframeworks\utils\ofsystemutils.h
 
 1420917387 c:\openframeworks\libs\openframeworks\utils\ofthread.h
 	"Poco/AtomicCounter.h"
@@ -9065,23 +9183,14 @@
 
 1420917384 ndows.h"
 
-<<<<<<< HEAD
-1420917384 c:\openframeworks\libs\poco\include\poco\thread_wince.h
-=======
-1420917384 ndows.h"
-
 1411795662 c:\openframeworks\libs\poco\include\poco\thread_wince.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/Foundation.h"
-	"Poco/Runnable.h"
-	"Poco/UnWindows.h"
 
 1420917385 c:\openframeworks\libs\poco\include\poco\runnable.h
 	"Poco/Foundation.h"
 
-1420917384 c:\openframeworks\libs\poco\include\poco\thread_win32.h
+1411795664 c:\openframeworks\libs\poco\include\poco\thread_win32.h
 	"Poco/Foundation.h"
-<<<<<<< HEAD
+	"Poco/Foundation.h"
 	"Poco/Runnable.h"
 	"Poco/UnWindows.h"
 
@@ -9094,41 +9203,39 @@
 	"Poco/AutoPtr.h"
 	<taskLib.h>
 	<taskVarLib.h>
-=======
+
+1420917383 b.h>
 	"Poco/Foundation.h"
 
-1411795664 c:\openframeworks\libs\poco\include\poco\thread_win32.h
+1411795663 c:\openframeworks\libs\poco\include\poco\signalhandler.h
 	"Poco/Foundation.h"
-	"Poco/Runnable.h"
-	"Poco/UnWindows.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-
-1420917384 c:\openframeworks\libs\poco\include\poco\signalhandler.h
+	<vector>
+	<setjmp.h>
 	"Poco/Foundation.h"
 	<vector>
 	<setjmp.h>
 
-<<<<<<< HEAD
 1420917384 c:\openframeworks\libs\poco\include\poco\event.h
 	"Poco/Foundation.h"
 	"Poco/Exception.h"
 	"Poco/Event_WIN32.h"
 	"Poco/Event_VX.h"
 	"Poco/Event_POSIX.h"
-=======
-1411795663 c:\openframeworks\libs\poco\include\poco\signalhandler.h
-	"Poco/Foundation.h"
-	<vector>
-	<setjmp.h>
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 
-1420917384 c:\openframeworks\libs\poco\include\poco\event_win32.h
+1420917384 t_POSIX.h"
+
+1411795662 c:\openframeworks\libs\poco\include\poco\event_win32.h
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	"Poco/UnWindows.h"
 	"Poco/Foundation.h"
 	"Poco/Exception.h"
 	"Poco/UnWindows.h"
 
-<<<<<<< HEAD
-1420917384 c:\openframeworks\libs\poco\include\poco\event_vx.h
+1411795663 c:\openframeworks\libs\poco\include\poco\event_vx.h
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	<semLib.h>
 	"Poco/Foundation.h"
 	"Poco/Exception.h"
 	<semLib.h>
@@ -9138,33 +9245,12 @@
 	"Poco/Exception.h"
 	<pthread.h>
 	<errno.h>
-=======
-1411795662 c:\openframeworks\libs\poco\include\poco\event_win32.h
-	"Poco/Foundation.h"
-	"Poco/Exception.h"
-	"Poco/UnWindows.h"
-
-1411795663 c:\openframeworks\libs\poco\include\poco\event_vx.h
-	"Poco/Foundation.h"
-	"Poco/Exception.h"
-	<semLib.h>
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-
-1420917384 >
-
-<<<<<<< HEAD
-1420917385 c:\openframeworks\libs\poco\include\poco\refcountedobject.h
-=======
-1420917384 >
 
 1411795664 c:\openframeworks\libs\poco\include\poco\refcountedobject.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/Foundation.h"
-	"Poco/AtomicCounter.h"
 
-1420917385 c:\openframeworks\libs\poco\include\poco\autoptr.h
+1411795665 c:\openframeworks\libs\poco\include\poco\autoptr.h
 	"Poco/Foundation.h"
-<<<<<<< HEAD
+	"Poco/Foundation.h"
 	"Poco/Exception.h"
 	<algorithm>
 
@@ -9180,16 +9266,6 @@
 	<sys/select.h>
 	<errno.h>
 	<cstring>
-=======
-	"Poco/AtomicCounter.h"
-	"Poco/Foundation.h"
-	"Poco/AtomicCounter.h"
-
-1411795665 c:\openframeworks\libs\poco\include\poco\autoptr.h
-	"Poco/Foundation.h"
-	"Poco/Exception.h"
-	<algorithm>
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 
 1420917387 c:\openframeworks\libs\openframeworks\utils\ofurlfileloader.h
 	<deque>
@@ -9201,16 +9277,7 @@
 
 1420917387 ils.h"
 
-<<<<<<< HEAD
-1420917387 c:\openframeworks\libs\openframeworks\events\ofevents.h
-=======
-1420917387 ils.h"
-
 1411795671 c:\openframeworks\libs\openframeworks\events\ofevents.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"ofConstants.h"
-	"ofPoint.h"
-	"ofEventUtils.h"
 
 1420917387 c:\openframeworks\libs\openframeworks\events\ofeventutils.h
 	"ofConstants.h"
@@ -9221,16 +9288,11 @@
 	<stdlib.h>
 
 1420917387 ractPriorityDelegate.h"
-<<<<<<< HEAD
-=======
 
-1411795664 c:\openframeworks\libs\poco\include\poco\priorityevent.h
+1420917385 c:\openframeworks\libs\poco\include\poco\priorityevent.h
 	"Poco/AbstractEvent.h"
 	"Poco/PriorityStrategy.h"
 	"Poco/AbstractPriorityDelegate.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-
-1420917385 c:\openframeworks\libs\poco\include\poco\priorityevent.h
 	"Poco/AbstractEvent.h"
 	"Poco/PriorityStrategy.h"
 	"Poco/AbstractPriorityDelegate.h"
@@ -9263,21 +9325,24 @@
 	"Poco/Exception.h"
 	<algorithm>
 
-<<<<<<< HEAD
 1420917384 c:\openframeworks\libs\poco\include\poco\activemethod.h
 	"Poco/Foundation.h"
 	"Poco/ActiveResult.h"
 	"Poco/ActiveRunnable.h"
 	"Poco/ActiveStarter.h"
 	"Poco/AutoPtr.h"
-=======
+
+1420917384 Ptr.h"
+
 1420917384 veRunnable.h"
 
-1411795663 c:\openframeworks\libs\poco\include\poco\activestarter.h
+1420917384 c:\openframeworks\libs\poco\include\poco\activestarter.h
 	"Poco/Foundation.h"
 	"Poco/ThreadPool.h"
 	"Poco/ActiveRunnable.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
+	"Poco/Foundation.h"
+	"Poco/ThreadPool.h"
+	"Poco/ActiveRunnable.h"
 
 1420917384 c:\openframeworks\libs\poco\include\poco\activerunnable.h
 	"Poco/Foundation.h"
@@ -9287,38 +9352,19 @@
 	"Poco/AutoPtr.h"
 	"Poco/Exception.h"
 
-<<<<<<< HEAD
-1420917384 veRunnable.h"
-=======
-1420917383 edPtr.h"
-
-1411795664 c:\openframeworks\libs\poco\include\poco\prioritystrategy.h
-	"Poco/NotificationStrategy.h"
-	"Poco/SharedPtr.h"
-	<vector>
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-
-1420917384 c:\openframeworks\libs\poco\include\poco\activestarter.h
+1420917385 edPtr.h"
 	"Poco/Foundation.h"
-	"Poco/ThreadPool.h"
-	"Poco/ActiveRunnable.h"
-
-1420917383 c:\openframeworks\libs\poco\include\poco\threadpool.h
-	"Poco/Foundation.h"
-<<<<<<< HEAD
-	"Poco/Thread.h"
-	"Poco/Mutex.h"
-	<vector>
-
-1420917383 edPtr.h"
 
 1420917385 c:\openframeworks\libs\poco\include\poco\prioritystrategy.h
 	"Poco/NotificationStrategy.h"
 	"Poco/SharedPtr.h"
 	<vector>
-=======
+	"Poco/NotificationStrategy.h"
+	"Poco/SharedPtr.h"
+	<vector>
+
+1420917383 c:\openframeworks\libs\poco\include\poco\threadpool.h
 	"Poco/Foundation.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 
 1420917384 c:\openframeworks\libs\poco\include\poco\notificationstrategy.h
 	"Poco/Foundation.h"
@@ -9333,32 +9379,20 @@
 	"Poco/Foundation.h"
 	"Poco/Foundation.h"
 
-<<<<<<< HEAD
-1420917385 c:\openframeworks\libs\poco\include\poco\prioritydelegate.h
+1411795664 c:\openframeworks\libs\poco\include\poco\prioritydelegate.h
 	"Poco/Foundation.h"
 	"Poco/AbstractPriorityDelegate.h"
 	"Poco/PriorityExpire.h"
 	"Poco/FunctionPriorityDelegate.h"
 	"Poco/Mutex.h"
 
-1420917385 x.h"
-=======
-1411795664 c:\openframeworks\libs\poco\include\poco\prioritydelegate.h
+1420917384 x.h"
+	"Poco/AbstractPriorityDelegate.h"
 
-1420917385 x.h"
-
-1411795661 c:\openframeworks\libs\poco\include\poco\priorityexpire.h
+1420917384 c:\openframeworks\libs\poco\include\poco\priorityexpire.h
 	"Poco/Foundation.h"
 	"Poco/Timestamp.h"
 	"Poco/AbstractPriorityDelegate.h"
-
-1411795664 c:\openframeworks\libs\poco\include\poco\functionprioritydelegate.h
-	"Poco/Foundation.h"
-	"Poco/AbstractPriorityDelegate.h"
-	"Poco/Mutex.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-
-1420917384 c:\openframeworks\libs\poco\include\poco\priorityexpire.h
 	"Poco/Foundation.h"
 	"Poco/Timestamp.h"
 	"Poco/AbstractPriorityDelegate.h"
@@ -9366,11 +9400,9 @@
 1420917384 c:\openframeworks\libs\poco\include\poco\functionprioritydelegate.h
 	"Poco/Foundation.h"
 	"Poco/AbstractPriorityDelegate.h"
-<<<<<<< HEAD
 	"Poco/Mutex.h"
-=======
+	"Poco/Foundation.h"
 	"Poco/AbstractPriorityDelegate.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 
 1420917387 c:\openframeworks\libs\openframeworks\events\ofdelegate.h
 	"Poco/AbstractPriorityDelegate.h"
@@ -9410,14 +9442,7 @@
 	"ofMatrix4x4.h"
 	"ofTypes.h"
 
-<<<<<<< HEAD
-1420917387 c:\openframeworks\libs\openframeworks\types\ofrectangle.h
-=======
 1411795670 c:\openframeworks\libs\openframeworks\types\ofrectangle.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"ofConstants.h"
-	"ofPoint.h"
-	"ofLog.h"
 
 1420917387 c:\openframeworks\libs\openframeworks\3d\ofmesh.h
 	"ofVec3f.h"
@@ -9428,16 +9453,11 @@
 	"ofGLUtils.h"
 
 1420917387 h"
-<<<<<<< HEAD
-=======
 
-1411795670 c:\openframeworks\libs\openframeworks\gl\ofglutils.h
+1420917387 c:\openframeworks\libs\openframeworks\gl\ofglutils.h
 	"ofConstants.h"
 	"ofTypes.h"
 	"ofPixels.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-
-1420917387 c:\openframeworks\libs\openframeworks\gl\ofglutils.h
 	"ofConstants.h"
 	"ofTypes.h"
 	"ofPixels.h"
@@ -9516,16 +9536,12 @@
 	"Poco/SAX/NamespaceSupport.h"
 
 1420917385 XMLString.h"
-<<<<<<< HEAD
-=======
+	"Poco/XML/XML.h"
 
-1411795666 c:\openframeworks\libs\poco\include\poco\dom\eventtarget.h
+1420917385 c:\openframeworks\libs\poco\include\poco\dom\eventtarget.h
 	"Poco/XML/XML.h"
 	"Poco/DOM/DOMObject.h"
 	"Poco/XML/XMLString.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-
-1420917385 c:\openframeworks\libs\poco\include\poco\dom\eventtarget.h
 	"Poco/XML/XML.h"
 	"Poco/DOM/DOMObject.h"
 	"Poco/XML/XMLString.h"
@@ -9539,41 +9555,14 @@
 
 1420917385 c:\openframeworks\libs\poco\include\poco\sax\namespacesupport.h
 	"Poco/XML/XML.h"
-<<<<<<< HEAD
-	"Poco/XML/XMLString.h"
-	<set>
-	<map>
-	<vector>
-=======
-	"Poco/XML/XML.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 
-1420917385 ParserEngine.h"
-
-<<<<<<< HEAD
-1420917385 c:\openframeworks\libs\poco\include\poco\dom\mutationevent.h
-=======
 1420917385 ParserEngine.h"
 
 1411795666 c:\openframeworks\libs\poco\include\poco\dom\mutationevent.h
 	"Poco/XML/XML.h"
 	"Poco/DOM/Event.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/XML/XML.h"
-	"Poco/DOM/Event.h"
-	"Poco/XML/XML.h"
-	"Poco/DOM/Event.h"
 
-<<<<<<< HEAD
-1420917385 c:\openframeworks\libs\poco\include\poco\dom\event.h
-=======
 1411795666 c:\openframeworks\libs\poco\include\poco\dom\event.h
-	"Poco/XML/XML.h"
-	"Poco/XML/XMLString.h"
-	"Poco/DOM/DOMObject.h"
-
-1411795666 c:\openframeworks\libs\poco\include\poco\dom\documentevent.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 	"Poco/XML/XML.h"
 	"Poco/XML/XMLString.h"
 	"Poco/DOM/DOMObject.h"
@@ -9584,54 +9573,26 @@
 	"Poco/XML/XML.h"
 	"Poco/XML/XMLString.h"
 
-<<<<<<< HEAD
-1420917385 c:\openframeworks\libs\poco\include\poco\dom\element.h
-=======
 1411795666 c:\openframeworks\libs\poco\include\poco\dom\element.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/XML/XML.h"
-	"Poco/DOM/AbstractContainerNode.h"
-	"Poco/XML/Name.h"
 
 1420917385 c:\openframeworks\libs\poco\include\poco\xml\name.h
-	"Poco/XML/XML.h"
-	"Poco/XML/XMLString.h"
-
-1420917385 c:\openframeworks\libs\poco\include\poco\xml\namepool.h
-	"Poco/XML/XML.h"
-	"Poco/XML/XMLString.h"
-<<<<<<< HEAD
-	"Poco/XML/Name.h"
-
-1420917384 c:\openframeworks\libs\poco\include\poco\autoreleasepool.h
-=======
 	"Poco/XML/XML.h"
 	"Poco/XML/XMLString.h"
 
 1411795666 c:\openframeworks\libs\poco\include\poco\xml\namepool.h
 	"Poco/XML/XML.h"
 	"Poco/XML/XMLString.h"
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
 	"Poco/XML/Name.h"
 
 1411795661 c:\openframeworks\libs\poco\include\poco\autoreleasepool.h
-	"Poco/Foundation.h"
-	<list>
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/Foundation.h"
-	<list>
-	"Poco/Foundation.h"
-	<list>
-
-<<<<<<< HEAD
-1420917385 c:\openframeworks\libs\poco\include\poco\dom\documentfragment.h
-=======
-1411795666 c:\openframeworks\libs\poco\include\poco\dom\documentfragment.h
 	"Poco/XML/XML.h"
-	"Poco/DOM/AbstractContainerNode.h"
 	"Poco/XML/XMLString.h"
+	"Poco/Foundation.h"
+	<list>
 
-1411795666 c:\openframeworks\libs\poco\include\poco\dom\domparser.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
+1411795666 c:\openframeworks\libs\poco\include\poco\dom\documentfragment.h
 	"Poco/XML/XML.h"
 	"Poco/DOM/AbstractContainerNode.h"
 	"Poco/XML/XMLString.h"
@@ -9642,14 +9603,7 @@
 	"Poco/XML/XML.h"
 	"Poco/SAX/SAXParser.h"
 
-<<<<<<< HEAD
-1420917385 c:\openframeworks\libs\poco\include\poco\sax\saxparser.h
-=======
 1411795666 c:\openframeworks\libs\poco\include\poco\sax\saxparser.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/XML/XML.h"
-	"Poco/SAX/XMLReader.h"
-	"Poco/XML/ParserEngine.h"
 
 1420917385 c:\openframeworks\libs\poco\include\poco\sax\xmlreader.h
 	"Poco/XML/XML.h"
@@ -9660,16 +9614,10 @@
 	<expat.h>
 	"Poco/XML/expat.h"
 	"Poco/XML/XMLString.h"
-<<<<<<< HEAD
-	"Poco/XML/XMLStream.h"
-	"Poco/SAX/Locator.h"
-	"Poco/TextEncoding.h"
-	<map>
-	<vector>
-=======
+
+1420917385 Encoding.h"
 	"Poco/XML/XML.h"
 	"Poco/XML/XMLString.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 
 1420917385 c:\openframeworks\libs\poco\include\poco\xml\expat.h
 	<stdlib.h>
@@ -9677,18 +9625,12 @@
 	<stdlib.h>
 	"expat_external.h"
 
-<<<<<<< HEAD
-1420917385 c:\openframeworks\libs\poco\include\poco\xml\expat_external.h
-=======
 1411795665 c:\openframeworks\libs\poco\include\poco\xml\expat_external.h
 
-1411795665 c:\openframeworks\libs\poco\include\poco\xml\xmlstream.h
+1420917385 c:\openframeworks\libs\poco\include\poco\xml\xmlstream.h
 	"Poco/XML/XML.h"
 	<istream>
 	<ostream>
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-
-1420917385 c:\openframeworks\libs\poco\include\poco\xml\xmlstream.h
 	"Poco/XML/XML.h"
 	<istream>
 	<ostream>
@@ -9717,24 +9659,9 @@
 	"Poco/XML/XML.h"
 	"Poco/Exception.h"
 
-<<<<<<< HEAD
-1420917385 c:\openframeworks\libs\poco\include\poco\sax\saxexception.h
-=======
 1411795666 c:\openframeworks\libs\poco\include\poco\sax\saxexception.h
 	"Poco/XML/XML.h"
 	"Poco/XML/XMLException.h"
-	"Poco/XML/XMLString.h"
-
-1411795665 c:\openframeworks\libs\poco\include\poco\xml\xmlwriter.h
-
-1411795666 c:\openframeworks\libs\poco\include\poco\sax\contenthandler.h
-	"Poco/XML/XML.h"
-	"Poco/XML/XMLString.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/XML/XML.h"
-	"Poco/XML/XMLException.h"
-	"Poco/XML/XMLString.h"
-	"Poco/XML/XML.h"
 	"Poco/XML/XMLString.h"
 
 1420917385 c:\openframeworks\libs\poco\include\poco\xml\xmlwriter.h
@@ -9752,6 +9679,8 @@
 	<map>
 
 1420917385 c:\openframeworks\libs\poco\include\poco\sax\contenthandler.h
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
 	"Poco/XML/XML.h"
 	"Poco/XML/XMLString.h"
 	"Poco/XML/XML.h"
@@ -9776,14 +9705,6 @@
 
 1420917383 c:\openframeworks\libs\poco\include\poco\unbufferedstreambuf.h
 	"Poco/Foundation.h"
-<<<<<<< HEAD
-	"Poco/StreamUtil.h"
-	<streambuf>
-	<iosfwd>
-	<ios>
-=======
-	"Poco/Foundation.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 
 1420917385 c:\openframeworks\libs\poco\include\poco\streamutil.h
 	"Poco/Foundation.h"
@@ -9794,29 +9715,24 @@
 	"Poco/XML/XMLStream.h"
 	"Poco/TextEncoding.h"
 
-<<<<<<< HEAD
 1420917385 c:\openframeworks\libs\poco\include\poco\dom\attr.h
 	"Poco/XML/XML.h"
 	"Poco/DOM/AbstractNode.h"
 	"Poco/DOM/Element.h"
 	"Poco/XML/Name.h"
 
-1420917385 c:\openframeworks\libs\poco\include\poco\dom\text.h
-	"Poco/XML/XML.h"
-	"Poco/DOM/CharacterData.h"
-=======
 1411795666 c:\openframeworks\libs\poco\include\poco\dom\text.h
 	"Poco/XML/XML.h"
 	"Poco/DOM/CharacterData.h"
+	"Poco/XML/XML.h"
+	"Poco/DOM/CharacterData.h"
 	"Poco/XML/XMLString.h"
 
-1411795666 c:\openframeworks\libs\poco\include\poco\dom\characterdata.h
-	"Poco/XML/XML.h"
-	"Poco/DOM/AbstractNode.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/XML/XMLString.h"
+1420917385 CharacterData.h"
 
 1420917385 c:\openframeworks\libs\poco\include\poco\dom\characterdata.h
+	"Poco/XML/XML.h"
+	"Poco/DOM/AbstractNode.h"
 	"Poco/XML/XML.h"
 	"Poco/DOM/AbstractNode.h"
 	"Poco/XML/XMLString.h"
@@ -9829,27 +9745,17 @@
 	"Poco/XML/XML.h"
 	"Poco/XML/XMLString.h"
 
-1420917385 c:\openframeworks\libs\poco\include\poco\dom\namednodemap.h
+1411795666 c:\openframeworks\libs\poco\include\poco\dom\namednodemap.h
 	"Poco/XML/XML.h"
 	"Poco/DOM/DOMObject.h"
 	"Poco/XML/XMLString.h"
 	"Poco/XML/XML.h"
 	"Poco/XML/XMLString.h"
-
-<<<<<<< HEAD
-1420917385 c:\openframeworks\libs\poco\include\poco\dom\childnodeslist.h
-=======
-1411795666 c:\openframeworks\libs\poco\include\poco\dom\namednodemap.h
 	"Poco/XML/XML.h"
 	"Poco/DOM/DOMObject.h"
 	"Poco/XML/XMLString.h"
 
 1411795666 c:\openframeworks\libs\poco\include\poco\dom\childnodeslist.h
-	"Poco/XML/XML.h"
-	"Poco/DOM/NodeList.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/XML/XML.h"
-	"Poco/DOM/NodeList.h"
 	"Poco/XML/XML.h"
 	"Poco/DOM/NodeList.h"
 
@@ -9859,14 +9765,7 @@
 	"Poco/XML/XML.h"
 	"Poco/DOM/DOMObject.h"
 
-<<<<<<< HEAD
-1420917387 c:\openframeworks\libs\openframeworks\types\ofparameter.h
-=======
 1411795670 c:\openframeworks\libs\openframeworks\types\ofparameter.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"ofEvents.h"
-	"ofTypes.h"
-	"ofUtils.h"
 
 1420917387 c:\openframeworks\libs\openframeworks\types\ofparametergroup.h
 	<map>
@@ -9876,14 +9775,7 @@
 	"ofParameter.h"
 	"ofTypes.h"
 
-<<<<<<< HEAD
-1420917384 c:\openframeworks\libs\poco\include\poco\any.h
-=======
 1411795661 c:\openframeworks\libs\poco\include\poco\any.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/Exception.h"
-	<algorithm>
-	<typeinfo>
 
 1420917387 c:\openframeworks\libs\openframeworks\math\ofvectormath.h
 	"ofVec2f.h"
@@ -9974,27 +9866,20 @@
 	"ofGraphics.h"
 	"ofMatrix4x4.h"
 
-1420917387 s.h"
-<<<<<<< HEAD
-
-1420917386 c:\openframeworks\libs\openframeworks\gl\oflight.h
-	"ofNode.h"
-	"ofColor.h"
-	"of3dGraphics.h"
-=======
-
 1411795669 c:\openframeworks\libs\openframeworks\gl\oflight.h
 	"ofNode.h"
 	"ofColor.h"
 	"of3dGraphics.h"
+	"ofNode.h"
+	"ofColor.h"
+	"of3dGraphics.h"
 
-1411795670 c:\openframeworks\libs\openframeworks\3d\ofnode.h
+1420917386 ics.h"
+
+1420917387 c:\openframeworks\libs\openframeworks\3d\ofnode.h
 	"ofVectorMath.h"
 	"of3dUtils.h"
 	"ofGraphics.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-
-1420917387 c:\openframeworks\libs\openframeworks\3d\ofnode.h
 	"ofVectorMath.h"
 	"of3dUtils.h"
 	"ofGraphics.h"
@@ -10036,20 +9921,14 @@
 
 1411795656 h>
 
-<<<<<<< HEAD
-1420917383 c:\openframeworks\libs\poco\include\poco\regularexpression.h
-=======
 1411795659 c:\openframeworks\libs\poco\include\poco\regularexpression.h
 	"Poco/Foundation.h"
 	<vector>
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"Poco/Foundation.h"
-	<vector>
-	"Poco/Foundation.h"
-	<vector>
 
-<<<<<<< HEAD
-1420917387 c:\openframeworks\libs\openframeworks\app\ofappbasewindow.h
+1411795670 c:\openframeworks\libs\openframeworks\app\ofappbasewindow.h
+	"ofPoint.h"
+	"ofTypes.h"
+	<X11/Xlib.h>
 	"ofPoint.h"
 	"ofTypes.h"
 	<X11/Xlib.h>
@@ -10062,12 +9941,8 @@
 	"ofGraphics.h"
 	"ofMatrixStack.h"
 	<stack>
-=======
-1411795670 c:\openframeworks\libs\openframeworks\app\ofappbasewindow.h
-	"ofPoint.h"
-	"ofTypes.h"
-	<X11/Xlib.h>
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
+
+1420917387 tack.h"
 
 1420917387 c:\openframeworks\libs\openframeworks\graphics\ofcairorenderer.h
 	"cairo-features.h"
@@ -10082,26 +9957,13 @@
 
 1420917387 recated.h"
 
-<<<<<<< HEAD
-1420917388 c:\openframeworks\libs\cairo\include\cairo\cairo-features.h
-=======
-1420917387 recated.h"
-
 1411795674 c:\openframeworks\libs\cairo\include\cairo\cairo-features.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 
 1420917388 c:\openframeworks\libs\cairo\include\cairo\cairo-pdf.h
 	"cairo.h"
 	"cairo.h"
 
-<<<<<<< HEAD
-1420917388 c:\openframeworks\libs\cairo\include\cairo\cairo.h
-=======
 1411795674 c:\openframeworks\libs\cairo\include\cairo\cairo.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"cairo-version.h"
-	"cairo-features.h"
-	"cairo-deprecated.h"
 
 1420917388 c:\openframeworks\libs\cairo\include\cairo\cairo-version.h
 
@@ -10150,16 +10012,11 @@
 	"ofMesh.h"
 
 1420917387 es.h"
-<<<<<<< HEAD
-=======
 
-1411795670 c:\openframeworks\libs\openframeworks\app\ofbaseapp.h
+1420917387 c:\openframeworks\libs\openframeworks\app\ofbaseapp.h
 	"ofPoint.h"
 	"ofEvents.h"
 	"ofBaseTypes.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-
-1420917387 c:\openframeworks\libs\openframeworks\app\ofbaseapp.h
 	"ofPoint.h"
 	"ofEvents.h"
 	"ofBaseTypes.h"
@@ -10186,14 +10043,7 @@
 	"ofConstants.h"
 	"ofConstants.h"
 
-<<<<<<< HEAD
-1420917387 c:\openframeworks\libs\openframeworks\sound\ofrtaudiosoundstream.h
-=======
 1411795670 c:\openframeworks\libs\openframeworks\sound\ofrtaudiosoundstream.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"ofConstants.h"
-	"ofBaseSoundStream.h"
-	"ofTypes.h"
 
 1420917387 c:\openframeworks\libs\openframeworks\sound\ofsoundplayer.h
 	"ofConstants.h"
@@ -10211,36 +10061,19 @@
 
 1420917387 c:\openframeworks\libs\openframeworks\sound\offmodsoundplayer.h
 	"ofConstants.h"
-<<<<<<< HEAD
-	"ofBaseSoundPlayer.h"
-	"fmod.h"
-	"fmod_errors.h"
-=======
+
+1420917387 rs.h"
 	"ofConstants.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 
-1420917387 ryinfo.h"
-
-<<<<<<< HEAD
-1420917380 c:\openframeworks\libs\fmodex\include\fmod.h
-=======
 1420917387 ryinfo.h"
 
 1411795646 c:\openframeworks\libs\fmodex\include\fmod.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"fmod_codec.h"
-	"fmod_dsp.h"
-	"fmod_memoryinfo.h"
 
 1420917380 c:\openframeworks\libs\fmodex\include\fmod_codec.h
 
 1420917380 c:\openframeworks\libs\fmodex\include\fmod_dsp.h
 
-<<<<<<< HEAD
-1420917380 c:\openframeworks\libs\fmodex\include\fmod_memoryinfo.h
-=======
 1411795646 c:\openframeworks\libs\fmodex\include\fmod_memoryinfo.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 
 1420917380 c:\openframeworks\libs\fmodex\include\fmod_errors.h
 	"fmod.h"
@@ -10260,7 +10093,7 @@
 	<sndfile.h>
 	<mpg123.h>
 
-1420917387 c:\openframeworks\libs\openframeworks\video\ofvideograbber.h
+1411795672 c:\openframeworks\libs\openframeworks\video\ofvideograbber.h
 	"ofConstants.h"
 	"ofTexture.h"
 	"ofBaseTypes.h"
@@ -10273,32 +10106,9 @@
 	"ofGstVideoGrabber.h"
 	"ofxAndroidVideoGrabber.h"
 
-1420917387 c:\openframeworks\libs\openframeworks\utils\offileutils.h
+1411795670 c:\openframeworks\libs\openframeworks\utils\offileutils.h
 	"ofConstants.h"
 	"Poco/File.h"
-
-1420917385 c:\openframeworks\libs\poco\include\poco\timestamp.h
-	"Poco/Foundation.h"
-	<ctime>
-
-1420917383 c:\openframeworks\libs\poco\include\poco\file_wince.h
-	"Poco/Foundation.h"
-	"Poco/Timestamp.h"
-
-1420917383 c:\openframeworks\libs\poco\include\poco\file_win32u.h
-	"Poco/Foundation.h"
-	"Poco/Timestamp.h"
-
-1420917384 c:\openframeworks\libs\poco\include\poco\file_win32.h
-	"Poco/Foundation.h"
-	"Poco/Timestamp.h"
-
-<<<<<<< HEAD
-1420917387 c:\openframeworks\libs\openframeworks\video\ofquicktimegrabber.h
-=======
-1411795672 c:\openframeworks\libs\openframeworks\video\ofvideograbber.h
-
-1411795670 c:\openframeworks\libs\openframeworks\utils\offileutils.h
 	"ofConstants.h"
 	"Poco/File.h"
 	"ofConstants.h"
@@ -10309,8 +10119,12 @@
 	<ctime>
 	"Poco/Foundation.h"
 	<ctime>
+	"Poco/Foundation.h"
+	<ctime>
 
 1411795660 c:\openframeworks\libs\poco\include\poco\file_wince.h
+	"Poco/Foundation.h"
+	"Poco/Timestamp.h"
 	"Poco/Foundation.h"
 	"Poco/Timestamp.h"
 	"Poco/Foundation.h"
@@ -10321,20 +10135,18 @@
 	"Poco/Timestamp.h"
 	"Poco/Foundation.h"
 	"Poco/Timestamp.h"
+	"Poco/Foundation.h"
+	"Poco/Timestamp.h"
 
 1411795661 c:\openframeworks\libs\poco\include\poco\file_win32.h
 	"Poco/Foundation.h"
 	"Poco/Timestamp.h"
 	"Poco/Foundation.h"
 	"Poco/Timestamp.h"
+	"Poco/Foundation.h"
+	"Poco/Timestamp.h"
 
 1411795672 c:\openframeworks\libs\openframeworks\video\ofquicktimegrabber.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"ofConstants.h"
-	"ofQtUtils.h"
-	"ofTexture.h"
-	"ofBaseTypes.h"
-	"ofPixels.h"
 
 1411795672 c:\openframeworks\libs\openframeworks\video\ofqtutils.h
 	"ofConstants.h"
@@ -10354,13 +10166,8 @@
 	<OSUtils.h>
 	<Files.h>
 
-<<<<<<< HEAD
-1420917382 c:\openframeworks\libs\quicktime\include\mactypes.h
-=======
 1411795654 c:\openframeworks\libs\quicktime\include\mactypes.h
 	<ConditionalMacros.h>
-	<ConditionalMacros.h>
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 	<ConditionalMacros.h>
 
 1420917383 c:\openframeworks\libs\quicktime\include\conditionalmacros.h
@@ -10368,35 +10175,15 @@
 1420917381 c:\openframeworks\libs\quicktime\include\macmemory.h
 	<MacTypes.h>
 	<MixedMode.h>
-<<<<<<< HEAD
-
-1420917382 c:\openframeworks\libs\quicktime\include\mixedmode.h
-	<MacTypes.h>
-
-1420917381 c:\openframeworks\libs\quicktime\include\macwindows.h
-=======
-	<MacTypes.h>
-	<MixedMode.h>
 
 1411795654 c:\openframeworks\libs\quicktime\include\mixedmode.h
 	<MacTypes.h>
 	<MacTypes.h>
+	<MacTypes.h>
 
 1411795652 c:\openframeworks\libs\quicktime\include\macwindows.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 	<MacTypes.h>
-	<Aliases.h>
-	<AppleEvents.h>
-	<Collections.h>
-	<Drag.h>
-	<Events.h>
-	<Menus.h>
 	<MixedMode.h>
-	<QDOffscreen.h>
-	<Quickdraw.h>
-	<TextCommon.h>
-	<Icons.h>
-	<MacErrors.h>
 
 1411795656 c:\openframeworks\libs\quicktime\include\aliases.h
 	<MacTypes.h>
@@ -10419,18 +10206,10 @@
 	<DateTimeUtils.h>
 	<Endian.h>
 
-<<<<<<< HEAD
-1420917382 c:\openframeworks\libs\quicktime\include\patches.h
-
-1420917382 c:\openframeworks\libs\quicktime\include\datetimeutils.h
-=======
 1411795655 c:\openframeworks\libs\quicktime\include\patches.h
 	<MacTypes.h>
 
 1411795655 c:\openframeworks\libs\quicktime\include\datetimeutils.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	<ConditionalMacros.h>
-	<MacTypes.h>
 
 1420917383 c:\openframeworks\libs\quicktime\include\endian.h
 	<ConditionalMacros.h>
@@ -10444,23 +10223,8 @@
 	<UTCUtils.h>
 	<Finder.h>
 
-<<<<<<< HEAD
-1420917382 c:\openframeworks\libs\quicktime\include\textcommon.h
-	<MacTypes.h>
-
-1420917382 c:\openframeworks\libs\quicktime\include\utcutils.h
-	<MacTypes.h>
-	<MacErrors.h>
-
-1420917382 c:\openframeworks\libs\quicktime\include\macerrors.h
-	<ConditionalMacros.h>
-
-1420917382 c:\openframeworks\libs\quicktime\include\finder.h
-	<MacTypes.h>
-
-1420917382 c:\openframeworks\libs\quicktime\include\appleevents.h
-=======
 1411795655 c:\openframeworks\libs\quicktime\include\textcommon.h
+	<MacTypes.h>
 	<MacTypes.h>
 	<MacTypes.h>
 	<MacTypes.h>
@@ -10472,70 +10236,31 @@
 	<MacErrors.h>
 	<MacTypes.h>
 	<MacErrors.h>
+	<MacTypes.h>
+	<MacErrors.h>
 
 1411795654 c:\openframeworks\libs\quicktime\include\macerrors.h
+	<ConditionalMacros.h>
 	<ConditionalMacros.h>
 	<ConditionalMacros.h>
 
 1411795655 c:\openframeworks\libs\quicktime\include\finder.h
 	<MacTypes.h>
 	<MacTypes.h>
+	<MacTypes.h>
 
 1411795654 c:\openframeworks\libs\quicktime\include\appleevents.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	<MacTypes.h>
-	<MixedMode.h>
-	<Notification.h>
-	<Events.h>
-	<AEDataModel.h>
 
 1411795652 c:\openframeworks\libs\quicktime\include\notification.h
 	<MacTypes.h>
 	<OSUtils.h>
-<<<<<<< HEAD
-	<MacTypes.h>
-	<OSUtils.h>
-	<MacTypes.h>
-	<OSUtils.h>
-
-1420917382 c:\openframeworks\libs\quicktime\include\events.h
-=======
 
 1411795652 c:\openframeworks\libs\quicktime\include\events.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	<OSUtils.h>
-	<Quickdraw.h>
-	<MacTypes.h>
-	<Endian.h>
 
-<<<<<<< HEAD
-1420917381 c:\openframeworks\libs\quicktime\include\quickdraw.h
-=======
 1411795652 c:\openframeworks\libs\quicktime\include\quickdraw.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	<Components.h>
-	<MacTypes.h>
-	<MixedMode.h>
-	<QuickdrawText.h>
 
-<<<<<<< HEAD
-1420917382 c:\openframeworks\libs\quicktime\include\components.h
-=======
 1411795654 c:\openframeworks\libs\quicktime\include\components.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	<MacErrors.h>
-	<MacTypes.h>
-	<MixedMode.h>
 
-<<<<<<< HEAD
-1420917382 c:\openframeworks\libs\quicktime\include\quickdrawtext.h
-
-1420917381 c:\openframeworks\libs\quicktime\include\aedatamodel.h
-	<MacTypes.h>
-	<MixedMode.h>
-
-1420917382 c:\openframeworks\libs\quicktime\include\collections.h
-=======
 1411795654 c:\openframeworks\libs\quicktime\include\quickdrawtext.h
 	<MacTypes.h>
 	<MixedMode.h>
@@ -10543,11 +10268,10 @@
 1411795652 c:\openframeworks\libs\quicktime\include\aedatamodel.h
 	<MacTypes.h>
 	<MixedMode.h>
-
-1411795654 c:\openframeworks\libs\quicktime\include\collections.h
 	<MacTypes.h>
 	<MixedMode.h>
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
+
+1411795654 c:\openframeworks\libs\quicktime\include\collections.h
 	<MacTypes.h>
 	<MixedMode.h>
 
@@ -12720,19 +12444,13 @@
 
 1429155941 source:c:\openframeworks\apps\game\ogpc_game\src\src-engine\enemyband.cpp
 
-<<<<<<< HEAD
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\icon.rc
-
-1429338580 source:c:\openframeworks\apps\finalgame\ogpc_game\src\main.cpp
-=======
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\icon.rc
 
-1429336849 source:c:\openframeworks\apps\finalgame\ogpc_game\src\main.cpp
+1429342627 source:c:\openframeworks\apps\finalgame\ogpc_game\src\main.cpp
 	"ofMain.h"
 	"ofApp.h"
 
-1429338820 c:\openframeworks\apps\finalgame\ogpc_game\src\ofapp.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
+1429339669 c:\openframeworks\apps\finalgame\ogpc_game\src\ofapp.h
 	"ofMain.h"
 	"src-Engine/EngineInclude.h"
 	"src-Game/GameMap.h"
@@ -12740,21 +12458,6 @@
 	"src-Game/LoadingScreen.h"
 	"src-Game/PauseMenu.h"
 
-<<<<<<< HEAD
-1429338580 c:\openframeworks\apps\finalgame\ogpc_game\src\ofapp.h
-=======
-1429333768 0fd4a9939e8e4b86e4fd020853dd18e189429
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"ofMain.h"
-	"src-Engine/EngineInclude.h"
-	"src-Game/GameMap.h"
-	"MainMenu.h"
-	"src-Game/LoadingScreen.h"
-	"src-Game/PauseMenu.h"
-	"ofApp.h"
-	"XML/src/ofxXmlSettings.h"
-
-<<<<<<< HEAD
 1429333768 0fd4a9939e8e4b86e4fd020853dd18e189429
 	"ofMain.h"
 	"src-Engine/EngineInclude.h"
@@ -12765,15 +12468,7 @@
 	"ofApp.h"
 	"XML/src/ofxXmlSettings.h"
 
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\engineinclude.h
-=======
 1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\engineinclude.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"ObjectManager.h"
-	"ResourceManager.h"
-	"TileManager.h"
-	"EngineMain.h"
-	"City.h"
 
 1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\objectmanager.h
 	"ofMain.h"
@@ -12857,92 +12552,43 @@
 	"Menu.h"
 	<Map>
 
-<<<<<<< HEAD
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\menu.h
-	"ofMain.h"
-	"MenuEntity.h"
-
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\menuentity.h
-	"ofMain.h"
-
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\simplebutton.h
-=======
 1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\menu.h
 	"ofMain.h"
 	"MenuEntity.h"
 	"ofMain.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 	"MenuEntity.h"
+	"ofMain.h"
 
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\slider.h
-	"ofMain.h"
-<<<<<<< HEAD
-=======
-	"ofMain.h"
+1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\menuentity.h
 	"ofMain.h"
 
 1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\simplebutton.h
 	"MenuEntity.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"MenuEntity.h"
+
+1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\slider.h
+	"ofMain.h"
 	"MenuEntity.h"
 
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\menubackground.h
-	"MenuEntity.h"
+1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\menubackground.h
 	"MenuEntity.h"
 
-<<<<<<< HEAD
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\hoverbutton.h
-	"MenuEntity.h"
-=======
 1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\hoverbutton.h
 	"MenuEntity.h"
+	"MenuEntity.h"
+
+1429242350 y.h"
 
 1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\piechart.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 	"MenuEntity.h"
 
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\piechart.h
+1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\textbox.h
 	"MenuEntity.h"
-<<<<<<< HEAD
-	"MenuEntity.h"
-	"MenuEntity.h"
-
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\textbox.h
-	"MenuEntity.h"
-	"MenuEntity.h"
-	"MenuEntity.h"
-
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\citymenu.h
-=======
 
 1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\citymenu.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"ofMain.h"
-	"../src-MenuAPI/MenuInclude.h"
-	"ResourceManager.h"
 
-<<<<<<< HEAD
-1429336963 c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\band.h
-=======
 1429338326 c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\band.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"ofMain.h"
-	"Tile.h"
-	"../src-Game/Vec2i.h"
-	"../src-MenuAPI/MenuInclude.h"
-	"../XML/src/ofxXmlSettings.h"
-	"ResourceManager.h"
-	"TileManager.h"
 
-<<<<<<< HEAD
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\bandmenu.h
-=======
 1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\bandmenu.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"ofMain.h"
-	"../src-MenuAPI/MenuInclude.h"
-	"ResourceManager.h"
 
 1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\utilmenus.h
 	"ofMain.h"
@@ -12966,52 +12612,8 @@
 	"../src-Engine/City.h"
 	"../src-Engine/Band.h"
 
-<<<<<<< HEAD
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\tile.h
-	"ofMain.h"
-
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\mainmenu.h
-	"ofMain.h"
-	"src-MenuAPI/MenuInclude.h"
-
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\loadingscreen.h
-	"ofMain.h"
-
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\pausemenu.h
-	"../src-MenuAPI/MenuInclude.h"
-
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\mainmenu.cpp
-	"MainMenu.h"
-
-1429336963 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\band.cpp
-	"Band.h"
-	"sstream"
-
-1429246901 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\bandmenu.cpp
-	"BandMenu.h"
-
-1429331192 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\city.cpp
-	"City.h"
-	<sstream>
-
-1429338341 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\citymenu.cpp
-	"CityMenu.h"
-
-1429336963 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\enemyband.cpp
-	"EnemyBand.h"
-
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\enginemain.cpp
-	"EngineMain.h"
-	"../XML/src/ofxXmlSettings.h"
-
-1429323873 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\objectmanager.cpp
-	"ObjectManager.h"
-
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\objectvector.cpp
-
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\resourcemanager.cpp
-=======
 1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\tile.h
+	"ofMain.h"
 	"ofMain.h"
 	"ofMain.h"
 	"ofMain.h"
@@ -13023,8 +12625,11 @@
 	"src-MenuAPI/MenuInclude.h"
 	"ofMain.h"
 	"src-MenuAPI/MenuInclude.h"
+	"ofMain.h"
+	"src-MenuAPI/MenuInclude.h"
 
 1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\loadingscreen.h
+	"ofMain.h"
 	"ofMain.h"
 	"ofMain.h"
 	"ofMain.h"
@@ -13033,17 +12638,19 @@
 	"../src-MenuAPI/MenuInclude.h"
 	"../src-MenuAPI/MenuInclude.h"
 	"../src-MenuAPI/MenuInclude.h"
+	"../src-MenuAPI/MenuInclude.h"
 
-1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\mainmenu.cpp
-	"MainMenu.h"
-	"MainMenu.h"
+1429342585 source:c:\openframeworks\apps\finalgame\ogpc_game\src\mainmenu.cpp
 	"MainMenu.h"
 
 1429338675 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\band.cpp
 	"Band.h"
 	"sstream"
+	"Band.h"
+	"sstream"
 
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\bandmenu.cpp
+	"BandMenu.h"
 	"BandMenu.h"
 	"BandMenu.h"
 	"BandMenu.h"
@@ -13055,16 +12662,19 @@
 	<sstream>
 	"City.h"
 	<sstream>
+	"City.h"
+	<sstream>
 
-1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\citymenu.cpp
-	"CityMenu.h"
-	"CityMenu.h"
+1429339448 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\citymenu.cpp
 	"CityMenu.h"
 
 1429338675 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\enemyband.cpp
 	"EnemyBand.h"
+	"EnemyBand.h"
 
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\enginemain.cpp
+	"EngineMain.h"
+	"../XML/src/ofxXmlSettings.h"
 	"EngineMain.h"
 	"../XML/src/ofxXmlSettings.h"
 	"EngineMain.h"
@@ -13075,126 +12685,68 @@
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\objectmanager.cpp
 	"ObjectManager.h"
 	"ObjectManager.h"
+	"ObjectManager.h"
 
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\objectvector.cpp
 
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\resourcemanager.cpp
 	"ResourceManager.h"
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"ResourceManager.h"
 
-1429323873 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\tile.cpp
+1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\tile.cpp
 	"Tile.h"
 
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\tilemanager.cpp
+1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\tilemanager.cpp
 	"TileManager.h"
 	"../XML/src/ofxXmlSettings.h"
 
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\utilmenus.cpp
+1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\utilmenus.cpp
 	"UtilMenus.h"
 
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\citymenu.cpp
+1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\citymenu.cpp
 
-<<<<<<< HEAD
-1429338351 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\gamemap.cpp
-=======
-1429338675 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\gamemap.cpp
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
+1429339448 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\gamemap.cpp
 	"GameMap.h"
 	<sstream>
 	"../XML/src/ofxXmlSettings.h"
 	"simplexnoise.h"
 
-<<<<<<< HEAD
-1429242350 c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\simplexnoise.h
-=======
 1429326441 c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\simplexnoise.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
 
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\pausemenu.cpp
-	"PauseMenu.h"
+1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\pausemenu.cpp
 	"PauseMenu.h"
 
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\simplexnoise.cpp
+1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\simplexnoise.cpp
 	<math.h>
 	"simplexnoise.h"
-<<<<<<< HEAD
-	<math.h>
-	"simplexnoise.h"
-	<math.h>
-	"simplexnoise.h"
-
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\tile.cpp
-	"Tile.h"
-	"Tile.h"
-	"Tile.h"
-
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\vec2i.cpp
-	"Vec2i.h"
-	"Vec2i.h"
-	"Vec2i.h"
-
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\hoverbutton.cpp
-	"HoverButton.h"
-	"HoverButton.h"
-	"HoverButton.h"
-
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\menu.cpp
-	"Menu.h"
-	"Menu.h"
-	"Menu.h"
-
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\menubackground.cpp
-	"MenuBackground.h"
-	"MenuBackground.h"
-	"MenuBackground.h"
-
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\menuentity.cpp
-
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\menumanager.cpp
-	"MenuManager.h"
-	<string>
-	"MenuManager.h"
-	<string>
-	"MenuManager.h"
-	<string>
-
-1429331192 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\piechart.cpp
-	"PieChart.h"
-	"PieChart.h"
-	"PieChart.h"
-
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\simplebutton.cpp
-	"SimpleButton.h"
-	"SimpleButton.h"
-	"SimpleButton.h"
-
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\slider.cpp
-	"Slider.h"
-	"Slider.h"
-	"Slider.h"
-
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\textbox.cpp
-	"TextBox.h"
-	"TextBox.h"
-	"TextBox.h"
-
-1429242350 source:c:\openframeworks\apps\finalgame\ogpc_game\src\xml\libs\tinyxml.cpp
-=======
 
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\tile.cpp
+	"Tile.h"
+	"Tile.h"
+	"Tile.h"
 	"Tile.h"
 
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-game\vec2i.cpp
 	"Vec2i.h"
+	"Vec2i.h"
+	"Vec2i.h"
+	"Vec2i.h"
 
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\hoverbutton.cpp
+	"HoverButton.h"
+	"HoverButton.h"
+	"HoverButton.h"
 	"HoverButton.h"
 
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\menu.cpp
 	"Menu.h"
+	"Menu.h"
+	"Menu.h"
+	"Menu.h"
 
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\menubackground.cpp
+	"MenuBackground.h"
+	"MenuBackground.h"
+	"MenuBackground.h"
 	"MenuBackground.h"
 
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\menuentity.cpp
@@ -13202,25 +12754,38 @@
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\menumanager.cpp
 	"MenuManager.h"
 	<string>
+	"MenuManager.h"
+	<string>
+	"MenuManager.h"
+	<string>
+	"MenuManager.h"
+	<string>
 
 1429329951 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\piechart.cpp
+	"PieChart.h"
+	"PieChart.h"
+	"PieChart.h"
 	"PieChart.h"
 
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\simplebutton.cpp
 	"SimpleButton.h"
+	"SimpleButton.h"
+	"SimpleButton.h"
+	"SimpleButton.h"
 
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\slider.cpp
+	"Slider.h"
+	"Slider.h"
+	"Slider.h"
 	"Slider.h"
 
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\src-menuapi\textbox.cpp
 	"TextBox.h"
+	"TextBox.h"
+	"TextBox.h"
+	"TextBox.h"
 
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\xml\libs\tinyxml.cpp
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	<ctype.h>
-	<sstream>
-	<iostream>
-	"tinyxml.h"
 
 1429326441 source:c:\openframeworks\apps\finalgame\ogpc_game\src\xml\libs\tinyxmlerror.cpp
 	"tinyxml.h"
@@ -13239,24 +12804,11 @@
 	<string>
 	<iostream>
 
-<<<<<<< HEAD
-1429335712 source:c:\openframeworks\apps\finalgame\ogpc_game\src\ofapp.cpp
+1429338413 source:c:\openframeworks\apps\finalgame\ogpc_game\src\ofapp.cpp
 	"ofApp.h"
 	"XML/src/ofxXmlSettings.h"
-
-1429336963 c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\enemyband.h
-=======
-1429338413 source:c:\openframeworks\apps\finalgame\ogpc_game\src\ofapp.cpp
 	"ofApp.h"
 	"XML/src/ofxXmlSettings.h"
 
 1429338675 c:\openframeworks\apps\finalgame\ogpc_game\src\src-engine\enemyband.h
->>>>>>> be9e7fc3883018d2b2bfd625a91b99c829315dba
-	"ofMain.h"
-	"Tile.h"
-	"../src-Game/Vec2i.h"
-	"../src-MenuAPI/MenuInclude.h"
-	"../XML/src/ofxXmlSettings.h"
-	"ResourceManager.h"
-	"Band.h"
 
