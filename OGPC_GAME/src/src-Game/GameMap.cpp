@@ -54,8 +54,8 @@ void GameMap::generateMap()
     mapTextureNames("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\tiles");
     genMapTwo();
     objectFile.addValue("numObjectTypes", 2);
-    genBand();
     genCities();
+    genBand();
 
 }
 
@@ -529,7 +529,7 @@ void GameMap::genBand()
     objectFile.pushTag("type", 1);
     objectFile.addValue("name", "Band");
     objectFile.addValue("numOf", 1);
-    for(int ii = 0; ii < 1; ii++)
+    for(int ii = 0; ii < 5; ii++)
     {
         objectFile.addTag("object");
         objectFile.pushTag("object", ii);
@@ -542,8 +542,6 @@ void GameMap::genBand()
         Band tmp(false, false, 10, 3, "", name, "selectTile", proposedIndex);
         tmp.saveObjectData(objectFile);
         objectFile.popTag();
-
-
     }
     objectFile.popTag();
     objectFile.saveFile("objects.xml");

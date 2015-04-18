@@ -11,7 +11,14 @@ void ofApp::setup(){
     ofSeedRandom();
     mapDim = ofVec2f(100, 100);
     tileDim = ofVec2f(32, 32);
-    mainSound.loadSound("MenuMusic.mp3");
+    mainSound.loadSound("Music1.mp3");
+    secondSound.loadSound("Music2.mp3");
+    menuSound.loadSound("Music3.mp3");
+    mainSound.setLoop(false);
+    menuSound.setLoop(true);
+    secondSound.setLoop(false);
+    soundIsPlaying == false;
+
 }
 
 //--------------------------------------------------------------
@@ -23,6 +30,8 @@ void ofApp::update(){
         {
             first = false;
             startingMenu = new MainMenu;
+            ofSoundSetVolume(.25f);
+            menuSound.play();
         }
         if(startingMenu->update(mousePos, clicked, pressed))
         {
@@ -36,7 +45,7 @@ void ofApp::update(){
         if(first == true)
         {
             resources = new ResourceManager;
-
+            resources->addTexture("bandTextures/selectTile.png", "selectTile");
           //  if(ofRandom(69) < 4.2)
           //  {
          //       resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\tiles\\memes");
@@ -52,7 +61,6 @@ void ofApp::update(){
             resources->addFont("monterey/MontereyFLF-Bold.ttf", "CMFont", 12);
             resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\BandTextures");
             resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\TurnMenuTextures");
-            resources->addSound("MainMenu.mp3", "MainMusic", true);
 
             gameEngine = new Engine;
             mapGenerator = new GameMap;
@@ -66,8 +74,10 @@ void ofApp::update(){
             first = false;
         }
         loading->update();
+        ofSoundUpdate();
         if(!loader->isThreadRunning())
         {
+            menuSound.stop();
             currentState = GAME;
         }
     }
@@ -78,8 +88,9 @@ void ofApp::update(){
             //everything is allready loaded
             ofSoundSetVolume(.25f);
             //mainSound = resources->getSound("MainMusic");
-            mainSound.setLoop(true);
-
+            secondSound.setVolume(.25f);
+            mainSound.setVolume(.25f);
+            mainSound.play();
             first = false;
         }
 
@@ -95,10 +106,22 @@ void ofApp::update(){
         else
         {
             loader->update(viewPos);
-            if(!mainSound.getIsPlaying())
+            if(secondSound.getIsPlaying() || mainSound.getIsPlaying())
             {
-                mainSound.play();
-                mainSound.setVolume(.25f);
+                soundIsPlaying == true;
+            }
+            if(!soundIsPlaying)
+            {
+                mainSound.stop();
+                secondSound.stop();
+                if(ofRandom(100) < 50)
+                {
+                    mainSound.play();
+                }
+                else
+                {
+                    secondSound.stop();
+                }
             }
             adjustedMousePos = mousePos - viewPos;
             gameEngine->update(adjustedMousePos, clicked, pressed);

@@ -17,7 +17,7 @@ public:
         ofSeedRandom();
         if(isThreadRunning())
         {
-            M->generateMap();
+            //M->generateMap();
             E->setup("tiles.xml", "game.xml", "objects.xml", viewPos, R);
             Sleep(1000);
             stopThread();
@@ -74,7 +74,11 @@ class ofApp : public ofBaseApp{
         LoadingScreen* loading;
         ResourceManager* resources;
         PauseMenu* pause;
+
         ofSoundPlayer mainSound;
+        ofSoundPlayer menuSound;
+        ofSoundPlayer secondSound;
+        bool soundIsPlaying;
 
         enum GameStates{MAINMENU, LOADING, GAME};
 
