@@ -31,7 +31,7 @@ Band::Band() // empty constructor
 }
 
 //you can change anything that would be have a possibility of being different at the start, including arbitrary things
-Band::Band(bool incog, bool incarn, int startnum, int mov, std::string incarnName, std::string TN[], std::string HLTName, int index /*set as "" if incarn is false*/)
+Band::Band(bool incog, bool incarn, int startnum, int mov, std::string incarnName, std::string TN[], std::string HLTName, std::string selectName, int index /*set as "" if incarn is false*/)
 {
     incognito = incog;
     incarnation = incarn;
@@ -52,6 +52,7 @@ Band::Band(bool incog, bool incarn, int startnum, int mov, std::string incarnNam
         TextureNames[i] = TN[i];
     }
     HLTexName = HLTexName;
+    SLTexName = selectName;
 }
 
 
@@ -111,6 +112,11 @@ void Band::draw() // draws the current texture at the bound tile
 
         BandTextures[bandType]->draw(boundTile->getLocation());
 
+    }
+
+    if (selected == true)
+    {
+        SLTex->draw(boundTile->getLocation());
     }
 }
 
@@ -217,6 +223,7 @@ void Band::findActions()
         }
 
     }
+
     else
     {
         actionState = 0;
@@ -238,6 +245,13 @@ int Band::update(ofVec2f& mousePos, bool& clicked, bool& pressed)
     hoveredTile = ofVec2i(-1,-1);
 
     findActions();
+    if (movable == false)
+    {
+        if (actionState != 1)
+        {
+            actionButtons[0]->setClicked(false);
+        }
+    }
     if (startup == true)
     {
         turnlyUpdate();
@@ -301,11 +315,11 @@ int Band::update(ofVec2f& mousePos, bool& clicked, bool& pressed)
                     boundTileCoords = temptile;
                     boundTileIndex = allTiles->tileIndiceByArrayCoords(tm);
                     actionState  = 1;
-                    actionButtons[0]->setClicked(false);
+
                     movable = false;
                 }
             }
-
+            actionButtons[0]->setClicked(false);
         }
         return -2;
     }
@@ -488,23 +502,24 @@ bool Band::getIncognito()
 
 
 
-void Band::setExtremeTiles(ofVec2i v1, ofVec2i v2)
-{
-    extremeTiles[0] = v1;
-    extremeTiles[1] = v2;
-    int temp = fabs(extremeTiles[1].x - extremeTiles[0].x);
-    boundTileCoords = ofVec2i(boundTileIndex % temp, boundTileIndex / temp);
-
-}
+//void Band::setExtremeTiles(ofVec2i v1, ofVec2i v2)
+//{
+//    extremeTiles[0] = v1;
+//    extremeTiles[1] = v2;
+//    int temp = fabs(extremeTiles[1].x - extremeTiles[0].x);
+//    boundTileCoords = ofVec2i(boundTileIndex % temp, boundTileIndex / temp);
+//
+//}
 
 //set ALL of the textures
 void Band::setTextures(ResourceManager* res)
 {
-    bandType = 1;
+    bandType = 0; // why?
     for (int i = 0; i < 4; i++)
     {
         BandTextures[i] = &res->getTextureReference(TextureNames[i]);
         HLTex = &res->getTextureReference(HLTexName);
+        SLTex = &res->getTextureReference(SLTexName);
     }
     TLpos = ofVec2f(boundTile->getLocation().x, boundTile->getLocation().y);
     BRpos = ofVec2f(boundTile->getLocation().x + BandTextures[bandType]->getWidth(), boundTile->getLocation().y + BandTextures[bandType]->getHeight());
