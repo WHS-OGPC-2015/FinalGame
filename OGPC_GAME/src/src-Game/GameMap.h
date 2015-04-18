@@ -5,6 +5,7 @@
 #include "Vec2i.h"
 #include "../src-Engine/City.h"
 #include "../src-Engine/Band.h"
+#include "../src-Engine/EnemyBand.h"
 //#include "objects/City.h" include this once objects are moved into game source
 
 
@@ -25,6 +26,7 @@ public:
     void generateMap();
     void genCities();
     void genBand();
+    void genEnemyBand();
     std::string randomName();
 
 private:

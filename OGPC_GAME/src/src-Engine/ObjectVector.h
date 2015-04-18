@@ -58,6 +58,11 @@ public:
         return vec;
     }
 
+    std::vector<T>* getVectorPointer()
+    {
+        return &vec;
+    }
+
     void updateAll(ofVec2f& mousePos, bool& clicked, bool& pressed)
     {
         for(int ii = 0; ii < vec.size(); ii++)

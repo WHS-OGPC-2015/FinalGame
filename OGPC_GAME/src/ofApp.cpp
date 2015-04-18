@@ -54,7 +54,7 @@ void ofApp::update(){
           //  {
                 resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\tiles");
            // }
-
+            resources->addTexture("EnemyBandTextures/EnemyBand.png", "EnemyBand");
             resources->addTexture("City.png", "City");
             resources->addTexture("CityHover.png", "CityHover");
             resources->addTexture("CMBackground.png", "CMBackground");
