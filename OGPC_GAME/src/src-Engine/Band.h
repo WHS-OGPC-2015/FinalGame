@@ -49,7 +49,7 @@ public:
     void swapIncognito();
     bool getIncognito();
 
-    void setExtremeTiles(ofVec2i v1, ofVec2i v2);
+    //void setExtremeTiles(ofVec2i v1, ofVec2i v2);
 
     void resetBandType();
     int getBandType();

@@ -217,6 +217,7 @@ void Band::findActions()
         }
 
     }
+
     else
     {
         actionState = 0;
@@ -238,6 +239,13 @@ int Band::update(ofVec2f& mousePos, bool& clicked, bool& pressed)
     hoveredTile = ofVec2i(-1,-1);
 
     findActions();
+    if (movable == false)
+    {
+        if (actionState != 1)
+        {
+            actionButtons[0]->setClicked(false);
+        }
+    }
     if (startup == true)
     {
         turnlyUpdate();
@@ -301,11 +309,11 @@ int Band::update(ofVec2f& mousePos, bool& clicked, bool& pressed)
                     boundTileCoords = temptile;
                     boundTileIndex = allTiles->tileIndiceByArrayCoords(tm);
                     actionState  = 1;
-                    actionButtons[0]->setClicked(false);
+
                     movable = false;
                 }
             }
-
+            actionButtons[0]->setClicked(false);
         }
         return -2;
     }
@@ -488,19 +496,19 @@ bool Band::getIncognito()
 
 
 
-void Band::setExtremeTiles(ofVec2i v1, ofVec2i v2)
-{
-    extremeTiles[0] = v1;
-    extremeTiles[1] = v2;
-    int temp = fabs(extremeTiles[1].x - extremeTiles[0].x);
-    boundTileCoords = ofVec2i(boundTileIndex % temp, boundTileIndex / temp);
-
-}
+//void Band::setExtremeTiles(ofVec2i v1, ofVec2i v2)
+//{
+//    extremeTiles[0] = v1;
+//    extremeTiles[1] = v2;
+//    int temp = fabs(extremeTiles[1].x - extremeTiles[0].x);
+//    boundTileCoords = ofVec2i(boundTileIndex % temp, boundTileIndex / temp);
+//
+//}
 
 //set ALL of the textures
 void Band::setTextures(ResourceManager* res)
 {
-    bandType = 1;
+    bandType = 0; // why?
     for (int i = 0; i < 4; i++)
     {
         BandTextures[i] = &res->getTextureReference(TextureNames[i]);
