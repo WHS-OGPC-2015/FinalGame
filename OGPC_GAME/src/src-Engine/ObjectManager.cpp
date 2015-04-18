@@ -55,7 +55,7 @@ void ObjectManager::loadFromFile(std::string filePath)
                     }
 
                 }
-                if(type == "Band")
+                else if(type == "Band")
                 {
                     addObjectType<Band>("Band", numType);
                     oVector<Band>* C = getPointerToChildByName<Band>("Band");
@@ -69,6 +69,20 @@ void ObjectManager::loadFromFile(std::string filePath)
                         tmp->setTextures(recMan);
                         tmp->setBandMenu(objectMenus->getMenuPointerByName("BandMenu"));
 
+                    }
+                }
+                else if(type == "EnemyBand")
+                {
+                    addObjectType<EnemyBand>("EnemyBand", numType);
+                    oVector<EnemyBand>* C = getPointerToChildByName<EnemyBand>("EnemyBand");
+                    oVector<Band>* bandThing = getPointerToChildByName<Band>("Band");
+                    for(int ii = 0; ii<numType; ii++)
+                    {
+                        EnemyBand* tmp = C->getObject(ii);
+                         tmp->setTileManager(tiles);
+                         tmp->setTile(tmp->getIndex());
+                         tmp->setTexture(recMan);
+                        tmp->setBandVec(bandThing->getVectorPointer());
                     }
                 }
                 /*

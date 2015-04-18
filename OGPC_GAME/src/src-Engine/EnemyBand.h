@@ -15,7 +15,7 @@ public:
     EnemyBand(std::string str, int i);
 
     void draw();
-    void update();
+    void update(ofVec2f&, bool&, bool&);
     void turnlyUpdate();
 
     void setTexture(ResourceManager* res);

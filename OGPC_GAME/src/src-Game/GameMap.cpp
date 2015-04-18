@@ -53,9 +53,10 @@ void GameMap::generateMap()
 {
     mapTextureNames("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\tiles");
     genMapTwo();
-    objectFile.addValue("numObjectTypes", 2);
+    objectFile.addValue("numObjectTypes", 3);
     genCities();
     genBand();
+    genEnemyBand();
 
 }
 
@@ -544,35 +545,29 @@ void GameMap::genBand()
         objectFile.popTag();
     }
     objectFile.popTag();
-    objectFile.saveFile("objects.xml");
+    //objectFile.saveFile("objects.xml");
 }
 
-//void genEnemyBand()
-//{
-//        std::string type = "Band";
-//    objectFile.addTag("type");
-//    objectFile.pushTag("type", 1);
-//    objectFile.addValue("name", "Band");
-//    objectFile.addValue("numOf", 1);
-//    for(int ii = 0; ii < 5; ii++)
-//    {
-//        objectFile.addTag("object");
-//        objectFile.pushTag("object", ii);
-//        int proposedIndex = ofRandom(0, (mapSize.x*mapSize.y)-1);
-////           while(altitudes[proposedIndex] < 2 || altitudes[proposedIndex] > 5)
-////           {
-////               proposedIndex = ofRandom(altitudes.size());
-////           }
-//        std::string name[4] = {"BandNormal", "BandIncog", "BandIncarn", "BandIncarnIncog"};
-//        Band tmp(false, false, 10, 3, "", name, "selectTile", proposedIndex);
-//        tmp.saveObjectData(objectFile);
-//        objectFile.popTag();
-//    }
-//    objectFile.popTag();
-//    objectFile.saveFile("objects.xml");
-//}
+void GameMap::genEnemyBand()
+{
+    std::string type = "EnemyBand";
+    objectFile.addTag("type");
+    objectFile.pushTag("type", 2);
+    objectFile.addValue("name", "EnemyBand");
+    objectFile.addValue("numOf", 1);
+    for(int ii = 0; ii < 1; ii++)
+    {
+        objectFile.addTag("object");
+        objectFile.pushTag("object", ii);
+        int proposedIndex = ofRandom(0, (mapSize.x*mapSize.y)-1);
 
-
+        EnemyBand tmp("EnemyBand", proposedIndex);
+        tmp.saveObjectData(objectFile);
+        objectFile.popTag();
+    }
+    objectFile.popTag();
+    objectFile.saveFile("objects.xml");
+}
 
 
 

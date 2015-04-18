@@ -19,7 +19,7 @@ EnemyBand::EnemyBand(std::string str, int i)
     boundTileIndex = i;
 }
 //---------------------------------------------------
-void EnemyBand::update()
+void EnemyBand::update(ofVec2f&, bool& clicked, bool&)
 {
 
 }
@@ -96,7 +96,7 @@ void EnemyBand::setBandVec(vector<Band>* vec)
 
 void EnemyBand::draw()
 {
-
+    enemyTexture->draw(boundTile->getLocation());
 }
 
 

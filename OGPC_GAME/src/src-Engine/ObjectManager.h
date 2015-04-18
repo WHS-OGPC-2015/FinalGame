@@ -9,6 +9,7 @@
 #include "Band.h"
 #include "BandMenu.h"
 #include "UtilMenus.h"
+#include "EnemyBand.h"
 class ObjectManager
 {
 
