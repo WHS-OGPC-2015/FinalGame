@@ -36,18 +36,19 @@ MainMenu::MainMenu() // in the constructor, we create EVERYTHING in the main men
 
     Manager->addTexture("CreditsBackground", "Credits(1).png");
     Manager->addTexture("MainMenuBackground", "MainMenuBG.png");
+    Manager->addTexture("PauseBackground", "PauseBackground.png");
 
     Manager->addTexture("StandardNormal", "StandardNormal.png");
     Manager->addTexture("StandardPressed", "StandardPressed.png");
     Manager->addTexture("StandardHovered", "StandardHovered.png");
 
-    Manager->addTexture("YesExitNormal", "YesButton.png");
-    Manager->addTexture("YesExitPressed", "YesButton.png");
-    Manager->addTexture("YesExitHovered", "YesButton.png");
+    Manager->addTexture("YesExitNormal", "YesButtonNormal.png");
+    Manager->addTexture("YesExitPressed", "YesButtonPressed.png");
+    Manager->addTexture("YesExitHovered", "YesButtonHovered.png");
 
-    Manager->addTexture("NoExitNormal", "NormalNoButton.png");
-    Manager->addTexture("NoExitPressed", "NormalNoButton.png");
-    Manager->addTexture("NoExitHovered", "NormalNoButton.png");
+    Manager->addTexture("NoExitNormal", "NoButtonNormal.png");
+    Manager->addTexture("NoExitPressed", "NoButtonPressed.png");
+    Manager->addTexture("NoExitHovered", "NoButtonHovered.png");
 
     Manager->addTexture("ReallyQuitBackground", "ReallyQuitBackground.png");
 
@@ -117,8 +118,9 @@ MainMenu::MainMenu() // in the constructor, we create EVERYTHING in the main men
                                   );
     MenuEntity *reallyQuitBG;//quitMenu background
     reallyQuitBG = new MenuBackground(
-                            ofVec2f(ofGetWindowWidth()/2, ofGetWindowHeight()/4),
-                            Manager->getTexturePointer("ReallyQuitBackground")
+                            ofVec2f(ofGetWindowWidth() * 3/4, ofGetWindowHeight()/4),
+                            Manager->getTexturePointer("PauseBackground"),
+                                      false
                                     );
 
 
@@ -206,7 +208,7 @@ MainMenu::MainMenu() // in the constructor, we create EVERYTHING in the main men
 
     MenuEntity *yesExitButton; //exit game button
     yesExitButton = new HoverButton(
-                            ofVec2f(ofGetWindowWidth()/4, ofGetWindowHeight()*2/3),
+                            ofVec2f(ofGetWindowWidth()*3/4, ofGetWindowHeight()*1/5),
                             Manager->getTexturePointer("YesExitNormal"),
                             Manager->getTexturePointer("YesExitHovered"),
                             Manager->getTexturePointer("YesExitPressed"),
@@ -217,7 +219,7 @@ MainMenu::MainMenu() // in the constructor, we create EVERYTHING in the main men
 
     MenuEntity *noExitButton; //return to main menu button
     noExitButton = new HoverButton(
-                            ofVec2f(ofGetWindowWidth()*3/4, ofGetWindowHeight()*2/3),
+                            ofVec2f(ofGetWindowWidth() * 3/4, ofGetWindowHeight()*2/5),
                             Manager->getTexturePointer("NoExitNormal"),
                             Manager->getTexturePointer("NoExitHovered"),
                             Manager->getTexturePointer("NoExitPressed"),
@@ -332,7 +334,7 @@ bool MainMenu::update(ofVec2f& mousePos, bool& clicked, bool& pressed) // In Upd
          }
          // This else if statement is more common than the previous if statement
 
-         else if (defaultMenu->isActive() == true and optionsMenu->isActive() == false and OptionsBut->getEventDataInt() > 2) // translation: if you are in the default menu,
+         else if (defaultMenu->isActive() == true and optionsMenu->isActive() == false and OptionsBut->getEventDataInt() > 2 and quitGameMenu->isActive() == false) // translation: if you are in the default menu,
          {
              OptionsBut->setClicked(false);// and you hit the options button, the following happens:
              optionsMenu->setActive(); // the options menu pops up
@@ -342,7 +344,7 @@ bool MainMenu::update(ofVec2f& mousePos, bool& clicked, bool& pressed) // In Upd
 
 
          // this if deals with the start game button
-         if (StartGameButton->getEventDataInt() > 2)
+         if (StartGameButton->getEventDataInt() > 2 and quitGameMenu->isActive() == false)
          {
              StartGameButton->setClicked(false);
              defaultMenu->setInactive();
@@ -371,7 +373,7 @@ bool MainMenu::update(ofVec2f& mousePos, bool& clicked, bool& pressed) // In Upd
          {
              quitGameMenu->setActive();
              QuitGameBut->setClicked(false);
-             defaultMenu->setInactive();
+//             defaultMenu->setInactive();
          }
 
          if(quitGameMenu->isActive() == true)
