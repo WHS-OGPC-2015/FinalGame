@@ -20,7 +20,7 @@ PieChart::PieChart(double tot, double dep, double radi, ofVec2f posi, ofColor c1
     colors[1] = c2;
     arc.setCircleResolution(360);
     arc.arc(pos.x, pos.y, rad, rad, pi/2*(180/pi), (pi/2+(rati*2*pi))*(180/pi));
-    std::cout << rati << std::endl;
+//    std::cout << rati << std::endl;
 }
 
 
@@ -28,7 +28,7 @@ void PieChart::setVariables(double dub, double tot)
 {
     depVar = dub;
     total = tot;
-    std::cout << dub << " " << tot << std::endl;
+  //  std::cout << dub << " " << tot << std::endl;
     rati = depVar/total;
     arc.clear();
     arc.setFillColor(colors[0]);

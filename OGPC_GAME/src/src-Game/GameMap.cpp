@@ -54,8 +54,8 @@ void GameMap::generateMap()
     mapTextureNames("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\tiles");
     genMapTwo();
     objectFile.addValue("numObjectTypes", 2);
-    genBand();
     genCities();
+    genBand();
 
 }
 
