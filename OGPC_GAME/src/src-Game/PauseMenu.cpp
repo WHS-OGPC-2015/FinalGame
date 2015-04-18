@@ -9,9 +9,17 @@ PauseMenu::PauseMenu()
     Menu defaultMenu(ofVec2f(xpos, ypos));
     Menu opMenu(ofVec2f(xpos, ypos));
                                                                     //adding textures and fonts to the manager
-    PauseManager->addTexture("StandardNormal", "StandardNormal.png");
-    PauseManager->addTexture("StandardPressed", "StandardPressed.png");
-    PauseManager->addTexture("StandardHovered", "StandardHovered.png");
+    PauseManager->addTexture("ResumeButtonNormal", "ResumeButtonNormal.png");
+    PauseManager->addTexture("ResumeButtonHovered", "ResumeButtonHovered.png");
+    PauseManager->addTexture("ResumeButtonPressed", "ResumeButtonPressed.png");
+
+    PauseManager->addTexture("OptionsButtonNormal", "OptionsButtonNormal.png");
+    PauseManager->addTexture("OptionsButtonHovered", "OptionsButtonHoveredl.png");
+    PauseManager->addTexture("OptionsButtonPressed", "OptionsButtonPressed.png");
+
+    PauseManager->addTexture("BackButtonNormal", "QuitButtonNormal.png");
+    PauseManager->addTexture("BackButtonHovered", "QuitButtonHovered.png");
+    PauseManager->addTexture("BackButtonPressed", "QuitButtonPressed.png");
 
     PauseManager->addTexture("PauseBackground" , "PauseBackground.png");
     PauseManager->addFont("NormalFont", "MySimpleFont.ttf", 16);
@@ -26,37 +34,36 @@ PauseMenu::PauseMenu()
     MenuEntity *ResumeBut;
     ResumeBut = new HoverButton(
                             ofVec2f(ofGetWindowWidth()/2, (ofGetScreenHeight()/2)-150),
-                            PauseManager->getTexturePointer("StandardNormal.png"),
-                            PauseManager->getTexturePointer("StandardHovered.png"),
-                            PauseManager->getTexturePointer("StandardPressed.png"),
-                            PauseManager->getTexturePointer("StandardPressed.png"),
-                            PauseManager->getTexturePointer("StandardPressed.png"),
-                            PauseManager->getTexturePointer("StandardPressed.png"),
+                            PauseManager->getTexturePointer("ResumeButtonNormal"),
+                            PauseManager->getTexturePointer("ResumeButtonHovered"),
+                            PauseManager->getTexturePointer("ResumeButtonPressed"),
+                            PauseManager->getTexturePointer("ResumeButtonPressed"),
+                            PauseManager->getTexturePointer("ResumeButtonPressed"),
+                            PauseManager->getTexturePointer("ResumeButtonPressed"),
                             PauseManager->getFontPointer("NormalFont"),
                                 ""
                                 );
     MenuEntity *OptionsBut;
     OptionsBut = new HoverButton(
                             ofVec2f(ofGetWindowWidth()/2, ofGetScreenHeight()/2),
-                            PauseManager->getTexturePointer("StandardNormal.png"),
-                            PauseManager->getTexturePointer("StandardHovered.png"),
-                            PauseManager->getTexturePointer("StandardPressed.png"),
-                            PauseManager->getTexturePointer("StandardPressed.png"),
-                            PauseManager->getTexturePointer("StandardPressed.png"),
-                            PauseManager->getTexturePointer("StandardPressed.png"),
+                            PauseManager->getTexturePointer("OptionsButtonNormal"),
+                            PauseManager->getTexturePointer("OptionsButtonHovered"),
+                            PauseManager->getTexturePointer("OptionsButtonPressed"),
+                            PauseManager->getTexturePointer("OptionsButtonPressed"),
+                            PauseManager->getTexturePointer("OptionsButtonPressed"),
+                            PauseManager->getTexturePointer("OptionsButtonPressed"),
                             PauseManager->getFontPointer("NormalFont"),
                                  ""
                                 );
-
     MenuEntity *QuitBut;
     QuitBut = new HoverButton(
                             ofVec2f(ofGetWindowWidth()/2, (ofGetScreenHeight()/2)+150),
-                            PauseManager->getTexturePointer("StandardNormal.png"),
-                            PauseManager->getTexturePointer("StandardHovered.png"),
-                            PauseManager->getTexturePointer("StandardPressed.png"),
-                            PauseManager->getTexturePointer("StandardPressed.png"),
-                            PauseManager->getTexturePointer("StandardPressed.png"),
-                            PauseManager->getTexturePointer("StandardPressed.png"),
+                            PauseManager->getTexturePointer("BackButtonNormal"),
+                            PauseManager->getTexturePointer("BackButtonHovered"),
+                            PauseManager->getTexturePointer("BackButtonPressed"),
+                            PauseManager->getTexturePointer("BackButtonPressed"),
+                            PauseManager->getTexturePointer("BackButtonPressed"),
+                            PauseManager->getTexturePointer("BackButtonPressed"),
                             PauseManager->getFontPointer("NormalFont"),
                               ""
                                 );
@@ -90,6 +97,7 @@ int PauseMenu::update(ofVec2f& pos, bool c, bool n)
         }
         else if(Resume->getEventDataInt() > 2)//return 1 to go back to game
         {
+            Resume->setClicked(false);
             toggleActive();
         }
     }

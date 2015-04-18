@@ -31,4 +31,5 @@ private:
    HoverButton* YesQuitBut;
    HoverButton* NoQuitBut;
     Slider* BrightnessSlider;
+    Slider* VolumeSlider;
 };

@@ -24,7 +24,7 @@ City::City()
     drawMenu = false;
     selected = false;
     hovered = false;
-    strength = 15;
+    strength = 20;
     bandAccel = 0;
 }
 

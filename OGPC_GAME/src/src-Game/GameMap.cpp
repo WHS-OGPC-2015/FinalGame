@@ -554,8 +554,8 @@ void GameMap::genEnemyBand()
     objectFile.addTag("type");
     objectFile.pushTag("type", 2);
     objectFile.addValue("name", "EnemyBand");
-    objectFile.addValue("numOf", 1);
-    for(int ii = 0; ii < 1; ii++)
+    objectFile.addValue("numOf", 5);
+    for(int ii = 0; ii < 5; ii++)
     {
         objectFile.addTag("object");
         objectFile.pushTag("object", ii);

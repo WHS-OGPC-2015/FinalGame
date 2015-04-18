@@ -16,9 +16,12 @@ MainMenu::MainMenu() // in the constructor, we create EVERYTHING in the main men
     Menu quitMenu(ofVec2f(0,0));//creating quit y/n? menu
 
     //Here we add ALL of the Textures
-    Manager->addTexture("XNormal", "XButtonNormal.png"); // adding textures in the format Manager->addTexture("Name you will refer to the texture with", "File_Name")
-    Manager->addTexture("XHovered", "XButtonHovered.png");
-    Manager->addTexture("XPressed", "XButtonPressed.png");
+    Manager->addTexture("XNormal", "BackButtonNormal.png"); // adding textures in the format Manager->addTexture("Name you will refer to the texture with", "File_Name")
+    Manager->addTexture("XHovered", "BackButtonHovered.png");
+    Manager->addTexture("XPressed", "BackButtonPressed.png");
+
+    Manager->addTexture("SliderBG", "SliderBG.png");
+    Manager->addTexture("SliderButton", "SliderButton.png");
 
 //    Manager->addTexture("OrangeBackground", "OrangeBackground.png");
 
@@ -86,8 +89,8 @@ MainMenu::MainMenu() // in the constructor, we create EVERYTHING in the main men
     MenuEntity *brightnessSlider;
     brightnessSlider = new Slider(
                             ofVec2f(ofGetWindowWidth()/2, ofGetWindowHeight()/4),
-                            Manager->getTexturePointer("StandardNormal"),
-                            Manager->getTexturePointer("XPressed"),
+                            Manager->getTexturePointer("SliderBG"),
+                            Manager->getTexturePointer("SliderButton"),
                             100,
                             0,
                             50,
@@ -96,9 +99,23 @@ MainMenu::MainMenu() // in the constructor, we create EVERYTHING in the main men
                                 );
 
 
+    MenuEntity *volumeSlider;
+    volumeSlider = new Slider(
+                            ofVec2f(ofGetWindowWidth()/2, ofGetWindowHeight()/2),
+                            Manager->getTexturePointer("SliderBG"),
+                            Manager->getTexturePointer("SliderButton"),
+                            100,
+                            0,
+                            100,
+                            Manager->getFontPointer("NormalFont"),
+                            "Volume"
+                                );
+
+
+
     MenuEntity *exitButton; // create the exit button
     exitButton = new HoverButton(
-                            ofVec2f(ofGetWindowWidth()-100, 100),                                   // position
+                            ofVec2f(ofGetWindowWidth()/2, ofGetWindowHeight()* 3/4),                                   // position
                             Manager->getTexturePointer("XNormal"),    // Normal Texture
                             Manager->getTexturePointer("XHovered"),    // Hovered Texture
                             Manager->getTexturePointer("XPressed"),    // Pressed texture
@@ -183,12 +200,12 @@ MainMenu::MainMenu() // in the constructor, we create EVERYTHING in the main men
     MenuEntity *backButton; // cancel Button
     backButton = new HoverButton(
                             ofVec2f(ofGetWindowWidth()/2, 9*ofGetWindowHeight()/10),
-                            Manager->getTexturePointer("QuitNormal"),
-                            Manager->getTexturePointer("QuitHovered"),
-                            Manager->getTexturePointer("QuitPressed"),
-                            Manager->getTexturePointer("QuitPressed"),
-                            Manager->getTexturePointer("QuitPressed"),
-                            Manager->getTexturePointer("QuitPressed")
+                            Manager->getTexturePointer("XNormal"),
+                            Manager->getTexturePointer("XHovered"),
+                            Manager->getTexturePointer("XPressed"),
+                            Manager->getTexturePointer("XPressed"),
+                            Manager->getTexturePointer("XPressed"),
+                            Manager->getTexturePointer("XPressed")
                                     );
 
 
@@ -236,6 +253,7 @@ MainMenu::MainMenu() // in the constructor, we create EVERYTHING in the main men
     opMenu.addEntity(*defaultBG, "OptionsBG"); // adding Entities to menus...
     opMenu.addEntity(*exitButton, "ExitButton");
     opMenu.addEntity(*brightnessSlider, "setBrightness");
+    opMenu.addEntity(*volumeSlider, "setVolume");
 
     normalMenu.addEntity(*defaultBG, "NormalBackground");
     normalMenu.addEntity(*SGButton, "StartGameButton");
@@ -284,7 +302,7 @@ MainMenu::MainMenu() // in the constructor, we create EVERYTHING in the main men
     YesQuitBut = quitGameMenu->getPointerToChildByName<HoverButton>("YesExitButton");
     NoQuitBut = quitGameMenu->getPointerToChildByName<HoverButton>("NoExitButton");
     BrightnessSlider = optionsMenu->getPointerToChildByName<Slider>("setBrightness");
-
+    VolumeSlider = optionsMenu->getPointerToChildByName<Slider>("setVolume");
 
 
 }
@@ -294,6 +312,7 @@ void MainMenu::draw() // in the draw function, all we do is call the manager's d
 {
     if (active == true)
     {
+        ofSetColor(BrightnessSlider->getEventDataInt() * 2 + 100, BrightnessSlider->getEventDataInt() * 2 + 100, BrightnessSlider->getEventDataInt() * 2 + 100); // simple brightness changer
         Manager->draw();
     }
 }
@@ -309,7 +328,7 @@ bool MainMenu::update(ofVec2f& mousePos, bool& clicked, bool& pressed) // In Upd
 
 
 
-        Exit->setPosition(ofVec2f(ofGetWindowWidth()-100, 100));
+        Exit->setPosition(ofVec2f(ofGetWindowWidth()/2, ofGetWindowHeight()* 3/4));
         OptionsBut->setPosition(ofVec2f(ofGetWindowWidth()/2, 2*ofGetWindowHeight()/5));
         CreditsBut->setPosition(ofVec2f(ofGetWindowWidth()/2, 3*ofGetWindowHeight()/5));
         StartGameButton->setPosition(ofVec2f(ofGetWindowWidth()/2, ofGetWindowHeight()/5));
@@ -320,6 +339,9 @@ bool MainMenu::update(ofVec2f& mousePos, bool& clicked, bool& pressed) // In Upd
 
         Manager->update(mousePos, clicked, pressed); // and finally, and most importantly, we update the manager
 
+        double tmp = VolumeSlider->getEventDataInt();
+        std::cout << tmp << std::endl;
+        ofSoundSetVolume(tmp/100);
 
         // this (if) -- (else if) statement is a good example of swapping between menus:
          //Start:

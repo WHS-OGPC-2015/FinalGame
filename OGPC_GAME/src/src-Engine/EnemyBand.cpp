@@ -6,11 +6,17 @@ int EnemyBand::convertTo1dindex(ofVec2i v)
     return (v.y * fabs(extremeTiles[1].x - extremeTiles[0].x) + v.x); // converts an ofVec2i to an int based on the amount of tiles in the map
 }
 
+int intify(double d)
+{
+    int i = d;
+    return i;
+}
+
 EnemyBand::EnemyBand()
 {
     textureName = "";
     movable = true;
-    movement = 4;
+    movement = 3;
 }
 
 EnemyBand::EnemyBand(std::string str, int i)
@@ -18,7 +24,7 @@ EnemyBand::EnemyBand(std::string str, int i)
     textureName = str;
     movable = true;
     boundTileIndex = i;
-    movement = 4;
+    movement = 3;
 
 }
 //---------------------------------------------------
@@ -29,6 +35,12 @@ void EnemyBand::update(ofVec2f&, bool& clicked, bool&)
 
 void EnemyBand::turnlyUpdate()
 {
+    double mult = 1;
+    if (ofRandom(0, 100) < 20)
+    {
+        mult = -1;
+    }
+
     bool found = false;
     bool done = false;
     int siz = pointerToBandVector->size();
@@ -71,11 +83,11 @@ void EnemyBand::turnlyUpdate()
                 std::cout << nrise << "  " << nrun << std::endl;
                 if (nrise > nrun)
                 {
-                    newCoord = ofVec2i(nrun + boundTileCoords.x, nrise + .999 + boundTileCoords.y);
+                    newCoord = ofVec2i(mult*nrun + boundTileCoords.x, mult * (nrise + .999) + boundTileCoords.y);
                 }
                 else
                 {
-                    newCoord = ofVec2i(nrun + .999 + boundTileCoords.x, nrise + boundTileCoords.y);
+                    newCoord = ofVec2i(mult * (nrun + .999) + boundTileCoords.x, mult * nrise + boundTileCoords.y);
                 }
             }
             else
@@ -85,15 +97,20 @@ void EnemyBand::turnlyUpdate()
         }
         else
         {
-            newCoord = boundTileCoords;
+            newCoord = ofVec2i(boundTileCoords.x + intify(ofRandom(-2,2)), boundTileCoords.y + intify(ofRandom(-2,2)));
         }
-        boundTileCoords = newCoord;
-        boundTile = allTile->getTileByCoords(ofVec2f(boundTileCoords.x, boundTileCoords.y));
-        boundTileIndex = allTile->tileIndiceByArrayCoords(ofVec2f(boundTileCoords.x, boundTileCoords.y));
+
 
 
 
     }
+    else
+    {
+        newCoord = ofVec2i(boundTileCoords.x + intify(ofRandom(-2,2)), boundTileCoords.y + intify(ofRandom(-2,2)));
+    }
+    boundTileCoords = newCoord;
+    boundTile = allTile->getTileByCoords(ofVec2f(boundTileCoords.x, boundTileCoords.y));
+    boundTileIndex = allTile->tileIndiceByArrayCoords(ofVec2f(boundTileCoords.x, boundTileCoords.y));
 }
 
 

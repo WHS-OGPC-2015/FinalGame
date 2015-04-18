@@ -37,23 +37,23 @@ void ofApp::update(){
         {
             currentState = LOADING;
             first = true;
-            delete startingMenu;
         }
     }
     else if(currentState == LOADING)
     {
         if(first == true)
         {
+            delete startingMenu;
             resources = new ResourceManager;
             resources->addTexture("bandTextures\\selectTile.png", "selectTile");
-          //  if(ofRandom(69) < 4.2)
-          //  {
-         //       resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\tiles\\memes");
-           // }
-          //  else
-          //  {
+            if(ofRandom(100) < 0)
+            {
+                resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\tiles\\memes");
+            }
+            else
+            {
                 resources->loadFilesFromDirectory("C:\\OpenFrameworks\\apps\\FinalGame\\OGPC_GAME\\bin\\data\\tiles");
-           // }
+            }
             resources->addTexture("EnemyBandTextures\\EnemyBand.png", "EnemyBand");
             resources->addTexture("City.png", "City");
             resources->addTexture("CityHover.png", "CityHover");
@@ -93,6 +93,7 @@ void ofApp::update(){
             if(pause->update(mousePos, clicked, pressed) == 0)
             {
                 currentState = MAINMENU;
+                first = true;
             }
             dif = ofVec2f(0, 0);
         }
@@ -114,7 +115,7 @@ void ofApp::update(){
                 secondSound.stop();
                 if(lastTrack)
                 {
-                    if(ofRandom(100) < 25)
+                    if(ofRandom(100) < 0)
                     {
                         secondSound.play();
                         lastTrack = 1;
@@ -127,7 +128,7 @@ void ofApp::update(){
                 }
                 else
                 {
-                    if(ofRandom(100) < 85)
+                    if(ofRandom(100) < 0)
                     {
                         mainSound.play();
                         lastTrack = 0;
