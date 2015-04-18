@@ -12,7 +12,7 @@ class EnemyBand
 public:
 
     EnemyBand();
-    EnemyBand(std::string str);
+    EnemyBand(std::string str, int i);
 
     void draw();
     void update();

@@ -12,7 +12,7 @@ class Band
 public:
 
     Band();
-    Band(bool incog, bool incarn, int startnum, int mov, std::string incarnName, std::string TN[], std::string HLTName, int /*set as "" if incarn is false*/);
+    Band(bool incog, bool incarn, int startnum, int mov, std::string incarnName, std::string TN[], std::string HLTName, std::string selectName, int /*set as "" if incarn is false*/);
 
     void draw();
     int update(ofVec2f& mousePos, bool& clicked, bool& pressed);
@@ -75,7 +75,8 @@ private:
     std::string TextureNames[4];
     ofTexture* HLTex;
     std::string HLTexName;
-
+    ofTexture* SLTex;
+    std::string SLTexName;
 
     int discipleNum;
     int begDisNum; // beginning disciple number -- doesn't change as opposed to disciple num

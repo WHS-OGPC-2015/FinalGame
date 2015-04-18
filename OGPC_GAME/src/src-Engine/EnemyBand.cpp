@@ -12,10 +12,11 @@ EnemyBand::EnemyBand()
     movable = true;
 }
 
-EnemyBand::EnemyBand(std::string str)
+EnemyBand::EnemyBand(std::string str, int i)
 {
     textureName = str;
     movable = true;
+    boundTileIndex = i;
 }
 //---------------------------------------------------
 void EnemyBand::update()
