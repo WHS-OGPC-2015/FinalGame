@@ -4,6 +4,7 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofEnableAlphaBlending();
+    ofSoundSetVolume(1);
     viewPos = ofVec2f(0, 0);
     first = true;
     currentState = MAINMENU;
@@ -14,9 +15,9 @@ void ofApp::setup(){
     mainSound.loadSound("Music1.mp3");
     secondSound.loadSound("Music2.mp3");
     menuSound.loadSound("Music3.mp3");
-    mainSound.setLoop(false);
+    mainSound.setLoop(true);
     menuSound.setLoop(true);
-    secondSound.setLoop(false);
+    secondSound.setLoop(true);
     soundIsPlaying == false;
 
 }
@@ -30,7 +31,6 @@ void ofApp::update(){
         {
             first = false;
             startingMenu = new MainMenu;
-            ofSoundSetVolume(.25f);
             menuSound.play();
         }
         if(startingMenu->update(mousePos, clicked, pressed))
@@ -74,10 +74,10 @@ void ofApp::update(){
             first = false;
         }
         loading->update();
-        ofSoundUpdate();
         if(!loader->isThreadRunning())
         {
             menuSound.stop();
+            secondSound.play();
             currentState = GAME;
         }
     }
@@ -86,14 +86,9 @@ void ofApp::update(){
         if(first == true)
         {
             //everything is allready loaded
-            ofSoundSetVolume(.25f);
             //mainSound = resources->getSound("MainMusic");
-            secondSound.setVolume(.25f);
-            mainSound.setVolume(.25f);
-            mainSound.play();
             first = false;
         }
-
         else if(pause->isActive())
         {
             if(pause->update(mousePos, clicked, pressed) == 0)
@@ -108,7 +103,7 @@ void ofApp::update(){
             loader->update(viewPos);
             if(secondSound.getIsPlaying() || mainSound.getIsPlaying())
             {
-                soundIsPlaying == true;
+                soundIsPlaying = true;
             }
             if(!soundIsPlaying)
             {
@@ -165,7 +160,7 @@ void ofApp::draw(){
     {
         if(currentState == GAME)
         {
-            ofSoundUpdate();
+
            // std::cout << mainSound.getIsPlaying() << ", " << mainSound.getVolume() << std::endl;
             ofSetColor(255, 255, 255);
             ofPopMatrix();
