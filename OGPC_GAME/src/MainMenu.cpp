@@ -324,7 +324,7 @@ bool MainMenu::update(ofVec2f& mousePos, bool& clicked, bool& pressed) // In Upd
         // this (if) -- (else if) statement is a good example of swapping between menus:
          //Start:
          // This if statement says that if you click the x button in the options menu, it goes back to the default menu
-         std::cout << OptionsBut->getEventDataInt() << std::endl;
+         //std::cout << OptionsBut->getEventDataInt() << std::endl;
          if(Exit->getEventDataInt() > 2) // "Exit->getEventDataInt() > 2" essentially means that if the exit button (inside the options menu) is clicked, it passes the if test
          {                               //   ( >2 means it's clicked. 0 = nothing, 1 = hovered, 2 = pressed, 3 = clicked, 4 = hovered and clicked, 5 = pressed and clicked)
              Exit->setClicked(false);    // once the button is clicked, we immediately unclick it manually

@@ -202,8 +202,8 @@ void City::turnlyUpdate()
 //                threshnums[0] = 1;
 
                 accel  = (percentconverted - thresholds[0])*((accelmax)/(thresholds[1] - thresholds[0])) - accelmax;
-                std::cout << accel << std::endl;
-                std::cout << bandAccel << std::endl;
+                //std::cout << accel << std::endl;
+                //std::cout << bandAccel << std::endl;
                //this is a point-slope formula
             }
             else

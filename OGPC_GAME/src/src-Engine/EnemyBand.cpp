@@ -17,6 +17,7 @@ EnemyBand::EnemyBand(std::string str, int i)
     textureName = str;
     movable = true;
     boundTileIndex = i;
+
 }
 //---------------------------------------------------
 void EnemyBand::update(ofVec2f&, bool& clicked, bool&)
@@ -104,6 +105,7 @@ void EnemyBand::draw()
 void EnemyBand::setTexture(ResourceManager* res)
 {
     enemyTexture = &res->getTextureReference(textureName);
+    std::cout << textureName << std::endl;
 }
 
 void EnemyBand::setTile(int i)
@@ -142,7 +144,6 @@ void EnemyBand::saveObjectData(ofxXmlSettings& file)
     file.addValue("movable", movable);
     file.addValue("textureName", textureName);
     file.addValue("boundTileIndex", boundTileIndex);
-
     file.addValue("boundTileCoordsx", boundTileCoords.x);
     file.addValue("boundTileCoordsy", boundTileCoords.y);
 
@@ -159,7 +160,6 @@ void EnemyBand::loadObjectData(ofxXmlSettings& file)
     boundTileIndex = file.getValue("boundTileIndex", 0);
     boundTileCoords.x = file.getValue("boundTileCoordsx", 0);
     boundTileCoords.y = file.getValue("boundTileCoordsy", 0);
-
     extremeTiles[0].x = file.getValue("extremeTile0x", 0);
     extremeTiles[0].y = file.getValue("extremeTile0y", 0);
     extremeTiles[1].x = file.getValue("extremeTile1x", 0);

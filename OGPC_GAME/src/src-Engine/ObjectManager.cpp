@@ -76,6 +76,7 @@ void ObjectManager::loadFromFile(std::string filePath)
                     addObjectType<EnemyBand>("EnemyBand", numType);
                     oVector<EnemyBand>* C = getPointerToChildByName<EnemyBand>("EnemyBand");
                     oVector<Band>* bandThing = getPointerToChildByName<Band>("Band");
+                    C->loadObjectData(objectFile, numType);
                     for(int ii = 0; ii<numType; ii++)
                     {
                         EnemyBand* tmp = C->getObject(ii);

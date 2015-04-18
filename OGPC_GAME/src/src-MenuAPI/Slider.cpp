@@ -49,8 +49,8 @@ void Slider::update(ofVec2f& mousePos, bool& clicked, bool& pressed)
         {
             //std::cout<<cordScale<<endl<<minValue<<endl;
             //std::cout << bgTLPos.x <<endl<< bgBRPos.x<<endl;
-            std::cout <<mousePos.x - bgTLPos.x<<endl;
-            std::cout << currentValue << std::endl;
+            //std::cout <<mousePos.x - bgTLPos.x<<endl;
+            //std::cout << currentValue << std::endl;
             currentValue = (mousePos.x - bgTLPos.x)/cordScale + minValue;
         }
     }
