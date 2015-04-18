@@ -58,8 +58,8 @@ void createCityMenu(MenuManager* man, ofVec2f pos, ResourceManager* R)
 
     MenuEntity* PCBox;
     PCBox = new TextBox{
-                    "Converted Population",
-                    ofVec2f(pos.x,
+                    "Converted Population:",
+                    ofVec2f(pos.x-100,
                             pos.y + halfmenuHeight - 2 * borderWidth - 2 * pcrad - man->getFontPointer("CMText").stringHeight("Converted Population")/2),
                     man->getFontPointer("CMText")
                     };
@@ -101,8 +101,7 @@ void createCityMenu(MenuManager* man, ofVec2f pos, ResourceManager* R)
                     3,
                     1,
                     pcrad,
-                    ofVec2f(pos.x,
-                            pos.y + halfmenuHeight - borderWidth - pcrad),
+                    ofVec2f(pos.x+50, pos.y + halfmenuHeight - borderWidth - pcrad - 50),
                     ofColor::blue,
                     ofColor::darkBlue
                     };
