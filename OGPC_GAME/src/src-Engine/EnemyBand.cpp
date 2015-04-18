@@ -10,6 +10,7 @@ EnemyBand::EnemyBand()
 {
     textureName = "";
     movable = true;
+    movement = 4;
 }
 
 EnemyBand::EnemyBand(std::string str, int i)
@@ -17,6 +18,7 @@ EnemyBand::EnemyBand(std::string str, int i)
     textureName = str;
     movable = true;
     boundTileIndex = i;
+    movement = 4;
 
 }
 //---------------------------------------------------
@@ -27,7 +29,7 @@ void EnemyBand::update(ofVec2f&, bool& clicked, bool&)
 
 void EnemyBand::turnlyUpdate()
 {
-    bool found;
+    bool found = false;
     bool done = false;
     int siz = pointerToBandVector->size();
     int discipleNum = 0;
@@ -38,8 +40,8 @@ void EnemyBand::turnlyUpdate()
     {
         if (pointerToBandVector->at(i).getIncognito() == false)
         {
-            if(pointerToBandVector->at(i).getCoords().x +
-               pointerToBandVector->at(i).getCoords().y <= movement)
+            if(fabs(pointerToBandVector->at(i).getCoords().x - boundTileCoords.x) +
+               fabs(pointerToBandVector->at(i).getCoords().y - boundTileCoords.y) <= movement)
             {
                 boundTile = allTile->getTileByCoords(ofVec2f(pointerToBandVector->at(i).getCoords().x, pointerToBandVector->at(i).getCoords().y));
                 done = true;
@@ -59,19 +61,21 @@ void EnemyBand::turnlyUpdate()
     {
         if (found == true)
         {
-            double rise = (boundTileCoords.y - coords.y);
-            double run =  (boundTileCoords.x - coords.x);
-            if (rise + run != 0)
+            double rise = (coords.y - boundTileCoords.y);
+            double run =  (coords.x - boundTileCoords.x);
+            std::cout << rise << "  " << run << std::endl;
+            if (fabs(rise) + fabs(run) != 0)
             {
-                double nrise = (rise * movement)/(rise + run);
-                double nrun = (run * movement)/(rise + run);
+                double nrise = (rise * movement)/(fabs(rise) + fabs(run));
+                double nrun = (run * movement)/(fabs(rise) + fabs(run));
+                std::cout << nrise << "  " << nrun << std::endl;
                 if (nrise > nrun)
                 {
-                    newCoord = ofVec2i(nrise, nrun + .5);
+                    newCoord = ofVec2i(nrun + boundTileCoords.x, nrise + .999 + boundTileCoords.y);
                 }
                 else
                 {
-                    newCoord = ofVec2i(nrise + .5 + boundTileCoords.x, nrun + boundTileCoords.y);
+                    newCoord = ofVec2i(nrun + .999 + boundTileCoords.x, nrise + boundTileCoords.y);
                 }
             }
             else
@@ -83,7 +87,10 @@ void EnemyBand::turnlyUpdate()
         {
             newCoord = boundTileCoords;
         }
-        boundTile = allTile->getTileByCoords(ofVec2f(newCoord.x, newCoord.y));
+        boundTileCoords = newCoord;
+        boundTile = allTile->getTileByCoords(ofVec2f(boundTileCoords.x, boundTileCoords.y));
+        boundTileIndex = allTile->tileIndiceByArrayCoords(ofVec2f(boundTileCoords.x, boundTileCoords.y));
+
 
 
     }

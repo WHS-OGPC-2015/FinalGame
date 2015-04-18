@@ -70,9 +70,9 @@ void createBandMenu(MenuManager* man, ofVec2f pos)
                         man->getTexturePointer("BMIncogButNormal"),           // adding textures, we have done this before...
                         man->getTexturePointer("BMIncogButHovered"),
                         man->getTexturePointer("BMIncogButPressed"),
-                        man->getTexturePointer("BMUnIncogButPressed"),
-                        man->getTexturePointer("BMUnIncogButPressed"),
-                        man->getTexturePointer("BMUnIncogButPressed")
+                        man->getTexturePointer("BMIncogButPressed"),
+                        man->getTexturePointer("BMIncogButPressed"),
+                        man->getTexturePointer("BMIncogButPressed")
                                 );
 
     //bandMenu.addEntity(*bandBG, "BandMenuBackground");
