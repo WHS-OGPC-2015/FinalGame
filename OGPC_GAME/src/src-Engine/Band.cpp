@@ -351,7 +351,7 @@ int Band::update(ofVec2f& mousePos, bool& clicked, bool& pressed)
 
 void Band::turnlyUpdate()
 {
-    std::cout << "hereband" << std::endl;
+//    std::cout << "hereband" << std::endl;
     //reset the TL and BR positions for collisions
     TLpos = ofVec2f(boundTile->getLocation().x, boundTile->getLocation().y);
     BRpos = ofVec2f(boundTile->getLocation().x + BandTextures[bandType]->getWidth(), boundTile->getLocation().y + BandTextures[bandType]->getHeight());
