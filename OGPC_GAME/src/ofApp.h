@@ -79,6 +79,7 @@ class ofApp : public ofBaseApp{
         ofSoundPlayer menuSound;
         ofSoundPlayer secondSound;
         bool soundIsPlaying;
+        bool lastTrack;
 
         enum GameStates{MAINMENU, LOADING, GAME};
 
