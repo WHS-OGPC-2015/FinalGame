@@ -15,9 +15,9 @@ void ofApp::setup(){
     mainSound.loadSound("Music1.mp3");
     secondSound.loadSound("Music2.mp3");
     menuSound.loadSound("Music3.mp3");
-    mainSound.setLoop(true);
+    mainSound.setLoop(false);
     menuSound.setLoop(true);
-    secondSound.setLoop(true);
+    secondSound.setLoop(false);
     soundIsPlaying == false;
 
 }
@@ -77,7 +77,6 @@ void ofApp::update(){
         if(!loader->isThreadRunning())
         {
             menuSound.stop();
-            secondSound.play();
             currentState = GAME;
         }
     }
@@ -105,19 +104,45 @@ void ofApp::update(){
             {
                 soundIsPlaying = true;
             }
+            else
+            {
+                soundIsPlaying = false;
+            }
             if(!soundIsPlaying)
             {
                 mainSound.stop();
                 secondSound.stop();
-                if(ofRandom(100) < 50)
+                if(lastTrack)
                 {
-                    mainSound.play();
+                    if(ofRandom(100) < 25)
+                    {
+                        secondSound.play();
+                        lastTrack = 1;
+                    }
+                    else
+                    {
+                        mainSound.play();
+                        lastTrack = 0;
+                    }
                 }
                 else
                 {
-                    secondSound.stop();
+                    if(ofRandom(100) < 85)
+                    {
+                        mainSound.play();
+                        lastTrack = 0;
+                    }
+                    else
+                    {
+                        secondSound.play();
+                        lastTrack = 1;
+                    }
+
                 }
+
+
             }
+
             adjustedMousePos = mousePos - viewPos;
             gameEngine->update(adjustedMousePos, clicked, pressed);
             gameEngine->updateNoTranslate(mousePos, clicked, pressed);

@@ -12484,8 +12484,12 @@
 	"ofMain.h"
 	"ofApp.h"
 
+<<<<<<< HEAD
+1429334820 c:\openframeworks\apps\finalgame\ogpc_game\src\ofapp.h
+=======
 1429331484 c:\openframeworks\apps\finalgame\ogpc_game\src\ofapp.h
 >>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+>>>>>>> 9a80fd4a9939e8e4b86e4fd020853dd18e189429
 	"ofMain.h"
 	"src-Engine/EngineInclude.h"
 	"src-Game/GameMap.h"
@@ -12981,8 +12985,12 @@
 	<string>
 	<iostream>
 
+<<<<<<< HEAD
+1429335712 source:c:\openframeworks\apps\finalgame\ogpc_game\src\ofapp.cpp
+=======
 1429333768 source:c:\openframeworks\apps\finalgame\ogpc_game\src\ofapp.cpp
 >>>>>>> d2dfcbc7333ed5492a076f5c0f3f3e17f1fa0ac5
+>>>>>>> 9a80fd4a9939e8e4b86e4fd020853dd18e189429
 	"ofApp.h"
 	"XML/src/ofxXmlSettings.h"
 
