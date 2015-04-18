@@ -31,7 +31,7 @@ Band::Band() // empty constructor
 }
 
 //you can change anything that would be have a possibility of being different at the start, including arbitrary things
-Band::Band(bool incog, bool incarn, int startnum, int mov, std::string incarnName, std::string TN[], std::string HLTName, int index /*set as "" if incarn is false*/)
+Band::Band(bool incog, bool incarn, int startnum, int mov, std::string incarnName, std::string TN[], std::string HLTName, std::string selectName, int index /*set as "" if incarn is false*/)
 {
     incognito = incog;
     incarnation = incarn;
@@ -52,6 +52,7 @@ Band::Band(bool incog, bool incarn, int startnum, int mov, std::string incarnNam
         TextureNames[i] = TN[i];
     }
     HLTexName = HLTexName;
+    SLTexName = selectName;
 }
 
 
@@ -513,6 +514,7 @@ void Band::setTextures(ResourceManager* res)
     {
         BandTextures[i] = &res->getTextureReference(TextureNames[i]);
         HLTex = &res->getTextureReference(HLTexName);
+        SLTex = &res->getTextureReference(SLTexName);
     }
     TLpos = ofVec2f(boundTile->getLocation().x, boundTile->getLocation().y);
     BRpos = ofVec2f(boundTile->getLocation().x + BandTextures[bandType]->getWidth(), boundTile->getLocation().y + BandTextures[bandType]->getHeight());
